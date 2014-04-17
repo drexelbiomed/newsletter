@@ -1,0 +1,111 @@
+@font-face {
+	font-family: FuturaStdBold;
+	src: url(http://biomed.drexel.edu/new04/Content/fonts/FuturaStd-CondensedBold.otf);
+}
+
+@font-face {
+	font-family: FuturaStdMed;
+	src: url(http://biomed.drexel.edu/new04/Content/fonts/FuturaStd-Medium.otf);
+}
+
+body{
+  font-size: 14px;
+  // font-family: Arial, Helvetica, sans-serif;
+  background: #CCCCCC;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+h2 {
+	// margin-top: .5em;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 16px;
+	margin: 0px;
+}
+h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+a {
+	color: #006699;
+}
+h1,h2,h3 {
+	font-family: FuturaStdBold, Arial, Tahoma, sans-serif;
+	color: #07294D;
+	font-weight: normal;
+}
+a {
+	font-family: FuturaStdMed, Arial, Tahoma, sans-serif;
+	text-decoration: none;
+
+	h3 {
+		color: #006699;
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+.section{
+	background: #FFc600;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+	h2 {
+		text-align: center;
+		
+	}
+}
+
+.spotlight, .inthenews {
+	// background: #f1f8f5; 
+	border: 1px solid #cccccc;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.spotlight {
+	// background-color: #fff3e1;
+
+	.thumbnail {
+		img{
+			border: 1px solid white;
+		}
+	}
+	.news {
+		.title{}
+		.date{
+			color: #666666;
+			margin: 0px;
+		}
+		.summary{}
+		.link{}
+	}
+}
+
+.inthenews {
+	padding: 10px;
+}
+
+.footer {
+	background: #07294D;
+	color: #ffffff;
+}
+
+.button {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: .5em;
+	border-radius: 3px;
+}

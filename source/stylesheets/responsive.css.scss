@@ -1,0 +1,56 @@
+@media all and (max-width: 768px) {
+	body {
+		font-size: 12px;
+	}
+
+	.wrapper {
+		width: 100%;
+
+		.percent-100 {
+			width: 100%;
+		}
+
+		.percent-75 {
+			width: 75%;
+		}
+
+		.percent-50 {
+			width: 50%;
+		}
+
+		.percent-35 {
+			width: 35%;
+		}
+
+		.percent-25 {
+			width: 25%;
+		}
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	.section {
+		margin-left: 5px;
+	}
+
+	.header, .spotlight, .inthenews {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.spotlight, .inthenews {
+		border-radius: 0px;
+		border-left: 0px;
+		border-right: 0px;
+	}
+}

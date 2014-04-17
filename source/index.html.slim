@@ -1,0 +1,113 @@
+---
+layout: "responsive"
+---
+
+table.wrapper cellpadding="0" cellspacing="0" border="0"
+	tr
+		td width="35"
+		td.percent-100
+			table.percent-100.header width="700" cellpadding="0" cellspacing="0" border="0"
+				tr
+					- link_to "#"
+						= tag :img, :src => "#{bme_path}spring-banner.jpg", class: "percent-100"
+				tr
+					td.percent-50 width="400"
+						h1 Winter & Spring Newsletter
+					td.percent-25 width="150" align="center"
+						p April 16th, 2014
+					td.percent-25 align="right"
+						p
+							- link_to "http://facebook.com/DrexelBIOMED" do
+								= tag :img, :src => "http://www.biomed.drexel.edu/new04/Images/facebook_biomed.jpg", :width => "25" 
+							- link_to "https://www.linkedin.com/groups?home=&trk=anet_ug_hm&gid=4587558" do
+								= tag :img, :src => "http://www.biomed.drexel.edu/new04/Images/linkedin_biomed.jpg", :width => "25" 
+
+		td width="35"
+
+	tr
+		td width="35"
+		td.percent-100 width="700"
+			table.section width="200" cellpadding="10" cellspacing="0"
+				tr
+					td align="center"
+						h2 Student Spotlight
+			table.spotlight.percent-100 width="700" cellpadding="10" cellspacing="0"
+				tr
+					td.thumbnail.percent-35 width="240" valign="top"
+						- link_to "#"
+							= tag :img, :src => "http://placehold.it/240x180", class: "percent-100"
+					td.news valign="bottom"
+						h3.title Alison Oxenberg, Christopher Flounders and Team Organize BME Week
+						p.date 14 March, 2014
+						p.summary Alison Oxenberg, undergraduate advisor in BIOMED, Christopher Flounders, undergraduate student in BIOMED, and team members organized Biomedical Engineering (BME) Week, with the help of a Drexel University Alumni Association Grant and other funding.
+						p.link
+							= link_to "Read More", "http://biomed.drexel.edu/new04/bmew2014", class: "button"
+			table.section width="200" cellpadding="10" cellspacing="0"
+				tr.title
+					td align="center"
+						h2 In the News
+			table.inthenews.percent-100 width="700" cellpadding="10" cellspacing="0"
+				tr.highlight
+					td.thumbnail.percent-25 width="160" valign="top"
+						- link_to "#"
+							= tag :img, :src => "http://placehold.it/160x120", class: "percent-100"
+					td.news
+						- link_to "#", class: "title" do
+							h3 Alison Oxenberg, Christopher Flounders and Team Organize Biomedical Engineering Week
+						p.summary Alison Oxenberg, BME Student Chris Flounders, and other team members organized BME Week.
+				tr.highlight
+					td.thumbnail.percent-25 width="160" valign="top"
+						- link_to "#"
+							= tag :img, :src => "http://placehold.it/160x120", class: "percent-100"
+					td.news
+						- link_to "#", class: "title" do
+							h3 Alison Oxenberg, Christopher Flounders and Team Organize Biomedical Engineering Week
+						p.summary Alison Oxenberg, BME Student Chris Flounders, and other team members organized BME Week.
+				tr.highlight
+					td.thumbnail.percent-25 width="160" valign="top"
+						- link_to "#"
+							= tag :img, :src => "http://placehold.it/160x120", class: "percent-100"
+					td.news
+						- link_to "#", class: "title" do
+							h3 Alison Oxenberg, Christopher Flounders and Team Organize Biomedical Engineering Week
+						p.summary Alison Oxenberg, BME Student Chris Flounders, and other team members organized BME Week.
+
+			table.section width="200" cellpadding="10" cellspacing="0"
+				tr.title
+					td align="center"
+						h2 Alumni
+			table.inthenews.percent-100 width="700" cellpadding="10" cellspacing="0"
+				tr
+					td.news
+						a.link href="#"
+							h3 Alison Oxenberg, Christopher Flounders and Team Organize Biomedical Engineering Week
+						p.summary Alison Oxenberg, undergraduate advisor in BIOMED, Christopher Flounders, undergraduate student in BIOMED, and team members organized Biomedical Engineering (BME) Week, with the help of a Drexel University Alumni Association Grant and other funding.
+					td.news
+						a.link href="#"
+							h3 Alison Oxenberg, Christopher Flounders and Team Organize Biomedical Engineering Week
+						p.summary Alison Oxenberg, undergraduate advisor in BIOMED, Christopher Flounders, undergraduate student in BIOMED, and team members organized Biomedical Engineering (BME) Week, with the help of a Drexel University Alumni Association Grant and other funding.
+					td.news
+						a.link href="#"
+							h3 Alison Oxenberg, Christopher Flounders and Team Organize Biomedical Engineering Week
+						p.summary Alison Oxenberg, undergraduate advisor in BIOMED, Christopher Flounders, undergraduate student in BIOMED, and team members organized Biomedical Engineering (BME) Week, with the help of a Drexel University Alumni Association Grant and other funding.
+						br
+			table.footer.percent-100 width="700" cellpadding="10" cellspacing="0"
+				tr
+					td valign="top"
+						strong Our mailing address is:
+						br 
+						| Drexel University
+						br
+						| 3141 Chestnut Street
+						br
+						| Philadelphia, PA 19104
+						br
+						| Copyright © 2014 Drexel University, All rights reserved.
+						br
+						br
+						br
+
+					td.percent-50 width="300" valign="top" align="right"
+						- link_to "http://biomed.drexel.edu" do
+							= tag :img, :src => "#{bme_path}logo-white.png", :width => "100%"
+		td width="35"

@@ -1,0 +1,403 @@
+html, body {
+  text-align: center;
+}
+
+body{
+  font-size: 11px;
+}
+
+table.news {
+  background: url(Images/news_fade.jpg) repeat-x top left;
+}
+table.sl_intro {
+  background: url(images/sl_homepage.png) center no-repeat;
+}
+div.spacer {
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+a.gallery {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000099;
+  letter-spacing: 1px;
+}
+.arrowlistmenu {
+  width: 287px; /*width of accordion menu*/
+  padding: 0px 0px 0px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.arrowlistmenu .menuheader { /*CSS class for menu headers in general (expanding or not!)*/
+  font: bold 12px Arial;
+  /* Spacing between closed Menu Tabs */
+margin-top: 7px;
+  margin-bottom: 0px;
+  /* ---------------------- */
+text-transform: uppercase;
+  padding: 0px 0 0px 0px; /*header text is indented 0px*/
+  cursor: hand;
+  cursor: pointer;
+}
+.arrowlistmenu .openheader { /*CSS class to apply to expandable header when it's expanded*/
+  background-image: url(titlebar-active.png);
+}
+.arrowlistmenu table { /*CSS for UL of each sub menu*/
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 0px;
+}
+.arrowlistmenu table a {
+  display: block;
+  padding: 2px 0px 0px 0px;
+  padding-left: 19px; /*link text is indented 19px*/
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #dadada;
+  font-size: 90%;
+}
+.arrowlistmenu table a:hover { /*hover state CSS*/
+  color: #FF6600;
+  background-color: #EAEAEA;
+}
+.style3 {
+  color: #FF3333;
+  font-size: small;
+}
+.box1 {
+  position: relative;
+  width: 156px;
+  height: 197px;
+  padding: 0 0 0 0;
+  background-image: url(images/vb_yellow.jpg);
+  background-repeat: no-repeat;
+}
+.box2 {
+  position: relative;
+  width: 156px;
+  height: 197px;
+  padding: 0 0 0 0;
+  background-image: url(images/lss_orange.jpg);
+  background-repeat: no-repeat;
+}
+.box3 {
+  position: relative;
+  width: 156px;
+  height: 197px;
+  padding: 0 0 0 0;
+  background-image: url(images/tr_green.jpg);
+  background-repeat: no-repeat;
+}
+#box-link {
+  position: absolute;
+  width: 156px;
+  height: 197px;
+  background-color: transparent;
+/* border: 1px solid red; */ }
+div.special {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #003399;
+  text-decoration: underline;
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+#clickable {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: #FFFFFF;
+}
+/*font.tabtitle {
+position: absolute; 
+width: 145px; 
+height: 14px;
+background-color: #074986;
+color: #FFFFFF;
+} */
+    
+div.blurb {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 5 5 5 5;
+}
+td.specialbg {
+  background: url(images/special_bg.jpg) top left repeat-x;
+}
+div.spacer {
+  margin-bottom: 12px;
+}
+.sidebar1 a:link {
+  color:#FFFFFF;
+  font-size: 12px;
+}
+.sidebar1 a:visited {
+  color:#FFFFFF;
+  font-size: 12px;
+}
+.sidebar1 a:hover {
+  color:#fcbb00;
+  font-size: 12px;
+}
+.sidebar1 a:active {
+  color:#fcbb00;
+  font-size: 12px;
+}
+.sidebar2 a:link {
+  color:#003063;
+  font-size: 12px;
+}
+.sidebar2 a:visited {
+  color:#003063;
+  font-size: 12px;
+}
+.sidebar2 a:hover {
+  color:#fcbb00;
+  font-size: 12px;
+}
+.sidebar2 a:active {
+  color:#fcbb00;
+  font-size: 12px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #CCCCCC;
+  border-top-width: 20px;
+}
+.wrapper {
+  background-color: #FFFFFF;
+  /*height: 768px;*/
+  width: 770px;
+  margin: auto;
+  padding: 0px;
+  text-align:left;
+}
+.left {
+  background-color: #FFFFFF;
+  float: left;
+  height: 520px;
+  width: 156px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align:left;
+}
+.right {
+  background-color: #FFFFFF;
+  height: 520px;
+  width: 156px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #000000;
+  text-align:left;
+}
+.center {
+  background-color: #FFFFFF;
+  float: left;
+  height: 520px;
+  width: 338px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  color: #000000;
+  text-align:left;
+}
+.image {
+  background-color: #FFFFFF;
+  height: 275px;
+  width: 770px;
+  position: relative;
+  z-index: 1;
+}
+.sidebar1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #003063;
+  height: 25px;
+  margin-bottom: 2px;
+  width: 165px;
+  line-height: 25px;
+  padding-left: 10px;
+  z-index: 1;
+  text-align:left;
+}
+.sidebar2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  color: #003063;
+  background-color: #FFFFFF;
+  height: 25px;
+  margin-bottom: 2px;
+  width: 156px;
+  padding-left: 0px;
+  text-align:left;
+}
+.coulter {
+  height: 90px;
+  width: 156px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  text-align:left;
+}
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  color: #003063;
+  margin: 0;
+  padding: 0;
+  text-align:left;
+}
+h2 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: #003063;
+  margin: 0;
+  padding: 0;
+  text-align:left;
+}
+h3 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  color: #003063;
+  margin-top: 20px;
+  padding: 0;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  text-align:left;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+}
+-ul {
+  list-style-type: none;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  color: #003063;
+  background-color: #FFFFFF;
+  list-style-position: outside;
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  line-height:  1.25em;
+  text-align:left;
+}
+.headline {
+  z-index: 2;
+  position: relative;
+  height: 40px;
+  width: 345px;
+  top: -40px;
+  right: -405px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 20px;
+  background-image: url(header_bar.png);
+  line-height: 35px;
+}
+a.gift{
+color:#FFFFFF;
+text-decoration: none;
+font-size: 12px;
+}
+
+a.gift:hover{
+color:#FF9900;
+text-decoration: none;
+font-size: 12px;
+}
+
+#box-link2 { 
+    position: absolute; 
+    width: 455px; 
+    height: 86px;
+    margin-left: 0px;
+    background-color: transparent; 
+    /*border: 1px solid red; */ 
+} 
+        
+table.top{
+margin-bottom: 0px;
+}
+
+div.direct{
+text-align: left;
+margin-left: 480px;
+margin-right: 100px;
+margin-top: 12px;
+}
+
+a.direct{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #FFFFFF;
+}
+
+font.direct{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #FFFFFF;
+}
+.style1 {color: #FFCC33}
+
+a.BiomedTopNav {
+  font-size: 11px;
+}
+
+#drexelLinks {
+  a {
+    font-size: 11px;
+  }
+}
