@@ -9,10 +9,11 @@ table.wrapper cellpadding="0" cellspacing="0" border="0"
 			table.percent-100.header width="700" cellpadding="0" cellspacing="0" border="0"
 				tr
 					- link_to "#"
-						= tag :img, :src => "#{bme_path}spring-banner.jpg", class: "percent-100"
+						= tag :img, :src => "#{bme_path}spring-banner.jpg", class: "percent-100 phone-hidden"
+						= tag :img, :src => "#{bme_path}spring-banner-phone.jpg", class: "percent-100 phone-visible"
 				tr
 					td.percent-50 width="400"
-						h1 Winter & Spring Newsletter
+						h1 Winter/Spring Newsletter
 					td.percent-25 width="150" align="center"
 						p April 16th, 2014
 					td.percent-25 align="right"
