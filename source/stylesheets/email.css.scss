@@ -1,3 +1,5 @@
+$header-height: 30px;
+
 @font-face {
 	font-family: FuturaStdBold;
 	src: url(http://biomed.drexel.edu/new04/Content/fonts/FuturaStd-CondensedBold.otf);
@@ -18,7 +20,12 @@ body{
 h1 {
 	text-transform: uppercase;
 	font-size: 30px;
+
+	&.main {
+		padding: 20px 0;
+	}
 }
+
 h2 {
 	// margin-top: .5em;
 	text-transform: uppercase;
@@ -26,24 +33,61 @@ h2 {
 	line-height: 16px;
 	margin: 0px;
 }
+
 h3 {
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	font-size: 18px;
+	line-height: 23px;
 }
-a {
-	color: #006699;
-}
-h1,h2,h3 {
+
+h1,h2 {
 	font-family: FuturaStdBold, Arial, Tahoma, sans-serif;
 	color: #07294D;
 	font-weight: normal;
 }
-a {
+
+h4.school {
+	text-transform: uppercase;
 	font-family: FuturaStdMed, Arial, Tahoma, sans-serif;
+	font-size: 10px;
+}
+
+a {
+	color: #006699;
+	// font-family: FuturaStdMed, Arial, Tahoma, sans-serif;
 	text-decoration: none;
 
 	h3 {
 		color: #006699;
+	}
+}
+
+.top {
+	margin-bottom: 30px;
+}
+
+ul.header {
+	list-style: none;
+
+	li {
+		display: inline-block;
+		padding: 0 5px;
+		height: $header-height;
+		line-height: $header-height;
+
+		&.separator {
+			color: #666666;
+		}
+
+		a {
+			display: inline-block;
+			height: $header-height;
+			line-height: $header-height;
+		}
+
+		img {
+			vertical-align: middle;
+		}
 	}
 }
 
@@ -52,54 +96,49 @@ a {
 	background: #ffffff;
 }
 
-.section{
-	background: #FFc600;
-	border-top: 1px solid #cccccc;
-	border-left: 1px solid #cccccc;
-	border-right: 1px solid #cccccc;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	
-	h2 {
-		text-align: center;
-		
-	}
+.highlight {
+	margin-bottom: 10px;
 }
 
-.spotlight, .inthenews {
-	// background: #f1f8f5; 
-	border: 1px solid #cccccc;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	margin-bottom: 30px;
+.news {
+
+	p {
+		font-size: 13px;
+		line-height: 21px;
+	}
+
+
 }
 
-.spotlight {
-	// background-color: #fff3e1;
+.info {
+	background: #07294D;
+	// background-color: #FCFBE3;
+	color: #ffffff;
 
-	.thumbnail {
-		img{
-			border: 1px solid white;
-		}
-	}
-	.news {
-		.title{}
-		.date{
-			color: #666666;
-			margin: 0px;
-		}
-		.summary{}
-		.link{}
-	}
 }
 
-.inthenews {
-	padding: 10px;
+.tag {
+	padding: 5px;
+
+	p {
+		font-size: 10px;
+		text-transform: uppercase;
+		font-family: FuturaStdMed, Arial, Tahoma, sans-serif;
+	}
+
+	&.phone-visible {
+		padding: 0px;
+	}
+
+}
+
+.title {
+	margin-bottom: 12px;
 }
 
 .footer {
 	background: #07294D;
+	// background-color: #FCFBE3;
 	color: #ffffff;
 }
 
@@ -117,3 +156,4 @@ a {
 .phone-visible {
 	display: none;
 }
+
