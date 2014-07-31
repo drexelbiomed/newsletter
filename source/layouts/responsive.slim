@@ -18,9 +18,9 @@
   / This will help you catch jumbled characters so that you don't forget to convert them to HTML entities.
   
   <title>Your Message Subject or Title</title>
-  <link rel="stylesheet" type="text/css" href="all.css"
+  <link rel="stylesheet" type="text/css" href="stylesheets/all.css" />
 </head>
-<body style="background:#fff; min-height:1000px; color:#fff;font-family:Arial, Helvetica, sans-serif; font-size:12px" alink="#FF0000" link="#FF0000" bgcolor="#ffffff" text="#000000" yahoo="fix"> 
+<body style="background:#fff; min-height:1000px; color:#333; font-family:Arial, Helvetica, sans-serif; font-size:12px" alink="#FF0000" link="#FF0000" bgcolor="#ffffff" text="#000000" yahoo="fix"> 
   / You may adjust each of the values above for your email as needed. 
   / We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to 
   / a div. Since it gets converted to a div, the other body attributes like bgcolor are ignored.  
@@ -45,16 +45,6 @@
     / =========================================================================
     = yield
 
-    / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
-    / cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. 
-    / The bgcolor and width attributes are for the Android Gmail application.  Gmail converts your body to a div, even on mobile apps. 
-    / Since there is no width set in your body, the Android sets the width of your converted body tag to that of the device viewport. 
-    / To make a long story short, your background color will get cut off as the viewer scrolls horizontally unless you add it to each 
-    / of your tables as well.
-     
-    / In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
-    / that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
-     
     / PARAGRAPHS 
     / =========================================================================
     <p style="margin-top:0">Hello</p>
@@ -134,7 +124,7 @@
     / =========================================================================
     <table width="150" cellspacing="3" cellpadding="0" border="0">
       <tr>
-        <td width="150" height="35" align="center" background="http://www.emailonacid.com/emails/response_emails/button_back.gif" style="background-repeat:repeat-x; background-position:top left; background-color:#3c96e2; border:1px solid #666666; color:#FFFFFF; font-weight:bold; white-space:nowrap; height:35px;">
+        <td width="150" height="35" align="center" background="http://www.emailonacid.com/emails/response_emails/button_back.gif" style="background-repeat:repeat-x; background-position:top left; background-color:#3c96e2; border: 1px solid #666666; color:#FFFFFF; font-weight:bold; white-space:nowrap; height:35px;">
           <a href="http://www.emailonacid.com/email-preview/online_demo/C7" target="_blank" style="color:#FFFFFF; cursor:pointer; font-size:13px; text-align:center; text-decoration:none; vertical-align:baseline; font-weight:bold;"> 
             <span style="padding:10px 10px; color:#FFF">Online Demo ››</span>
           </a>

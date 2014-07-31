@@ -2,17 +2,39 @@
 layout: "responsive"
 ---
 
-table cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" width="600" align="center"
+/ Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
+/ cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. 
+/ The bgcolor and width attributes are for the Android Gmail application.  Gmail converts your body to a div, even on mobile apps. 
+/ Since there is no width set in your body, the Android sets the width of your converted body tag to that of the device viewport. 
+/ To make a long story short, your background color will get cut off as the viewer scrolls horizontally unless you add it to each 
+/ of your tables as well.
+ 
+/ In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
+/ that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
+
+table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="600" align="center"
   tr
     td colspan="100%" width="600"
-      <img src="http://www.emailonacid.com/images/EOA_logo.gif" alt="Info Here" title="Info Here" width="600" height="58" style="display:block"  border="0"/>
+      <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="600" height="88" style="display:block"  border="0"/>
   tr
-    td width="365" valign='top'
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-      </p>
-    
-    td width="10"
+    td colspan="100%" width="600" style="border-top: 1px solid #07294D; border-bottom: 1px solid #07294D; " align="center"
+	    p SUMMER NEWSLETTER - <small>Thursday July 31<sup>st</sup>, 2014 </small>
+  tr
+    td width="300" valign="top" style="padding-right: 10px;"
+	    <h1>Faculty</h1>
+	    <h2><a href="#">Dolor sit amet consectetur adipisicing elit</a></h2>
+	    <img src="http://placehold.it/300x300" alt="Info Here" title="Info Here" width="100%" height="200" style="display:block"  border="0"/>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <strong>ullamco laboris</strong> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <em>Excepteur</em> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    td width="225" valign='top'
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-      </p>
+
+    td width="300" valign="top" style="border-left: 1px solid #07294D; padding-left: 10px;"
+	    <h1>Student</h1>
+	    <h2><a href="#">Dolor sit amet consectetur adipisicing elit</a></h2>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	tr
+		td colspan="100%" width="600" align="center" style="border-top: 1px solid #07294D"
+			p © 2014 Drexel School of Biomedical Engineering, Science & Health Systems.
+
+			p Questions? Concerns? <a href="#">biomed@drexel.edu</a> | (215) 895-1029
+
+			p <a href="#">Website</a> | <a href="#">Contact Us</a> | <a href="#">Forward to a friend</a>

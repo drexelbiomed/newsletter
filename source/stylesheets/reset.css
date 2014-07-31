@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 /* This CSS will overwrite Outlook.com/Outlook.com's default CSS and make your headings appear consistent with Gmail.  
 From there, you can overwrite your styles inline if needed.  */
 
-a, a: link {
+a, a:link {
   color: #2A5DB0;
   text-decoration: underline;
 
@@ -85,9 +85,9 @@ embedded link colors and make it consistent with Gmail.  You must overwrite this
 /****** EDITABLE STYLES        ********/
 
 body, #body_style {
-  background: #000;
+  background: #ffffff;
   min-height: 1000px;
-  color: #fff;
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 
@@ -107,9 +107,9 @@ span.yshortcuts {
   border: none;
 
 }
-span.yshortcuts: hover,
-span.yshortcuts: active,
-span.yshortcuts: focus {
+span.yshortcuts:hover,
+span.yshortcuts:active,
+span.yshortcuts:focus {
   color: #000;
   background-color: none;
   border: none;
@@ -120,15 +120,15 @@ too soon. Here's more:  http: //www.emailonacid.com/blog/details/C13/yahoo_short
 
          
 /*Optional: */
-a: visited {
+a:visited {
   color: #3c96e2;
   text-decoration: none;
 } 
-a: focus {
+a:focus {
   color: #3c96e2;
   text-decoration: underline;
 }  
-a: hover {
+a:hover {
   color: #3c96e2;
   text-decoration: underline;
 }  
@@ -190,6 +190,10 @@ body[yahoo] p {
 
 }              
 
+p {
+  margin-top: .825em;
+  margin-bottom: .825em;
+}
 /*** END EDITABLE STYLES ***/                      
 
 /*** EMBEDDED CSS NOTES ***
