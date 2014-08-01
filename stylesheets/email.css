@@ -1,0 +1,96 @@
+@font-face {
+  font-family: FuturaStdBold;
+  src: url(http://biomed.drexel.edu/new04/Content/fonts/FuturaStd-CondensedBold.otf); }
+
+@font-face {
+  font-family: FuturaStdMed;
+  src: url(http://biomed.drexel.edu/new04/Content/fonts/FuturaStd-Medium.otf); }
+
+/* line 11, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+body {
+  font-size: 14px;
+  background: #CCCCCC;
+  font-family: Arial, Tahoma, sans-serif; }
+
+/* line 18, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+h1 {
+  text-transform: uppercase;
+  font-size: 30px; }
+
+/* line 22, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0px; }
+
+/* line 29, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+h3 {
+  text-transform: uppercase;
+  font-size: 18px; }
+
+/* line 33, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+a {
+  color: #006699; }
+
+/* line 36, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+h1, h2, h3 {
+  font-family: FuturaStdBold, Arial, Tahoma, sans-serif;
+  color: #07294D; }
+
+/* line 40, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+a {
+  font-family: FuturaStdMed, Arial, Tahoma, sans-serif;
+  text-decoration: none; }
+  /* line 44, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+  a h3 {
+    color: #006699; }
+
+/* line 49, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.wrapper {
+  margin: 0 auto;
+  background: #ffffff; }
+
+/* line 54, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.section {
+  background: #FFc600;
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  /* line 62, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+  .section h2 {
+    text-align: center; }
+
+/* line 68, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.spotlight, .inthenews {
+  border: 1px solid #cccccc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 30px; }
+
+/* line 81, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.spotlight .thumbnail img {
+  border: 1px solid white; }
+/* line 87, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.spotlight .news .date {
+  color: #666666;
+  margin: 0px; }
+
+/* line 96, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.inthenews {
+  padding: 10px; }
+
+/* line 100, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.footer {
+  background: #07294D;
+  color: #ffffff; }
+
+/* line 105, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.button {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: .5em;
+  border-radius: 3px; }
