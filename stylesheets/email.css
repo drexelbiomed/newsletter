@@ -36,22 +36,23 @@ a {
 /* line 36, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 h1, h2, h3 {
   font-family: FuturaStdBold, Arial, Tahoma, sans-serif;
-  color: #07294D; }
+  color: #07294D;
+  font-weight: normal; }
 
-/* line 40, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 41, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 a {
   font-family: FuturaStdMed, Arial, Tahoma, sans-serif;
   text-decoration: none; }
-  /* line 44, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+  /* line 45, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
   a h3 {
     color: #006699; }
 
-/* line 49, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 50, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .wrapper {
   margin: 0 auto;
   background: #ffffff; }
 
-/* line 54, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 55, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .section {
   background: #FFc600;
   border-top: 1px solid #cccccc;
@@ -59,11 +60,11 @@ a {
   border-right: 1px solid #cccccc;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; }
-  /* line 62, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+  /* line 63, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
   .section h2 {
     text-align: center; }
 
-/* line 68, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 69, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .spotlight, .inthenews {
   border: 1px solid #cccccc;
   border-top-right-radius: 10px;
@@ -71,26 +72,34 @@ a {
   border-bottom-left-radius: 10px;
   margin-bottom: 30px; }
 
-/* line 81, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 82, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .spotlight .thumbnail img {
   border: 1px solid white; }
-/* line 87, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 88, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .spotlight .news .date {
   color: #666666;
   margin: 0px; }
 
-/* line 96, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 97, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .inthenews {
   padding: 10px; }
 
-/* line 100, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 101, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .footer {
   background: #07294D;
   color: #ffffff; }
 
-/* line 105, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+/* line 106, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
 .button {
   display: inline-block;
   border: 1px solid #ccc;
   padding: .5em;
   border-radius: 3px; }
+
+/* line 113, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.phone-hidden {
+  display: block; }
+
+/* line 117, /Users/Dave/src/biomed-newsletter/source/stylesheets/email.css.scss */
+.phone-visible {
+  display: none; }
