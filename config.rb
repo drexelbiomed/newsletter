@@ -31,10 +31,14 @@
 ###
 # Helpers
 ###
+require 'date'
 
 helpers do
   def bme_path
     "http://www.biomed.drexel.edu/new04/Content/newsletter/"
+  end
+  def format_date(stringy)
+    Date.strptime(stringy, '%m-%d-%y').strftime("%B %d, %Y")
   end
 end
 
