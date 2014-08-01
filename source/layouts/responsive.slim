@@ -47,25 +47,25 @@
 
     / PARAGRAPHS 
     / =========================================================================
-    <p style="margin-top:0">Hello</p>
+    / <p style="margin-top:0">Hello</p>
     / As stated above, paragraph tags are optional. Do not allow yourself to change the margin-top because it is not supported 
     / in Outlook.com.  Paragraph padding is hit or miss in Outlook 2007/2010/2013.  You will have to stick to margin-left, margin-right, and 
     / margin-bottom and avoid the generic "margin" property
      
     / TEXT LINKS
     / =========================================================================
-    <a href="http://www.emailonacid.html" style="color:#F00" target ="_blank" title="Email on Acid">Text Link Here</a>
+    / <a href="http://www.emailonacid.html" style="color:#F00" target ="_blank" title="Email on Acid">Text Link Here</a>
     / Here, we've used inline css to overwrite Gmail's default link color. 
      
     / EMBEDDING FILES 
     / =========================================================================
-    <a href="http://www.emailonacid.pdf" style="color:#F00" target ="_blank" title="Email on Acid">External File</a>
+    / <a href="http://www.emailonacid.pdf" style="color:#F00" target ="_blank" title="Email on Acid">External File</a>
     / If you have a client who asks you to include an attachment like a pdf, always recommend linking to an external file.  
     / Attachments will often cause an email to be blocked by SPAM filters
      
     / INSERTING IMAGES
     / =========================================================================
-    <img src="http://www.emailonacid.com/images/EOA_logo.gif" alt="Info Here" title="Info Here" width="308" height="58"style="display:block"  border="0"/>
+    / <img src="http://www.emailonacid.com/images/EOA_logo.gif" alt="Info Here" title="Info Here" width="308" height="58"style="display:block"  border="0"/>
     / Gmail, Yahoo and Outlook.com add in an extra space below images when using non IE browsers.  This is especially noticeable 
     / when stacking images on top of each other.  
     / A common fix is to add style="display: block".  Here are some more possible work-arounds: 
@@ -81,26 +81,26 @@
      
     / ORDERED AND UNORDERED LISTS
     / =========================================================================
-    <table cellpadding="2" cellspacing="2" border="0"> 
-      <tr>
-        <td valign="top">•</td>
-        <td>Test</td>
-      </tr>
-      <tr>
-        <td valign="top">1.)</td>
-        <td>Test</td>
-      </tr>
-    </table>  
+    / <table cellpadding="2" cellspacing="2" border="0"> 
+    /   <tr>
+    /     <td valign="top">•</td>
+    /     <td>Test</td>
+    /   </tr>
+    /   <tr>
+    /     <td valign="top">1.)</td>
+    /     <td>Test</td>
+    /   </tr>
+    / </table>  
     / Outlook 2007/2010 converts your list items into paragraphs and spans (particularly if you use inline styles) so although 
     / using tables is rather frustrating, it might save you time and hassle when testing lists. 
 
     / BACKGROUND IMAGES 
     / =========================================================================
-    <table cellpadding="0" cellspacing="0" border="0"> 
-      <tr>
-        <td valign="top" background="http://www.emailonacid.com/images/EOA_logo.gif" bgcolor="#006600"> </td>
-      </tr>
-    </table>  
+    / <table cellpadding="0" cellspacing="0" border="0"> 
+    /   <tr>
+    /     <td valign="top" background="http://www.emailonacid.com/images/EOA_logo.gif" bgcolor="#006600"> </td>
+    /   </tr>
+    / </table>  
     / The "background" attribute within the TABLE, TH, or TD tag is the safest way to use background images.  This is supported 
     / by all clients except Outlook 07, 2010, Lotus Notes 6.5, and 7.  For those, we added a "bgcolor" because Notes 6.5 and 7 have 
     / limited support for inline CSS.
@@ -112,9 +112,9 @@
 
     / EMBEDDING VIDEO 
     / =========================================================================
-    <a href="http://www.emailonacid.com/free-email-test" target="_blank">
-      <img src="http://www.emailonacid.com/images/widget_demo.jpg" alt="Online Demo" title="Online Demo" width="308" height="106" style="display:block;" border="0" />
-    </a>
+    / <a href="http://www.emailonacid.com/free-email-test" target="_blank">
+    /   <img src="http://www.emailonacid.com/images/widget_demo.jpg" alt="Online Demo" title="Online Demo" width="308" height="106" style="display:block;" border="0" />
+    / </a>
     / HTML5 video is now possible in email, using a workaround we devised. Check that out here:
     / ADDRESS HERE
     / Or, you can use an image with play button and link it to the actual video. This is the usual method for including video.
@@ -122,15 +122,15 @@
 
     / STYLING A CALL TO ACTION BUTTON
     / =========================================================================
-    <table width="150" cellspacing="3" cellpadding="0" border="0">
-      <tr>
-        <td width="150" height="35" align="center" background="http://www.emailonacid.com/emails/response_emails/button_back.gif" style="background-repeat:repeat-x; background-position:top left; background-color:#3c96e2; border: 1px solid #666666; color:#FFFFFF; font-weight:bold; white-space:nowrap; height:35px;">
-          <a href="http://www.emailonacid.com/email-preview/online_demo/C7" target="_blank" style="color:#FFFFFF; cursor:pointer; font-size:13px; text-align:center; text-decoration:none; vertical-align:baseline; font-weight:bold;"> 
-            <span style="padding:10px 10px; color:#FFF">Online Demo ››</span>
-          </a>
-        </td>
-      </tr>
-    </table>
+    / <table width="150" cellspacing="3" cellpadding="0" border="0">
+    /   <tr>
+    /     <td width="150" height="35" align="center" background="http://www.emailonacid.com/emails/response_emails/button_back.gif" style="background-repeat:repeat-x; background-position:top left; background-color:#3c96e2; border: 1px solid #666666; color:#FFFFFF; font-weight:bold; white-space:nowrap; height:35px;">
+    /       <a href="http://www.emailonacid.com/email-preview/online_demo/C7" target="_blank" style="color:#FFFFFF; cursor:pointer; font-size:13px; text-align:center; text-decoration:none; vertical-align:baseline; font-weight:bold;"> 
+    /         <span style="padding:10px 10px; color:#FFF">Online Demo ››</span>
+    /       </a>
+    /     </td>
+    /   </tr>
+    / </table>
     / This button looks good with and without images, here's more on that:
     / http://www.emailonacid.com/blog/details/C13/email_design_for_mobile_and_blocked_images
 

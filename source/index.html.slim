@@ -12,35 +12,36 @@ layout: "responsive"
 / In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
 / that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
 
-table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="600" align="center"
+table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="600" align="center" style=" border: 1px solid #07294d;"
   tr
-    td colspan="100%" width="600"
+    td width="600" style="border-bottom: 1px solid #07294d"
       <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="600" height="88" style="display:block"  border="0"/>
+  / tr
+  /   td width="600"
+	 /    p
+	 /    	strong Newsletter / May - July, 2014 
   tr
-    td colspan="100%" width="600" style="border-top: 1px solid #07294D; border-bottom: 1px solid #07294D; " align="center"
-	    p
-	    	strong Newsletter / May - July, 2014 
-  tr
-    td width="300" valign="top" style="padding-right: 10px;"
-	    <h1>Faculty/Staff Awards And Honors</h1>
-	    <h2>Dolor sit amet consectetur adipisicing elit</h2>
-	    <img src="http://placehold.it/300x300" alt="Info Here" title="Info Here" width="100%" height="200" style="display:block"  border="0"/>
-	    <small>May 30, 2014</small>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <strong>ullamco laboris</strong> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <em>Excepteur</em> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-    td width="300" valign="top" style="border-left: 1px solid #07294D; padding-left: 10px;"
-	    <h1>Student Awards And Honors</h1>
+    td width="600" valign="top" style="padding: 0 10px;"
+	    h1 Latest News
 	    - data.summer.students.each do |article|
-		    hr
+
+		    hr(style="border: none; border-bottom: 3px solid #BBBBBB;")
 		    p
-		    	strong= article.title
-		    p
-		    	= format_date(article.date)
-	    	/- article.lines.each do |line|
-	    		/p= line
+		    	strong= format_date(article.date)
+		    h2(style="line-height: 27px")= link_to article.title, article.url, style: "text-decoration: none; color: #006699"
+		    / If images exist setup image table
+	    	- if article.images[0].length > 0
+		    	table cellpadding="0" cellspacing="5" border="0" align="center"
+		    		tr
+		    			/ Create a new td for each image AND normalize the height
+				    	- article.images.each do |image|
+				    		td
+				    			- link_to article.url do
+				    				= image_tag "#{image}", height: "150", style: "border: 1px solid #BBBBBB;"
+	    	- article.lines.each do |line|
+	    		p= line
 	tr
-		td colspan="100%" width="600" align="center" style="border-top: 1px solid #07294D"
+		td width="600" align="center" style="border-top: 1px solid #07294D"
 			p © 2014 Drexel School of Biomedical Engineering, Science & Health Systems.
 
 			p Questions? Concerns? <a href="#">biomed@drexel.edu</a> | (215) 895-1029

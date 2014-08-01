@@ -193,6 +193,8 @@ body[yahoo] p {
 p {
   margin-top: .825em;
   margin-bottom: .825em;
+  font-size: 15px;
+  line-height: 24px;
 }
 /*** END EDITABLE STYLES ***/                      
 
