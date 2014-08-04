@@ -1,5 +1,5 @@
 ---
-layout: "responsive"
+layout: "emailology"
 ---
 
 / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
@@ -38,6 +38,10 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="600" a
 				    		td
 				    			- link_to article.url do
 				    				= image_tag "#{image}", height: "150", style: "border: 1px solid #BBBBBB;"
+				    tr
+				    	- article.people.each do |person|
+				    		td
+				    			= person
 	    	- article.lines.each do |line|
 	    		p= line
 	tr

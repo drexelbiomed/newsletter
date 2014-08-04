@@ -10,6 +10,10 @@ students:
       - "people/throckmorton.jpeg"
       - "people/barbee.jpg"
       - "people/spiller.gif"
+    people:
+      - "Dr. Amy Throckmorton"
+      - "Dr. Ken Barbee"
+      - "Dr. Kara Spiller"
 
 
   - title: "Dr. Joshua Jacobs and Colleagues Receive a Multi-Site Grant for a Study on Brain Injury Recovery"
@@ -20,6 +24,8 @@ students:
     url: "http://thetriangle.org/news/study-explores-brain-injury-recovery/"
     images: 
       - "people/jacobs.gif"
+    people:
+      - "Dr. Joshua Jacobs"
  # - title: "Michael Koerner Will Present His Paper on Multisensory Interface for 5D Stem Cell Image Volumes at the 2014 IEEE Engineering in Medicine and Biology Conference (EMBC)"
   #   date: "6-5-14"
   #   lines:
@@ -43,6 +49,8 @@ students:
     url: ""
     images: 
       - ""
+    people:
+      - ""
       # - "people/dastgheyb.jpeg"
 
   - title: "Ellen Giranda, Allison Kosydar, Caitlin Kealy, Michael McNichol, and Renee Nester Win First Place in the 2014 BIOMED Senior Design Competition and the Faculty Choice Award in the 2014 CoE Senior Design Competition"
@@ -57,6 +65,8 @@ students:
       - 'Advisor: Michael Neidrauer'
     url: ""
     images: 
+      - ""
+    people:
       - ""
 
   # - title: "Tyler Brennan, Josa Hanzlik, Rebecca Walker, Claudia Gutierrez, Angeline Aguinaldo, and Will Dampier Receive 2014 Student Life Awards"
@@ -113,6 +123,8 @@ students:
     url: ""
     images: 
       - ""
+    people:
+      - ""
 
   - title: "John Lee Wins 2nd Place at the Medical Student Research Day Poster Competition"
     date: "5-24-14"
@@ -121,6 +133,8 @@ students:
         John Lee, MD/PhD candidate in CoM and BIOMED (Advisor: S. Giszter), won 2nd Place in the MD/PhD category at the College of Medicine's Medical Student Research Day for the poster titled "Investigating Combination Therapies of Robot Rehabilitation and Viral Delivery of Brain-Derived Neurotrophic Factor (BDNF) in Treating Adult Spinal Cord Injury (SCI)."
     url: ""
     images: 
+      - ""
+    people:
       - ""
 
   - title: "Aparna Bhattacharyya Wins First Place in the Wound Healing Society Conference 2014 Poster Competition"
@@ -131,6 +145,9 @@ students:
     url: ""
     images: 
       - ""
+    people:
+      - ""
+
   - title: "Parth Panchal Wins 3rd Place In the Laurence A. Baiada Institute for Entrepreneurship 2014 Ian J. Berg Business Plan Competition"
     date: "5-12-14"
     lines:
@@ -138,6 +155,7 @@ students:
         Parth Panchal, undergraduate student in BIOMED, won the 3rd Place prize and $1K in the Laurence A. Baiada Institute for Entrepreneurship 2014 Ian J. Berg Business Plan Competition for their project “SAVE Simulation: Surgical Aid via Visual Experience." SAVE is a learning tool for physicians and medical professionals.
     images:
       - ""
+
   - title: "Dr. Uri Hershberg and Colleague Receive an NIH Grant for Their Tissue Compartmentalization of Human Lymphocytes Project"
     date: "5-11-14"
     lines:
@@ -145,4 +163,6 @@ students:
         Dr. Uri Hershberg, assistant professor in BIOMED, and Donna Farber (Columbia University – PI) received an $89.2K NIH Program Project Grant for the project “Tissue Compartmentalization of Human Lymphocytes.”
     url: ""
     images: 
+      - ""
+    people:
       - ""

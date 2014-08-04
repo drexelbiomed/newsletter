@@ -48,6 +48,7 @@ end
 # Reload the browser automatically whenever files change
 activate :livereload
 
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -63,7 +64,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :inliner
+
 activate :deploy do |deploy|
+  deploy.build_before = true # default: false
   deploy.method = :git
   # Optional Settings
   # deploy.remote   = "custom-remote" # remote name or git url, default: origin
@@ -75,10 +79,10 @@ end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
@@ -88,4 +92,9 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/biomed-newsletter/images/"
+
+  # activate :gzip
+  activate :inliner
+  activate :minify_html
+  # activate :imageoptim
 end
