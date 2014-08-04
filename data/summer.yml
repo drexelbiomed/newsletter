@@ -122,9 +122,11 @@ students:
       - 'Rosemary Bastian, PhD candidate in BIOMED (Advisors: I. Chaiken and A. Shieh), and Tony Yu, BS/MS student in BIOMED (Advisor: K. Spiller), won the 2014 Drexel Commencement Awards for Outstanding Doctoral and Masters Dissertations in the Physical Life Sciences Category for their theses titled "Irreversible Breakdown of HIV-1 by Peptide Triazole Thiols and Multivalent Gold Nanoparticle Conjugates" and "Design and Validation of a Mathematical Model to Describe Macrophage Dynamics in Wound Healing," respectively. They will be recognized for their achievements at Commencement on June 14, 2014 in the Daskalakis Athletic Center.'
     url: ""
     images: 
-      - ""
+      - "people/Rosemary-Bastian.jpeg"
+      - "people/Tony-Yu.jpeg"
     people:
-      - ""
+      - "Rosemary Bastian"
+      - "Tony Yu"
 
   - title: "John Lee Wins 2nd Place at the Medical Student Research Day Poster Competition"
     date: "5-24-14"
@@ -133,9 +135,9 @@ students:
         John Lee, MD/PhD candidate in CoM and BIOMED (Advisor: S. Giszter), won 2nd Place in the MD/PhD category at the College of Medicine's Medical Student Research Day for the poster titled "Investigating Combination Therapies of Robot Rehabilitation and Viral Delivery of Brain-Derived Neurotrophic Factor (BDNF) in Treating Adult Spinal Cord Injury (SCI)."
     url: ""
     images: 
-      - ""
+      - "people/John-Lee.jpeg"
     people:
-      - ""
+      - "John Lee"
 
   - title: "Aparna Bhattacharyya Wins First Place in the Wound Healing Society Conference 2014 Poster Competition"
     date: "5-23-14"
