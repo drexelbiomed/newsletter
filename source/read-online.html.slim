@@ -1,0 +1,69 @@
+---
+layout: "emailology"
+facebook: "https://www.facebook.com/DrexelBIOMED"
+linkedin: "https://www.linkedin.com/groups?gid=4587558"
+read_online: "http://biomed.drexel.edu/Content/newsletter/summer-2014"
+width: "770"
+---
+
+/ Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
+/ cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. 
+/ The bgcolor and width attributes are for the Android Gmail application.  Gmail converts your body to a div, even on mobile apps. 
+/ Since there is no width set in your body, the Android sets the width of your converted body tag to that of the device viewport. 
+/ To make a long story short, your background color will get cut off as the viewer scrolls horizontally unless you add it to each 
+/ of your tables as well.
+ 
+/ In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
+/ that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
+
+table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{current_page.data.width}" align="center" style=" border: 1px solid #07294d;"
+  / tr
+  /   td width="#{current_page.data.width}" style="border-bottom: 12px solid #DDD"
+  /     <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="#{current_page.data.width}" height="88" style="display:block"  border="0"/>
+  / tr
+  /   td width="#{current_page.data.width}"
+  /    p
+  /      strong Newsletter / May - July, 2014 
+  tr
+    td width="#{current_page.data.width}" valign="top" style="padding: 0 24px;"
+      h1 Latest News
+      - data.summer.students.each do |article|
+
+        hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
+        p
+          small style="text-transform: uppercase;"
+            strong= format_date(article.date)
+        h2(style="line-height: 27px")= link_to article.title, article.url, style: "text-decoration: none; color: #006699"
+        / If images exist setup image table
+        - if article.images[0].length > 0
+          table cellpadding="0" cellspacing="5" border="0" align="center"
+            tr
+              / Create a new td for each image AND normalize the height
+              - article.images.each do |image|
+                td
+                  - link_to article.url do
+                    = image_tag "#{image}", height: "150", style: "border: 1px solid #006699;"
+            tr
+              - article.people.each do |person|
+                td align="center"
+                  small
+                    em= person
+        - article.lines.each do |line|
+          p= line
+      p
+        br
+  tr
+    td align="center" style="border-top: 1px solid #07294D"
+      p 
+        = link_to current_page.data.facebook do
+          = image_tag "facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
+        = link_to current_page.data.linkedin do
+          = image_tag "linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
+  tr
+    td width="#{current_page.data.width}" align="center" 
+      /style="border-top: 1px solid #07294D"
+      p © 2014 Drexel School of Biomedical Engineering, Science & Health Systems.
+
+      p Questions? Concerns? <a href="mailto:biomed@drexel.edu">biomed@drexel.edu</a> | (215) 895-1029
+
+      p <a href="http://biomed.drexel.edu">Website</a> | <a href="mailto:biomed@drexel.edu">Contact Us</a> | <a href="mailto:Enter%20An%20Email;?subject=FW:%20Your%20Email%20Subject&amp;body=Thought%20you%20might%20be%20interested%20in%20this%20#{current_page.data.read_online}">Forward to a friend</a>

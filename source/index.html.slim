@@ -3,6 +3,7 @@ layout: "emailology"
 facebook: "https://www.facebook.com/DrexelBIOMED"
 linkedin: "https://www.linkedin.com/groups?gid=4587558"
 read_online: "http://biomed.drexel.edu/Content/newsletter/summer-2014"
+width: "600"
 ---
 
 / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
@@ -15,16 +16,16 @@ read_online: "http://biomed.drexel.edu/Content/newsletter/summer-2014"
 / In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
 / that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
 
-table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="600" align="center" style=" border: 1px solid #07294d;"
+table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{current_page.data.width}" align="center" style=" border: 1px solid #07294d;"
   tr
-    td width="600" style="border-bottom: 1px solid #07294d"
-      <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="600" height="88" style="display:block"  border="0"/>
+    td width="#{current_page.data.width}" style="border-bottom: 12px solid #DDD"
+      <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="#{current_page.data.width}" height="88" style="display:block"  border="0"/>
   / tr
-  /   td width="600"
+  /   td width="#{current_page.data.width}"
 	 /    p
 	 /    	strong Newsletter / May - July, 2014 
   tr
-    td width="600" valign="top" style="padding: 0 24px;"
+    td width="#{current_page.data.width}" valign="top" style="padding: 0 24px;"
 	    h1 Latest News
 	    - data.summer.students.each do |article|
 
@@ -59,7 +60,7 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="600" a
 				= link_to current_page.data.linkedin do
 					= image_tag "linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
 	tr
-		td width="600" align="center" 
+		td width="#{current_page.data.width}" align="center" 
 			/style="border-top: 1px solid #07294D"
 			p © 2014 Drexel School of Biomedical Engineering, Science & Health Systems.
 
