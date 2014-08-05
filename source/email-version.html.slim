@@ -2,8 +2,8 @@
 layout: "emailology"
 facebook: "https://www.facebook.com/DrexelBIOMED"
 linkedin: "https://www.linkedin.com/groups?gid=4587558"
-read_online: "http://biomed.drexel.edu/Content/newsletter/summer-2014"
 width: "600"
+abs_path: "http://biomed.drexel.edu/new04/Content/newsletter/summer2014/"
 ---
 
 / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
@@ -18,7 +18,7 @@ width: "600"
 
 table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{current_page.data.width}" align="center" style=" border: 1px solid #07294d;"
   tr
-    td width="#{current_page.data.width}" style="border-bottom: 1px solid #DDD"
+    td width="#{current_page.data.width}" style="border-bottom: 1px solid #BBBBBB"
       <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="#{current_page.data.width}" height="88" style="display:block"  border="0"/>
   / tr
   /   td width="#{current_page.data.width}"
@@ -26,14 +26,14 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
 	 /    	strong Newsletter / May - July, 2014 
   tr
     td width="#{current_page.data.width}" valign="top" style="padding: 0 24px;"
-	    h1 Latest News
+	    h1(style="margin-top: 24px;") Latest News
 	    - data.summer.students.each do |article|
 
 		    hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
 		    p
 		    	small style="text-transform: uppercase;"
 		    		strong= format_date(article.date)
-		    h2(style="line-height: 27px")= link_to article.title, article.url, style: "text-decoration: none; color: #006699"
+		    h2(style="line-height: 27px")= link_to article.title, current_page.data.abs_path+"#"+article.anchor, style: "text-decoration: none; color: #006699"
 		    / If images exist setup image table
 	    	- if article.images[0].length > 0
 		    	table cellpadding="0" cellspacing="5" border="0" align="center"
@@ -41,24 +41,24 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
 		    			/ Create a new td for each image AND normalize the height
 				    	- article.images.each do |image|
 				    		td
-				    			- link_to article.url do
-				    				= image_tag "#{image}", height: "150", style: "border: 1px solid #006699;"
+				    			- link_to current_page.data.abs_path+"#"+article.anchor do
+				    				= image_tag "#{current_page.data.abs_path}images/#{image}", height: "150", style: "border: 1px solid #006699;"
 				    tr
 				    	- article.people.each do |person|
 				    		td align="center"
 				    			small
 				    				em= person
-	    	- article.lines.each do |line|
-	    		p= line
+	    	p
+	    		= article.lines[0].slice(0,295).concat("... [ <a href='#{current_page.data.abs_path}##{article.anchor}'>Read More</a> ]")
 	   	p
 		   	br
 	tr
-		td align="center" style="border-top: 1px solid #07294D"
+		td align="center" style="border-top: 1px solid #BBBBBB"
 			p 
 				= link_to current_page.data.facebook do
-					= image_tag "facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
+					= image_tag "#{current_page.data.abs_path}images/facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
 				= link_to current_page.data.linkedin do
-					= image_tag "linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
+					= image_tag "#{current_page.data.abs_path}images/linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
 	tr
 		td width="#{current_page.data.width}" align="center" 
 			/style="border-top: 1px solid #07294D"
@@ -66,4 +66,4 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
 
 			p Questions? Concerns? <a href="mailto:biomed@drexel.edu">biomed@drexel.edu</a> | (215) 895-1029
 
-			p <a href="http://biomed.drexel.edu">Website</a> | <a href="mailto:biomed@drexel.edu">Contact Us</a> | <a href="mailto:Enter%20An%20Email;?subject=FW:%20Your%20Email%20Subject&amp;body=Thought%20you%20might%20be%20interested%20in%20this%20#{current_page.data.read_online}">Forward to a friend</a>
+			p <a href="http://biomed.drexel.edu">Website</a> | <a href="mailto:biomed@drexel.edu">Contact Us</a> | <a href="mailto:Enter%20An%20Email;?subject=FW:%20Your%20Email%20Subject&amp;body=Thought%20you%20might%20be%20interested%20in%20this%20#{current_page.data.abs_path}">Forward to a friend</a>
