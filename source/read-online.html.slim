@@ -1,9 +1,17 @@
 ---
+title: "Summer Newsletter<br><small>May-July, 2014</small>"
 layout: "emailology"
 facebook: "https://www.facebook.com/DrexelBIOMED"
 linkedin: "https://www.linkedin.com/groups?gid=4587558"
 read_online: "http://biomed.drexel.edu/Content/newsletter/summer-2014"
 width: "770"
+content_width: "600"
+
+archives:
+  - year: 2014
+    items:
+      - quarter: "Summer"
+        month: "May-July"
 ---
 
 / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
@@ -16,7 +24,7 @@ width: "770"
 / In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
 / that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
 
-table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{current_page.data.width}" align="center" style=" border: 1px solid #07294d;"
+table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{current_page.data.width}" align="center"
   / tr
   /   td width="#{current_page.data.width}" style="border-bottom: 12px solid #DDD"
   /     <img src="images/logo.jpg" alt="Info Here" title="Info Here" width="#{current_page.data.width}" height="88" style="display:block"  border="0"/>
@@ -25,8 +33,18 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
   /    p
   /      strong Newsletter / May - July, 2014 
   tr
-    td width="#{current_page.data.width}" valign="top" style="padding: 0 24px;"
-      h1 Latest News
+    td valign="top" width="#{current_page.data.width.to_i-current_page.data.content_width.to_i}"
+      h2 Archives
+      ul(style="list-style: none; padding-left: 16px;")
+        - current_page.data.archives.each do |archive|
+          h3= archive.year
+          ul(style="list-style: none; padding-left: 16px;")
+            - archive.items.each do |item|
+              li= link_to item.quarter, "../#{item.quarter.downcase+archive.year.to_s}"
+
+    td width="#{current_page.data.content_width}" valign="top" style="padding: 0 24px; border-left: 1px solid #07294d;"
+      h1(style="margin-top: 24px;")
+        = current_page.data.title
       - data.summer.students.each do |article|
 
         hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
@@ -53,17 +71,19 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
       p
         br
   tr
-    td align="center" style="border-top: 1px solid #07294D"
+    td
+    td align="center" style="border: none;"
       p 
         = link_to current_page.data.facebook do
           = image_tag "facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
         = link_to current_page.data.linkedin do
           = image_tag "linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
   tr
-    td width="#{current_page.data.width}" align="center" 
+    td
+    td width="#{current_page.data.content_width}" align="center" 
       /style="border-top: 1px solid #07294D"
       p © 2014 Drexel School of Biomedical Engineering, Science & Health Systems.
 
       p Questions? Concerns? <a href="mailto:biomed@drexel.edu">biomed@drexel.edu</a> | (215) 895-1029
 
-      p <a href="http://biomed.drexel.edu">Website</a> | <a href="mailto:biomed@drexel.edu">Contact Us</a> | <a href="mailto:Enter%20An%20Email;?subject=FW:%20Your%20Email%20Subject&amp;body=Thought%20you%20might%20be%20interested%20in%20this%20#{current_page.data.read_online}">Forward to a friend</a>
+      p(style="margin-bottom: 24px;") <a href="http://biomed.drexel.edu">Website</a> | <a href="mailto:biomed@drexel.edu">Contact Us</a> | <a href="mailto:Enter%20An%20Email;?subject=FW:%20Your%20Email%20Subject&amp;body=Thought%20you%20might%20be%20interested%20in%20this%20#{current_page.data.read_online}">Forward to a friend</a>
