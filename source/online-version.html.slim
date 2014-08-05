@@ -34,7 +34,7 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
   /      strong Newsletter / May - July, 2014 
   tr
     td valign="top" width="#{current_page.data.width.to_i-current_page.data.content_width.to_i}"
-      h2 Archives
+      h2(style="margin-top: 24px;") Archives
       ul(style="list-style: none; padding-left: 16px;")
         - current_page.data.archives.each do |archive|
           h3= archive.year
@@ -42,7 +42,7 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
             - archive.items.each do |item|
               li= link_to item.quarter, "../#{item.quarter.downcase+archive.year.to_s}"
 
-    td width="#{current_page.data.content_width}" valign="top" style="padding: 0 24px; border-left: 1px solid #07294d;"
+    td width="#{current_page.data.content_width}" valign="top" style="padding: 0 24px; border-left: 1px solid #07294d; border-right: 1px solid #07294d"
       h1(style="margin-top: 24px;")
         = current_page.data.title
       - data.summer.students.each do |article|
@@ -72,7 +72,8 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
         br
   tr
     td
-    td align="center" style="border: none;"
+    td align="center" style="border-left: 1px solid #07294d; border-right: 1px solid #07294d"
+      hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
       p 
         = link_to current_page.data.facebook do
           = image_tag "facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
@@ -80,7 +81,7 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
           = image_tag "linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
   tr
     td
-    td width="#{current_page.data.content_width}" align="center" 
+    td width="#{current_page.data.content_width}" align="center" style="border-left: 1px solid #07294d; border-right: 1px solid #07294d" 
       /style="border-top: 1px solid #07294D"
       p © 2014 Drexel School of Biomedical Engineering, Science & Health Systems.
 
