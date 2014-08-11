@@ -35,22 +35,31 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
   tr
     td valign="top" width="#{current_page.data.width.to_i-current_page.data.content_width.to_i}"
       h2(style="margin-top: 24px;") Archives
-      ul(style="list-style: none; padding-left: 16px;")
+      ul(style="list-style: none; padding-left: 8px;")
         - current_page.data.archives.each do |archive|
           h3= archive.year
-          ul(style="list-style: none; padding-left: 16px;")
+          ul(style="list-style: none; padding-left: 8px;")
             - archive.items.each do |item|
               li= link_to item.quarter, "../#{item.quarter.downcase+archive.year.to_s}"
 
-    td width="#{current_page.data.content_width}" valign="top" style="padding: 0 24px; border-left: 1px solid #07294d; border-right: 1px solid #07294d"
+            ul(style="padding-left: 16px;")
+              - data.summer.news.each do |article|
+                li= link_to "#{format_date(article.date)}", "#"+article.anchor
+
+
+    td width="#{current_page.data.content_width}" valign="top" style="padding: 0 24px; border-left: 1px solid #07294d; border-right: 1px solid #07294d;"
+      
       h1(style="margin-top: 24px;")
         = current_page.data.title
-      - data.summer.students.each do |article|
 
-        hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
-        p(id="#{article.anchor}")
-          small style="text-transform: uppercase;"
-            strong= format_date(article.date)
+
+      - data.summer.news.each do |article|
+
+        hr(style="border: none; border-bottom: 3px solid #07294D; margin: 24px 0;")
+        table width="120" cellspacing="0" cellpadding="0" border="0"
+          td(width="120" height="24" align="left" style="background-repeat:repeat-x; background-position:top left; background-color:#FFFFFF; color:#07294D; font-weight:bold; white-space:nowrap; height:24px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;")
+            span style="text-transform: uppercase; border-bottom: 1px solid #07294D;" id="#{article.anchor}"
+              strong= format_date(article.date)
         h2(style="line-height: 27px; text-decoration: none; color: #006699;")= article.title
         / h2(style="line-height: 27px")= link_to article.title, article.url, style: "text-decoration: none; color: #006699"
         
@@ -70,7 +79,12 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
         - article.lines.each do |line|
           p= line
         - if article.url.length > 0
-          p= link_to "See Source Article", article.url
+          table width="150" cellspacing="0" cellpadding="0" border="0"
+            td(width="150" height="35" align="center" style="background-repeat:repeat-x; background-position:top left; background-color:#FFC600; color:#07294D; font-weight:bold; white-space:nowrap; height:35px; border-radius: 3px;")
+              span >  
+              = link_to article.url, style: "color:#07294D" do
+                span(style="padding:10px 10px; color:#07294D;") 
+                  | Source Article
       p
         br
   tr
