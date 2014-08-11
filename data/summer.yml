@@ -75,20 +75,34 @@ news:
     people:
       - ""
 
-  # - title: "Tyler Brennan, Josa Hanzlik, Rebecca Walker, Claudia Gutierrez, Angeline Aguinaldo, and Will Dampier Receive 2014 Student Life Awards"
-    # anchor: ""
-  #   date: "5-25-14"
-  #   lines:
-  #     - 'Student Affairs and the Undergraduate Student Government Association collaborate to recognize and reward Drexel community members who have made significant contributions to student life at the University and in the surrounding community. Student Life Awards recipients for 2014 from the BIOMED community include:'
-  #     - '• Charles E. Etting Award: Tyler Brennan and Josa Hanzlik'
-  #     - '• Alexander Van Rensselaer Service Award: Rebecca Walker and Claudia Gutierrez'
-  #     - '• Rising Leader of the Year: Angeline Aguinaldo'
-  #     - '• Student Organization Outstanding Service Award: Drexel Graduate Women in Science and Engineering (founded by Josa Hanzlik)'
-  #     - '• New Student Organization of the Year: Medical Device Entrepreneurship Association (Austin Sacks / Organization advisor: Baruch Ben Dor)'
-  #     - '• Club Sports Coach of the Year: Will Dampier, Judo'
-  # url: ""  
-  # images: 
-    # - ""
+  - title: "Dr. Yinghui Zhong and Colleagues Receive a College of Medicine Philadelphia Health Education Corporation (PHEC) Grant To Study Chronic Tissue Response and Brain Tissue Integration of Novel Brain Electrodes"
+    anchor: "zhong-phec-grant"
+    date: "6-2-14"
+    lines:
+      - > 
+        Drs. Yinghui Zhong, assistant professor in BIOMED (Co-PI), Simon Giszter (CoM – PI), and Denise Garcia (CoM – Co-PI), received a 1-year $75K Philadelphia Health Education Corporation (PHEC) grant for the project "In-vivo 2 Photon Imaging of Neural Plasticity in Mouse Cortex to Compare Chronic Responses to the Drexel Braided Electrodes vs. Standard Microwires, with and without Hydrogel Delivered Trophins." The goal of the project is to study chronic tissue response and brain tissue integration of novel brain electrodes by releasing neurotrophins using non-invasive in-vivo 2-photo imaging so the brain-electrode interface is not disrupted.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Tyler Brennan, Josa Hanzlik, Rebecca Walker, Claudia Gutierrez, Angeline Aguinaldo, and Will Dampier Receive 2014 Student Life Awards"
+    anchor: "student-life-awards"
+    date: "5-25-14"
+    lines:
+      - 'Student Affairs and the Undergraduate Student Government Association collaborate to recognize and reward Drexel community members who have made significant contributions to student life at the University and in the surrounding community. Student Life Awards recipients for 2014 from the BIOMED community include:'
+      - '• Charles E. Etting Award: Tyler Brennan and Josa Hanzlik'
+      - '• Alexander Van Rensselaer Service Award: Rebecca Walker and Claudia Gutierrez'
+      - '• Rising Leader of the Year: Angeline Aguinaldo'
+      - '• Student Organization Outstanding Service Award: Drexel Graduate Women in Science and Engineering (founded by Josa Hanzlik)'
+      - '• New Student Organization of the Year: Medical Device Entrepreneurship Association (Austin Sacks / Organization advisor: Baruch Ben Dor)'
+      - '• Club Sports Coach of the Year: Will Dampier, Judo'
+    url: ""  
+    images: 
+      - ""
+    people:
+      - ""
 
   # - title: "Amrit Misra, Sina Nassiri, and Glen Marzalowicz Receive 2014 Graduate Student Day Awards"
     # anchor: ""
@@ -125,6 +139,17 @@ news:
   # url: ""  
   # images: 
     # - ""
+  - title: "Anitha Manohar and Suganya Karunakaran Each Receive an Office of Graduate Studies Dissertation Fellowship"
+    anchor: "graduate-dissertation-fellowship"
+    date: "5-25-14"
+    lines:
+      - > 
+        Anitha Manohar and Suganya Karunakaran, both PhD candidates in BIOMED (Advisor: K. Moxon), were each selected to receive a 2014 Office of Graduate Studies dissertation fellowship. The fellowship is awarded to qualified teaching assistants (TAs) who have had at least two years of service as a TA and are about to enter the final term of their PhD degree program.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
 
   - title: "Rosemary Bastian and Tony Yu Win the 2014 Drexel Commencement Awards for Outstanding Doctoral and Master's Dissertation in the Physical Life Sciences "
     anchor: "drexel-commencement-awards"
@@ -139,6 +164,30 @@ news:
       - "Rosemary Bastian"
       - "Tony Yu"
 
+  - title: "Joshua Samuels Gives an Invited Talk on Ultrasound Heals Venous Ulcers at the 167th Meeting of the Acoustical Society of America"
+    anchor: "talk-on-ultrasound"
+    date: "5-24-14"
+    lines:
+      - > 
+        Joshua Samuels, doctoral student in BIOMED (Advisor: P. Lewin), who recently successfully defended his PhD dissertation under the supervision of Dr. Peter A. Lewin, gave an invited talk titled "Low Intensity (55 kPa) 20 kHz Ultrasound Heals Venous Ulcers" (Co-authors: J. Samuels, P. Lewin, M. Weingarten, L. Zubkov, C. Bawiec, Y. Sunny, J. McDaniel, L. Jenkins, and D. Margolis) at the 167th Meeting of the Acoustical Society of America in Providence, RI, May 5–9, 2014.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Chris Bawiec and Youhan Sunny Give an Invited Talk on Tether-free, Wearable Ultrasound Sources for Operation at the 12th Annual Ultrasonic Transducer Engineering Conference (UTEC)"
+    anchor: "tetherfree-wearable-ultrasound"
+    date: "5-24-14"
+    lines:
+      - > 
+        Chris Bawiec and Youhan Sunny, both PhD candidates in BIOMED (Advisor: P. Lewin), gave an invited talk titled "Tether-free, Wearable Ultrasound Sources for Operation in 20–100 kHz Bandwidth" (Co-authors: Y. Sunny, C. Bawiec, P. Lewin, M. Weingarten, L. Zubkov, J. Samuels, and D. Margolis) at the NIH sponsored12th Annual Ultrasonic Transducer Engineering Conference (UTEC) in Los Angeles, CA, May 8, 2014.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
   - title: "John Lee Wins 2nd Place at the Medical Student Research Day Poster Competition"
     anchor: "medical-student-research"
     date: "5-24-14"
@@ -151,12 +200,60 @@ news:
     people:
       - "John Lee"
 
+  - title: "John Lee Receives a Lindau Meeting of Nobel Laureates Graduate Student Travel Award"
+    anchor: "lindau-meeting-travel"
+    date: "5-24-14"
+    lines:
+      - > 
+        John Lee, graduate student in the CoM-BIOMED MD/PhD program (Advisor: S. Giszter), received a Lindau Meeting of Nobel Laureates Graduate Student Travel Award to attend the meeting of Nobel Laureates for Medicine and Physiology in Lindau, Germany, June 29–July 42014. The meeting offers students the opportunity to hear lectures and interact directly with Nobel laureates with the goal of inspiring the next generation of scientists worldwide.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
   - title: "Aparna Bhattacharyya Wins First Place in the Wound Healing Society Conference 2014 Poster Competition"
     anchor: "wound-healing-society"
     date: "5-23-14"
     lines: 
       - > 
         Aparna Bhattacharyya, PhD Candidate in BIOMED (Advisor: K. Barbee), won First Place and a $500 cash prize at the Wound Healing Society Conference 2014 Poster Competition, held in Orlando, FL, for the poster titled "Controlled Release of Nitric Oxide Through Zeolite Sachets" (Co-author: M. Neidrauer).
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Mesut Yucel Gives a Lecture on Memory As an Organizer of Dynamic Modules In a Network of Potential Interactions in Paris, France"
+    anchor: "dynamic-lecture-paris"
+    date: "5-23-14"
+    lines:
+      - > 
+        Mesut Yucel, graduate student in BIOMED (Advisor: U. Hershberg), gave a lecture titled "Memory As an Organizer of Dynamic Modules In a Network of Potential Interactions" (Co-author: U. Hershberg) at the Spatial Computing Workshop of the13th Autonomous Agents and Multiagent Systems conference in Paris, France.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Christopher Flounders, Alison Oxenberg, and Team Members Organize Biomedical Engineering (BME) Week"
+    anchor: "flounders-bme-week"
+    date: "5-22-14"
+    lines:
+      - > 
+        Christopher Flounders, undergraduate student in BIOMED, Alison Oxenberg, undergraduate advisor in BIOMED, and team members organized the inaugural Biomedical Engineering (BME) Week, with the help of a Drexel University Alumni Association grant and other funding. BME Week was organized around the theme "Startups and Translational Research" and included lectures and seminars on translational research, startup companies, and a research and design showcase.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Justin Melunis Receives a Department of Education Graduate Assistance in Areas of National Need (GAANN) Fellowship for the Field of infectious Disease Bioinformatics"
+    anchor: "melunis-gaann-fellowship"
+    date: "5-21-14"
+    lines:
+      - > 
+        Justin Melunis, PhD candidate in BIOMED (Advisor: U. Hershberg), received a Department of Education Graduate Assistance in Areas of National Need (GAANN) fellowship in the field of infectious disease bioinformatics. GAANN fellowships are awarded to graduate students with excellent academic records and who demonstrate financial need, and also plan to pursue the highest degree available in a field designated as an area of national need. 
     url: ""
     images: 
       - ""
@@ -184,3 +281,87 @@ news:
       - "people/Uri-Hershberg.jpeg"
     people:
       - "Dr. Uri Hershberg"
+
+  - title: "Dr. Uri Hershberg and Colleague Receive a Pennsylvania Department of Health’s Commonwealth Universal Research Enhancement (CURE) Grant for Their HIV-1 Viral Reservoir Persistence and CTL Surveillance Project"
+    anchor: "hershberg-cure-grant"
+    date: "5-11-14"
+    lines:
+      - > 
+        Dr. Uri Hershberg, assistant professor in BIOMED (Co-PI), and Brian Wigdahl (CoM – Co-PI) received a $75K grant from the Pennsylvania Department of Health’s Commonwealth Universal Research Enhancement (CURE) program for the project “HIV-1 Viral Reservoir Persistence and CTL Surveillance during Effective Therapy."
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Dr. Kara Spiller Is Named as an Associate Scientific Advisor of the Journal Science Translational Medicine for 2014"
+    anchor: "spiller-stm-advisor"
+    date: "5-11-14"
+    lines:
+      - > 
+        Dr. Kara Spiller, assistant professor in BIOMED, was named by the American Association for the Advancement of Science (AAAS) as an Associate Scientific Advisor of the journal Science Translational Medicine for 2014.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Dr. Sriram Balasubramanian Receives a Grant from the Pediatric Orthopaedic Society of North America (POSNA) for his Spinal Fusion and Instrumentation on Rib Position Project"
+    anchor: "balasubramanian-posna-grant"
+    date: "5-10-14"
+    lines:
+      - > 
+        Dr. Sriram Balasubramanian, assistant professor in BIOMED, received a $30K grant from the Pediatric Orthopaedic Society of North America (POSNA) for the project titled "Effects of Spinal Fusion and Instrumentation on Rib Position, Costovertebral Joint Geometry and Vertebral Morphology in Adolescent Idiopathic Scoliosis."
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Dr. Banu Onaral Authors a Piece in Science Translational Medicine on the Importance of International Collaboration for Translational Biomedical Research"
+    anchor: "onaral-stm-collaboration"
+    date: "5-9-14"
+    lines:
+      - > 
+        Dr. Banu Onaral, H. H. Sun Professor and Director, School of Biomedical Engineering, Science and Health Systems, was featured in a Science Translational Medicine Q&A and podcast on May 7, 2014. 
+    url: "http://stm.sciencemag.org/content/4/158/158pc7/suppl/DC1"
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Drs. Hasan Ayaz and Jennifer Nasser Receive a Drexel Clinical & Translational Research Institute (CTRI) Seed Fund Grant for their fNIRS Assessment of Prefrontal Cortex Project"
+    anchor: "ayaz-ctri-grant"
+    date: "5-9-14"
+    lines:
+      - > 
+        Dr. Hasan Ayaz, research assistant professor in BIOMED, and Dr. Jennifer Nasser (PI), associate professor in CNHP, received a 1-year $75K Drexel Clinical & Translational Research Institute (CTRI) Seed Fund grant for the project titled "fNIRS Assessment of Dorsolateral and Dorsomedial Prefrontal Cortex in Response to Food as a Marker for “Loss of Control."
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Jhan-Duc Duclos Wins a Drexel University 2014 Cooperative Education Award"
+    anchor: "duclos-coop-award"
+    date: "5-9-14"
+    lines:
+      - > 
+        Jhan-Duc Duclos, BS/MS student in BIOMED, won a Drexel University 2014 Cooperative Education Award for fulfilling the goals and ideals of cooperative education and was honored along with other co-op award recipients at Behrakis Grand Hall in the Creese Student Center on May 8, 2014.
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
+
+  - title: "Dr. Hualou Liang, Xiajing Gong and Colleagues Publish an Article on Top-Down Influences on Visual Processing in the Journal Neuron"
+    anchor: "liang-published-neuron"
+    date: "5-7-14"
+    lines:
+      - > 
+        Dr. Hualou Liang, professor in BIOMED, Xiajing Gong, PhD candidate in BIOMED (Advisor: H. Liang), and colleagues published a paper titled “Incremental Integration of Global Contours through Interplay between Visual Cortical Areas”  (Co-authors: M. Chen, Y. Yan, C.D. Gilbert, and W. Li) in the journal Neuron. 
+    url: ""
+    images: 
+      - ""
+    people:
+      - ""
