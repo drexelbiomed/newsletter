@@ -1,10 +1,11 @@
 ---
 layout: "emailology"
-facebook: "https://www.facebook.com/DrexelBIOMED"
-linkedin: "https://www.linkedin.com/groups?gid=4587558"
+facebook: https://www.facebook.com/DrexelBIOMED
+linkedin: https://www.linkedin.com/groups?gid=4587558
 width: "600"
-abs_path: "http://biomed.drexel.edu/new04/Content/newsletter/summer2014/"
+abs_path: http://biomed.drexel.edu/new04/Content/newsletter/summer2014/
 ---
+
 
 / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
 / cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. 
@@ -21,18 +22,14 @@ table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{curr
     td width="#{current_page.data.width}" style="border-bottom: 1px solid #BBBBBB"
       = link_to "http://biomed.drexel.edu", style:"border: none;" do
 	      <img src="#{current_page.data.abs_path}images/logo.jpg" alt="Info Here" title="Info Here" width="#{current_page.data.width}" height="88" style="display:block"  border="0"/>
-  / tr
-  /   td width="#{current_page.data.width}"
-	 /    p
-	 /    	strong Newsletter / May - July, 2014 
   tr
     td width="#{current_page.data.width}" valign="top" style="padding: 0 24px;"
 	    h1(style="margin-top: 24px;") Latest News
 	    - data.summer.students.each do |article|
 
-		    hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
+		    hr(style="border: none; border-bottom: 3px double #BBBBBB; margin: 24px 0;")
 		    p
-		    	small style="text-transform: uppercase;"
+		    	small style="text-transform: uppercase; color: #07294D;"
 		    		strong= format_date(article.date)
 		    h2(style="line-height: 27px")= link_to article.title, current_page.data.abs_path+"#"+article.anchor, style: "text-decoration: none; color: #006699"
 		    / If images exist setup image table
