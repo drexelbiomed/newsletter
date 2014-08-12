@@ -6,14 +6,13 @@ td(width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{b
 
   / Be sure to change this 
     / =========================
-  - data.spring2014.news.each do |article|
+  - data.summer2014.news.each do |article|
     / =========================
 
     hr(style="border: none; border-bottom: 3px solid #07294D; margin: 24px 0;")
-    table width="120" cellspacing="0" cellpadding="0" border="0"
-      td(width="120" height="24" align="left" style="background-repeat:repeat-x; background-position:top left; background-color:#FFFFFF; color:#07294D; font-weight:bold; white-space:nowrap; height:24px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;")
-        span style="text-transform: uppercase; border-bottom: 1px solid #07294D;" id="#{article.anchor}"
-          strong= format_date(article.date)
+    span style="background-repeat:repeat-x; background-position:top left; background-color:#FFFFFF; color:#07294D; font-weight:bold; white-space:nowrap; height:24px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"
+      span style="text-transform: uppercase; border-bottom: 1px solid #07294D;" id="#{article.anchor}"
+        strong= format_date(article.date)
     / Sniff for Email version, and add links
     - if current_page.data.layout == "email_version"
       = link_to "#{data.config.base_url+'#'+article.anchor}", style: "text-decoration: none;" do
@@ -43,8 +42,7 @@ td(width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{b
     - article.lines.each do |line|
       p= line
     - if article.url.length > 0
-      table width="150" cellspacing="0" cellpadding="0" border="0"
-        td(width="150" height="35" align="center" style="background-repeat:repeat-x; background-position:top left; background-color:#FFC600; color:#07294D; font-weight:bold; white-space:nowrap; height:35px; border-radius: 3px;")
+      span style="background-color:#FFC600; color:#07294D; font-weight:bold; white-space:nowrap; height:35px; border-radius: 3px; padding: 10px;"
           span >  
           = link_to article.url, style: "color:#07294D" do
             span(style="padding:10px 10px; color:#07294D;") 
