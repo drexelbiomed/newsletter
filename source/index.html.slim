@@ -5,7 +5,7 @@ layout: "emailology"
 h1 Index
 ul
   - Dir.entries("source").each do |index|
-    - if index.match(/.html.slim/) && !index.match("index.html")
+    - if index.match(/.html.slim/) && !(index.match("index.html") || index.match(/^_/))
       li
         h2= link_to index.sub(".html.slim", "").sub("-", " "), index.sub(".slim", "")
   / - index.

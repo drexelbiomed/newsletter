@@ -30,7 +30,16 @@
   / background color to reach the bottom of the page. 
   / The "yahoo" attribute is added if you are using media queries for mobile devices.  For an explanation, check out the media 
   / queries example in the style block below. 
-     
+  / Tables are the most common way to format your email consistently. Set your table widths inside cells and in most 
+  / cases reset cellpadding, cellspacing, and border to zero. Use nested tables as a way to space effectively in your message. 
+  / The bgcolor and width attributes are for the Android Gmail application.  Gmail converts your body to a div, even on mobile apps. 
+  / Since there is no width set in your body, the Android sets the width of your converted body tag to that of the device viewport. 
+  / To make a long story short, your background color will get cut off as the viewer scrolls horizontally unless you add it to each 
+  / of your tables as well.
+   
+  / In this example, we are using the align="center" attribute to center the final email, if you want it left aligned, just remove
+  / that.  Using align attribute will ensure consistent results in all clients even after your DOCTYPE is stripped.
+  
   / PAGE WRAPPER
   / =========================================================================
   div#body_style style="padding:15px"

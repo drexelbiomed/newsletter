@@ -1,0 +1,13 @@
+- wrap_layout :emailology do
+  = yield
+  / Use frontmatter "width" value to biomed site wrapper
+  table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="#{data.config.biomed_width}" align="center"
+    tr
+      = partial "side-nav"
+      = partial(:content, :locals => { :border_style => "border-left: 1px solid #07294d; border-right: 1px solid #07294d;"})
+    tr
+      td
+      = partial(:footer1, :locals => { :border_style => "border-left: 1px solid #07294d; border-right: 1px solid #07294d;"})
+    tr
+      td
+      = partial(:footer2, :locals => { :border_style => "border-left: 1px solid #07294d; border-right: 1px solid #07294d;"})
