@@ -13,12 +13,14 @@ td(width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{b
     span style="background-repeat:repeat-x; background-position:top left; background-color:#FFFFFF; color:#07294D; font-weight:bold; white-space:nowrap; height:24px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"
       span style="text-transform: uppercase; border-bottom: 1px solid #07294D;" id="#{article.anchor}"
         strong= format_date(article.date)
+
     / Sniff for Email version, and add links
     - if current_page.data.layout == "email_version"
       = link_to "#{data.config.base_url+'#'+article.anchor}", style: "text-decoration: none;" do
         h2(style="line-height: 27px; text-decoration: none; color: #006699;")= article.title
     - else
       h2(style="line-height: 27px; text-decoration: none; color: #006699;")= article.title
+
     / h2(style="line-height: 27px")= link_to article.title, article.url, style: "text-decoration: none; color: #006699"
     
     / If images exist setup image table
@@ -31,7 +33,7 @@ td(width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{b
               / Sniff for Email version, and add links
               - if current_page.data.layout == "email_version"
                 = link_to "#{data.config.base_url+'#'+article.anchor}" do
-                  = image_tag "people/#{image}", height: "150", style: "border: 1px solid #006699;"
+                  = image_tag "#{data.config.img_url}/people/#{image}", height: "150", style: "border: 1px solid #006699;"
               - else
                 = image_tag "people/#{image}", height: "150", style: "border: 1px solid #006699;"
         tr

@@ -1,8 +1,10 @@
 / - FOOTER 1 -
-td align="center" style="#{border_style}"
+td align="center" style="#{border_style}" valign="middle"
   hr(style="border: none; border-bottom: 1px solid #BBBBBB; margin: 24px 0;")
-  p 
+  p
     = link_to data.config.facebook do
-      = image_tag "facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
+      = image_tag "#{data.config.img_url}/facebook_icon.png", height: "35", alt: "Facebook", style: "margin: 20px 5px"
+    = link_to data.config.givenow do
+      = image_tag "#{data.config.img_url}/give-now.png", height: "75", alt: "Facebook", style: "margin: 5px"
     = link_to data.config.linkedin do
-      = image_tag "linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 5px"
+      = image_tag "#{data.config.img_url}/linkedin_icon.png", height: "35", alt: "Facebook", style: "margin: 20px 5px"
