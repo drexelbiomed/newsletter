@@ -1,12 +1,13 @@
 / - CONTENT -
 / Use frontmatter "content width" value to set total width
-td width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{border_style}"
-  
+td(width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{border_style}")
   h1(style="margin-top: 24px;")
     = current_page.data.title
 
   / Be sure to change this 
+    / =========================
   - data.summer2014.news.each do |article|
+    / =========================
 
     hr(style="border: none; border-bottom: 3px solid #07294D; margin: 24px 0;")
     table width="120" cellspacing="0" cellpadding="0" border="0"
