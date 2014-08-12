@@ -18,7 +18,7 @@ td valign="top" width="#{data.config.biomed_width.to_i-data.config.content_width
           ul(style="padding-left: 16px;")
             / populate with anchor links from the yaml
               / =========================
-            - data.summer2014.news.each do |article|
+            - data.spring2014.news.each do |article|
               / =========================
               li(style="margin: 5px 0; font-size: 12px;") 
                 = link_to "#{format_date(article.date).chomp(', 2014')}", "#"+article.anchor, style: "font-size: 12px;"
