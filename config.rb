@@ -95,6 +95,6 @@ configure :build do
 
   # activate :gzip
   activate :inliner
-  activate :minify_html
+  # activate :minify_html
   # activate :imageoptim
 end
