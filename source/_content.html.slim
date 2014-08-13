@@ -4,10 +4,8 @@ td(width="#{data.config.content_width}" valign="top" style="padding: 0 24px; #{b
   h1(style="margin-top: 24px;")
     = current_page.data.title
 
-  / Be sure to change this 
-    / =========================
-  - data.summer2014.news.each do |article|
-    / =========================
+  / Get frontmatter to find YAML file
+  - eval(current_page.data.news).each do |article|
 
     hr(style="border: none; border-bottom: 3px solid #07294D; margin: 24px 0;")
     span style="background-repeat:repeat-x; background-position:top left; background-color:#FFFFFF; color:#07294D; font-weight:bold; white-space:nowrap; height:24px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"
