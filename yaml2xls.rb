@@ -3,7 +3,7 @@ require "spreadsheet"
 require "Date"
 
 # Newsletter ID
-news_id = "spring2014"
+news_id = "summer2014"
 
 Spreadsheet.client_encoding = 'UTF-8'
 
