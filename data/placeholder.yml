@@ -1,0 +1,14 @@
+news:
+
+  - title: "This is an example title"
+    anchor: "dream-team-funding"
+    date: "1-1-14"
+    lines:
+      - > 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis, orci non cursus faucibus, turpis augue auctor ligula, vel lacinia ipsum urna sit amet ante. Integer maximus nunc a ante ultrices, eget fringilla lorem placerat. Proin pharetra rutrum ligula, in eleifend risus tristique vel. Nam tristique ex odio, nec faucibus velit aliquam non. Nunc in placerat felis, id bibendum urna. Curabitur luctus diam mi, eget pulvinar odio vestibulum non. Maecenas sodales blandit condimentum. Aenean accumsan porta ex, a gravida dolor fringilla id. Donec auctor congue aliquet. Praesent ut dapibus orci, vel suscipit augue.
+
+    url: "http://www.drexel.edu/now/features/archive/2014/July/Drexel-CHOP-Hebrew-Dream-Teams/"
+    images: 
+      - "throckmorton.jpeg"
+    people:
+      - "Dr. Amy Throckmorton"
