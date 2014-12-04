@@ -41,15 +41,16 @@ td(width="#{data.config.content}" valign="top" style="padding: 0 24px; #{border_
                 p(mc:edit="person-name")
                   small
                     em= person
-      .article-body(mc:edit="article-body")
+      p(style="font-size: 15px; line-height: 22px; margin-bottom: 22px;" mc:edit="article-body")
         - article.lines.each do |line|
-          p= line
+          = line
+          br
+
       - if article.url.length > 0
         / span(style="background-color:#FFC600; color:#07294D; font-weight:bold; white-space:nowrap; height:35px; border-radius: 3px; padding: 10px;" mc:edit="article-link")
-        span(mc:edit="article-link" style="font-weight:bold; height: 35px; font-size: 17px;")
-          span >  
+        p(mc:edit="article-link" style="font-weight:bold; font-size: 15px; line-height: 15px;")
+          | >  
           = link_to article.url, style: "color:#07294D" do
-            span(style="padding:10px 10px; color:#07294D;") 
-              | Source Article
+            | Source Article
   p
     br
