@@ -27,20 +27,10 @@ td(width="#{data.config.content}" valign="top" style="padding: 0 24px; #{border_
         table cellpadding="0" cellspacing="5" border="0" align="center"
           tr
             / Create a new td for each image AND normalize the height
-            - article.images.each do |image|
-              td(mc:repeatable)
-                / Sniff for Email version, and add links
-                - if current_page.data.layout == "email_version"
-                  = link_to "#{data.config.base_url+'#'+article.anchor}" do
-                    img(src="#{data.config.img_url}/people/#{image}" height="150" style="border: 1px solid #006699;" mc:edit="person-img")
-                - else
-                  = image_tag "people/#{image}", height: "150", style: "border: 1px solid #006699;"
+            = partial(:images, :locals => {:article => article })
           tr
-            - article.people.each do |person|
-              td(align="center" mc:repeatable)
-                p(mc:edit="person-name")
-                  small
-                    em= person
+            = partial(:captions, :locals => {:article => article })
+
       p(style="font-size: 15px; line-height: 22px; margin-bottom: 22px;" mc:edit="article-body")
         - article.lines.each do |line|
           = line

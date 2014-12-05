@@ -1,0 +1,28 @@
+- if article.images.length == 1
+  - article.images.each do |image|
+    td(mc:repeatable)
+      / Sniff for Email version, and add links
+      - if current_page.data.layout == "email_version"
+        = link_to "#{data.config.base_url+'#'+article.anchor}" do
+          img(src="#{data.config.img_url}/people/#{image}" height="200" style="border: 1px solid #006699;" mc:edit="person-img")
+      - else
+        = image_tag "people/#{image}", height: "200", style: "border: 1px solid #006699;"
+- if article.images.length > 1 && article.images.length <= 3
+  - article.images.each do |image|
+    td(mc:repeatable)
+      / Sniff for Email version, and add links
+      - if current_page.data.layout == "email_version"
+        = link_to "#{data.config.base_url+'#'+article.anchor}" do
+          img(src="#{data.config.img_url}/people/#{image}" height="150" style="border: 1px solid #006699;" mc:edit="person-img")
+      - else
+        = image_tag "people/#{image}", height: "150", style: "border: 1px solid #006699;"
+
+- if article.images.length >= 4
+  - article.images.each do |image|
+    td(mc:repeatable)
+      / Sniff for Email version, and add links
+      - if current_page.data.layout == "email_version"
+        = link_to "#{data.config.base_url+'#'+article.anchor}" do
+          img(src="#{data.config.img_url}/people/#{image}" height="100" style="border: 1px solid #006699;" mc:edit="person-img")
+      - else
+        = image_tag "people/#{image}", height: "100", style: "border: 1px solid #006699;"
