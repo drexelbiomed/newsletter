@@ -1,11 +1,531 @@
 news:
+  - title: 
+      >
+        Dr. Kara Spiller Receives an NSF Grant for a US–Australia 
+        Collaborative Research Project
+    anchor: us-aussie-collaborative
+    date: 9-8-14
+    lines:
+      - >
+        Dr. Kara Spiller, assistant professor in BIOMED, received a 1-year $45K NSF 
+        grant for the project titled “US–Australia Collaborative Research: 
+        Research Planning and Proof-of-Concept Study of Macrophage-Scaffold 
+        Interactions" to investigate the interactions between cells of the human 
+        inflammatory response with novel ceramic scaffolds developed by Dr. Hala 
+        Zreiqat of the University of Sydney.
+      - >
+        The ceramic scaffolds have been shown to be extremely successful at 
+        inducing bone regeneration in preclinical studies. This project 
+        investigates the hypothesis that the mechanism behind their success 
+        is positive interactions with the inflammatory response, which is the 
+        focus of Dr. Spiller's laboratory. This grant, funded by the NSF 
+        Catalyzing International Collaborations (CNIC) program, supports the 
+        exchange of doctoral students between Sydney University and Drexel 
+        University to conduct this research. Pamela Graney, a doctoral student 
+        in Dr. Spiller's laboratory at Drexel, will spend four months in Dr. 
+        Zreiqat's lab in Sydney this fall, and one of Dr. Zreiqat's students 
+        will visit Drexel next spring." 
+    url: ""
+    images:
+      - "spiller.gif"
+    people:
+      - "Dr. Kara Spiller"
 
-  - title: "Drs. Amy Throckmorton, Ken Barbee, Kara Spiller and Colleagues Receive Funding for a Unique Collaboration That Leads to “Dream Teams” to Advance Pediatric Research"
+  - title: 
+      >
+        Dr. Wan Shih Is Quoted in a Press Release Welcoming Her New Biotech 
+        Startup Firm Lenima Field Diagnostics to the Science Center
+    anchor: lenima-field-diagnostics
+    date: 8-26-14
+    lines:
+      - >
+        Drs. Wan Shih, professor in BIOMED, was quoted in a press release 
+        welcoming her new biotech startup firm Lenima Field Diagnostics LLC 
+        to the Science Center. The firm, founded by Dr. Shih and her husband, 
+        Dr. Wei-Heng Shih (MS&E), is focused on cancer patients and 
+        developing a simple, portable, and low-cost test for diagnosing 
+        infectious diseases. For the full story, please visit:
+    url: https://www.sciencecenter.org/science-center-news/press-release-science-center-port-welcomes-two-companies-to-its-growing-ecosystem
+    images:
+      - Wan-Shih.jpg
+    people:
+      - "Dr. Wan Shih"
+
+  - title: 
+      >
+        Drs. Wan Shih and Wei-Heng Shih Are Featured Philadelphia Daily News 
+        Story about Their Piezoelectric Plate Sensor Research
+    anchor: shih-shih-piezoelectric
+    date: 8-25-14
+    lines:
+      - >
+        Drs. Wan Shih, professor in BIOMED, and Wei-Heng Shih (MS&E), were 
+        featured in an August 24, 2014 Philadelphia Daily News story about 
+        their piezoelectric plate sensor research and the start-up they 
+        founded to help make it a commercially viable product. For the full 
+        story, please visit:
+    url: "http://articles.philly.com/2014-08-25/news/53210256_1_research-funding-technology-molecules"
+    images:
+      - Wan-Shih.jpg
+      - Wei-Heng-Shih.jpg
+    people:
+      - Dr. Wan Shih
+      - Dr. Wei-Heng Shih
+
+  - title: 
+      >
+        Dr. Andres Kriete Gives an Invited Talk at the Systems Biology of 
+        Aging Workshop
+    anchor: kriete-aging-workshop
+    date: 8-21-14
+    lines:
+      - >
+        Dr. Andres Kriete, associate professor in BIOMED, will give an 
+        invited talk titled "Robustness and Aging - The Control Gap" at the 
+        Systems Biology of Aging Workshop in Jena, Germany on September 8, 
+        2014.
+    url: ""
+    images:
+      - Andres-Kriete.jpg
+    people:
+      - Dr. Andres Kriete
+
+  - title: 
+      >
+        Dr. Banu Onaral Gives an Invited Talk on Clinical Deployment of 
+        Functional Optical Brain Monitoring at Jiangsu Asialand Technopark 
+        in Changzhou, China
+    anchor: onaral-fnir-china
+    date: 8-20-14
+    lines:
+      - >
+        Dr. Banu Onaral, H. H. Sun Professor and Director, School of 
+        Biomedical Engineering, Science and Health Systems, gave an invited 
+        talk titled "Clinical Deployment of Functional Optical Brain 
+        Monitoring: fNIR" at Jiangsu Asialand Bio-Med Tech Co. in Changzhou, 
+        China, August 19, 2014. Dr. Onaral discussed optical brain imaging 
+        (fNIR) applications and translational research and learned about 
+        Shanghai Tech's strategies for interdisciplinary studies in 
+        biomedical sciences and technologies, as well as translational 
+        research and commercialization of academic innovation. She shared 
+        information about one of Drexel's international partners, namely, 
+        Teknopark Istanbul and her role as the 'Senior Advisor for Strategic 
+        Initiatives.' Teknopark Istanbul is under development as a science, 
+        technology, innovation and industry gateway to Turkey and the region. 
+        There are also plans to create a 'Shanghai Tech' inspired advanced 
+        science and high technology institute in the next 5 years timeframe. 
+    url: ""
+    images:
+      - Banu-Onaral.jpg
+    people:
+      - Dr. Banu Onaral
+
+  - title: 
+      >
+        Drs. Banu Onaral, Kurtulus Izzetoglu, Hasan Ayaz, Patricia Shewokis 
+        and Colleagues Co-author an Article on Cognitive Workload and Learning 
+        Assessment That Is Published in the IEEE Transactions on Human-Machine 
+        Systems
+    anchor: cognitive-published-ieee
+    date: 8-19-14
+    lines:
+      - >
+        Drs. Banu Onaral, H. H. Sun Professor and Director, Kurtulus 
+        Izzetoglu, associate research professor, and Hasan Ayaz, assistant 
+        research professor, all in BIOMED, and Patricia Shewokis, professor in 
+        CoNHP with a joint appointment in BIOMED, co-authored the article 
+        titled "Cognitive Workload and Learning Assessment During the 
+        Implementation of a Next-Generation Air Traffic Control Technology 
+        Using Functional Near-Infrared Spectroscopy" (co-authors: J. Harrison, 
+        B. Willems, H. Sehchang, U. Ahlstrom, W. Hyun,  and S.C. Bunce) that 
+        was published in the August 2014 edition of IEEE Transactions on Human-
+        Machine Systems. To view the article, please visit:
+    url: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6826546
+    images:
+      - Banu-Onaral.jpg
+      - Kurtulus-Izzetoglu.jpg
+      - Hasan-Ayaz.jpg
+      - Patricia-Shewokis.jpg
+    people:
+      - Dr. Banu Onaral
+      - Dr. Kurtulus Izzetoglu
+      - Dr. Hasan Ayaz
+      - Dr. Patricia Shewokis
+
+  - title: 
+      >
+        Drs. Banu Onaral, Kurtulus Izzetoglu, Hasan Ayaz, Patricia Shewokis 
+        and Colleagues Co-author a Book Chapter on Unmanned Aerial Vehicle 
+        (UAV) Operators Workload Assessment 
+    anchor: uav-workload-assessment
+    date: 8-19-14
+    lines:
+      - >
+        Drs. Banu Onaral, H. H. Sun Professor and Director, Kurtulus Izzetoglu, 
+        associate research professor, and Hasan Ayaz, assistant research 
+        professor, all in BIOMED, and Patricia Shewokis, professor in CoNHP 
+        with a joint appointment in BIOMED, co-authored a chapter titled "UAV 
+        Operators Workload Assessment by Optical Brain Imaging Technology 
+        (fNIR)" in the Handbook of UAV (co-authors: J.T. Hing, S.C. Bunce, and 
+        P. Oh). To view the chapter abstract, please visit:
+    url: http://link.springer.com/referenceworkentry/10.1007/978-90-481-9707-1_22
+    images:
+      - Banu-Onaral.jpg
+      - Kurtulus-Izzetoglu.jpg
+      - Hasan-Ayaz.jpg
+      - Patricia-Shewokis.jpg
+    people:
+      - Dr. Banu Onaral
+      - Dr. Kurtulus Izzetoglu
+      - Dr. Hasan Ayaz
+      - Dr. Patricia Shewokis
+  - title: 
+      >
+        Drs. Meltem Izzetoglu, Kurtulus Izzetoglu, and Colleagues Receive an 
+        Albert Einstein College of Medicine of Yeshiva University Grant for 
+        Their Biological and Neural Mechanisms of Falls Project
+    anchor: einstein-yeshiva-grant
+    date: 8-15-14
+    lines:
+      - >
+        Drs. Meltem Izzetoglu (PI) and Kurtulus Izzetoglu (Co-I), both 
+        associate research professors in BIOMED, and colleagues received a 
+        5-year $68K grant from the Albert Einstein College of Medicine of 
+        Yeshiva University for their project titled "Biological and Neural 
+        Mechanisms of Falls.
+    url: ""
+    images:
+      - Meltem-Izzetoglu.jpg
+      - Kurtulus-Izzetoglu.jpg
+    people:
+      - Dr. Meltem Izzetoglu
+      - Dr. Kurtulus Izzetoglu
+
+  - title: 
+      >
+        Dr. Hasan Ayaz and Colleagues Receive a CoM Clinical and Translational 
+        Research Institute Grant for Their fNIRS Assessment of Dorsolateral 
+        and Dorsomedial Prefrontal Cortex Project
+    anchor: fnir-dorsolateral-grant
+    date: 8-15-14
+    lines:
+      - >
+        Drs. Hasan Ayaz, assistant research professor in BIOMED (Co-I), and 
+        Jennifer Nasser, associate professor in CNHP (PI), and colleagues 
+        received a 1-year $75K grant from the Drexel University College of 
+        Medicine Clinical and Translational Research Institute for their 
+        project titled "fNIRS Assessment of Dorsolateral and Dorsomedial 
+        Prefrontal Cortex in Response to Food as a Marker for 'Loss of 
+        Control'."
+    url: ""
+    images:
+      - Hasan-Ayaz.jpg
+    people:
+      - Dr. Hasan Ayaz
+
+  - title: 
+      >
+        Dr. Hasan Ayaz and Colleagues Receive a CoM Clinical and Translational 
+        Research Institute Grant for Their Use of fNIR to Detect Cognitive 
+        Changes in ALS Project
+    anchor: fnir-als-grant
+    date: 8-15-14
+    lines:
+      - >
+        Drs. Hasan Ayaz, assistant research professor in BIOMED (Co-I), Terry 
+        Heiman-Patterson, professor of neurology in CoM (PI), and colleagues 
+        received a 1-year $75K grant from the Drexel University College of 
+        Medicine Clinical and Translational Research Institute for their 
+        project titled "Use of fNIR to Detect Cognitive Changes in ALS: Cross 
+        Section and Longitudinal Studies."
+    url: ""
+    images:
+      - Hasan-Ayaz.jpg
+    people:
+      - Dr. Hasan Ayaz
+
+  - title: 
+      >
+        Dr. Johann deSa and Colleagues Receive a Glycotest, Inc. Grant for 
+        Their Development of a Multiplexed Assay for the Detection of 
+        Hepatocellular Carcinoma Project
+    anchor: hepatocellular-carcinoma-project
+    date: 8-15-14
+    lines:
+      - >
+        Drs. Johann deSa, research assistant professor in BIOMED (Co-I), and 
+        Timothy Block, professor and director, Drexel Institute for 
+        Biotechnology and Virology Research (PI), and colleagues received a 
+        1-year $185K grant from Glycotest, Inc. for their project titled 
+        "Development of a Multiplexed Assay for the Detection of Hepatocellular 
+        Carcinoma."
+    url: ""
+    images:
+      - Johann-deSa.jpg
+    people:
+      - Dr. Johann deSa
+      # - Dr. Timothy Block
+
+  - title: 
+      >
+        Dr. Joshua Jacobs and Colleagues Receive a DARPA Grant for Their Memory 
+        Enhancement with Modeling, Electrophysiology, and Stimulation (MEMES) 
+        Project
+    anchor: memory-enhancement-grant
+    date: 8-15-14
+    lines:
+      - >
+        Dr. Joshua Jacobs, assistant professor in BIOMED (PI), and colleagues 
+        from the University of Pennsylvania received a 5-year $1.26M DARPA 
+        (Defense Advanced Research Project Agency) grant for the project titled 
+        "Memory Enhancement with Modeling, Electrophysiology, and Stimulation 
+        (MEMES)."
+    url: ""
+    images:
+      - jacobs.gif
+    people:
+      - Dr. Joshua Jacobs
+
+  - title: 
+      >
+        Dr. Ming Xiao and Colleague Receive a Wistar Institute Grant for Their 
+        Novel Single-Molecule Telomere Characterization Technology for 
+        Analyzing Cancer Genomes Project
+    anchor: xiao-wistar-grant
+    date: 8-15-14
+    lines:
+      - >
+        Dr. Ming Xiao, research professor in BIOMED (PI), and colleagues 
+        received a 3-year $130K Wistar Institute grant for the project titled 
+        "A Novel Single-Molecule Telomere Characterization Technology for 
+        Analyzing Cancer Genomes."
+    url: ""
+    images:
+      - Ming-Xiao.jpg
+    people:
+      - Dr. Ming Xiao
+
+  - title: 
+      >
+        Drs. Wan Shih, Wei-Heng Shih, and Colleagues Receive College of 
+        Engineering / College of Medicine Seed Grant for Their Quantum Dot 
+        Molecular Probes for In Vivo Imaging Project
+    anchor: shih-shih-medicine-grant
+    date: 8-15-14
+    lines:
+      - >
+        Drs. Wan Shih, professor in BIOMED (Co-I), and Wei-Heng Shih 
+        (MS&E – PI), and colleagues received a 1-year $25K College of 
+        Engineering / College of Medicine seed grant for the project titled 
+        "Near-infrared SnS Aqueous Quantum Dot Molecular Probes for In Vivo 
+        Imaging."
+    url: ""
+    images:
+      - Wan-Shih.jpg
+      - Wei-Heng-Shih.jpg
+    people:
+      - Dr. Wan Shih
+      - Dr. Wei-Heng Shih
+
+  - title: 
+      >
+        Drs. Wan Shih and Wei-Heng Shih Are Featured in a Drexel News Blog 
+        Story on Their Developing a New Sensor to Detect Hospital-acquired 
+        Bacterial Infections
+    anchor: 
+    date: 8-14-14
+    lines:
+      - >
+        Drs. Wan Shih, professor in BIOMED, and Wei-Heng Shih (MS&E), were 
+        featured in an August 14, 2014 Drexel News Blog piece on their 
+        developing a new sensor that can detect one of the most challenging 
+        hospital-acquired bacterial infections easily, early and without 
+        expensive equipment. They are trying to give doctors a tool that will 
+        help them make a quick and accurate diagnosis using a tiny ceramic 
+        plate about a millimeter long, half a millimeter wide and thinner than 
+        a strand of hair. For the full story, please visit:
+    url: http://newsblog.drexel.edu/2014/08/14/a-pitch-perfect-test-for-bacterial-infection/
+    images:
+      - Wan-Shih.jpg
+      - Wei-Heng-Shih.jpg
+    people:
+      - Dr. Wan Shih
+      - Dr. Wei-Heng Shih
+
+  - title: 
+      >
+        Drs. Kurtulus Izzetoglu, Hasan Ayaz and Colleagues Receive NIH Grant 
+        for Treatment of Prescription Opioid Dependence Project
+    anchor: 
+    date: 8-14-14
+    lines:
+      - >
+        Drs. Kurtulus Izzetoglu, associate research professor (PI), Hasan Ayaz, 
+        assistant research professor (Co-PI), both in BIOMED, and colleagues 
+        from the Penn State Milton S. Hershey Medical Center received 3-year 
+        $115K National Institutes of Health (NIH) grant for the project titled 
+        "Prescription Opioid Dependence: Physiology, Emotion and Treatment 
+        Outcome."      
+    url: ""
+    images:
+      - Kurtulus-Izzetoglu.jpg
+      - Hasan-Ayaz.jpg
+    people:
+      - Dr. Kurtulus Izzetoglu
+      - Dr. Hasan Ayaz
+
+  - title: 
+      >
+        Dr. Kambiz Pourrezaei and Colleagues Are Featured in an Exel Magazine 
+        Article on a 'Smart Cup' for Monitoring the Nutritional Intake of the 
+        Hospitalized Patients
+    anchor: smart-cup-exel
+    date: 8-14-14
+    lines:
+      - >
+        Dr. Kambiz Pourrezaei, professor in BIOMED, and Dr. Rose Ann DiMaria-
+        Ghalili (CNHP) were featured in an August 14, 2014 Exel magazine 
+        article titled "A Cup That Counts" that discusses how their team of 
+        interdisciplinary and transdisciplinary researchers are developing a 
+        patent-pending “Smart Cup” for monitoring the nutritional intake of 
+        hospitalized patients. Their translational collaborative research 
+        received funding from the Wallace H. Coulter Foundation for their 
+        project titled "Smart Cup: Development of A Device to Measure Liquid 
+        Intake." For the full story, please visit:
+    url: http://exelmagazine.org/article/a-cup-that-counts/
+    images:
+      - Kambiz-Pourrezaei.jpg
+    people:
+      - Kambiz Pourrezaei
+
+  - title: 
+      >
+        Coulter Funded Research Leads to Plant Protein-Based Wound Dressing
+         Invented at Drexel and Moves Closer to Medical Marketplace
+    anchor: coulter-omegaskin-patent
+    date: 8-4-14
+    lines:
+      - >
+        Wound healing technology developed at Drexel University via initial 
+        funding from the Wallace H. Coulter Foundation is one step closer to 
+        becoming a tool for medical caregivers. Eqalix, Inc., a Northern 
+        Virginia regenerative medicine device company, recently received 
+        patent protection for a protein-based nanofiber scaffold technology 
+        invented by Drexel researchers. U.S. Patent No. 8,790,921, entitled 
+        “Alimentary Protein-Based Scaffolds (APS) for Wound Healing, 
+        Regenerative Medicine and Drug Discovery” is an important step for 
+        Eqalix, the company that licensed the technology from Drexel, as it 
+        seeks to bring it to market as a product called OmegaSkin™. For the 
+        full story, please visit: 
+
+    url: http://drexel.edu/now/news-media/releases/archive/2014/August/Eqalix-wound-scaffold/
+    images:
+      - ""
+    people:
+      - ""
+
+  - title: 
+      >
+        Drs. Hasan Ayaz, Meltem Izzetoglu, Patricia Shewokis and Colleagues Are 
+        Featured in an Exel Magazine Article that Showcases Recent Optical 
+        Brain Imaging Applications 
+    anchor: exel-optical-brain-imaging
+    date: 8-4-14
+    lines:
+      - >
+        Drs. Hasan Ayaz, assistant research professor, and Meltem Izzetoglu, 
+        associate research professor, both in BIOMED, along with Dr. Patricia 
+        Shewokis, professor in CoNHP with a joint appointment in BIOMED, were 
+        featured in an August 1, 2014 Exel magazine article titled "Mind 
+        Readers" that provides an overview of the interdisciplinary innovation 
+        partnerships across Drexel University and illustrates a few of the 
+        deployment opportunities of fNIR technology by giving examples of 
+        collaborators from different academic units who have joined forces to 
+        push the fNIR frontier in neuroimaging as part of the goal of 
+        translating functional optical brain monitoring technology into 
+        lifesaving and life changing solutions. For the full story, please 
+        visit:
+    url: http://exelmagazine.org/article/mind-readers/
+    images:
+      - Hasan-Ayaz.jpg
+      - Meltem-Izzetoglu.jpg
+      - Patricia-Shewokis.jpg
+    people:
+      - Dr. Hasan Ayaz      
+      - Dr. Meltem Izzetoglu
+      - Dr. Patricia Shewokis
+
+  - title: 
+      >
+        Dr. Peter Lewin Is Appointed as a Voting Member of the Food and Drug 
+        Administration (FDA) Medical Devices Advisory Committee
+    anchor: lewin-fda-medical
+    date: 8-4-14
+    lines:
+      - >
+        Drs. Peter A. Lewin, Richard B. Beard Professor of Biomedical and 
+        Electrical and Computer Engineering, Director, Biomedical Ultrasound 
+        Research and Education Center, was appointed as a voting member of the 
+        Food and Drug Administration (FDA) Medical Devices Advisory Committee. 
+        His selection as a technical expert confirms the national recognition 
+        of his and the School of Biomedical Engineering, Science and Health 
+        Systems' experience in the field of biomedical ultrasonics.
+    url: ""
+    images:
+      - Peter-Lewin.jpg
+    people:
+      - Dr. Peter A. Lewin
+
+  - title: 
+      >
+        Dr. Peter Lewin Is Invited to Give a Talk at the SPIE DSS (Defense, 
+        Security and Sensing) International Society for Optics and Photonics 
+        Conference
+    anchor: lewin-spie-dss
+    date: 8-4-14
+    lines:
+      - >
+        Drs. Peter A. Lewin, Richard B. Beard Professor of Biomedical and 
+        Electrical and Computer Engineering, Director, Biomedical Ultrasound 
+        Research and Education Center, was invited to give a talk titled 
+        "Enhanced Wound Healing through Low Frequency Ultrasound" at the SPIE 
+        DSS (Defense, Security and Sensing) international society for optics 
+        and photonics conference being held April 20–24, 2015 in Baltimore, MD.
+    url: ""
+    images:
+      - Peter-Lewin.jpg
+    people:
+      - Dr. Peter A. Lewin
+
+  - title: 
+      >
+        Drs. Amy Throckmorton, Ken Barbee, Kara Spiller and Colleagues Receive 
+        Funding for a Unique Collaboration That Leads to “Dream Teams” to 
+        Advance Pediatric Research
     anchor: "dream-team-funding"
-    date: "7-31-14"
+    date: 7-31-14
     lines:
       - > 
-        Amy Throckmorton, associate professor, Ken Barbee, professor and deputy director, and Kara Spiller, assistant professor, all in BIOMED, are members of two 'dream teams' of investigators who will shape innovative solutions to address unmet pediatric medical needs, as part of a research partnership with The Children’s Hospital of Philadelphia (CHOP), Drexel University, and The Hebrew University of Jerusalem. The joint projects each will receive $250K over two years in institutional funding, as administrators seek external investors interested in advancing exciting pediatric translational research with commercial viability. One dream team will be based at Drexel, with Dr. Throckmorton as the principal investigator of the “Giving Kids a Chance” project that will investigate a new intravascular blood pump for pediatric patients with congenital heart disease (CHD). Drs. Barbee and Spiller are members of a second dream team based at CHOP, with Robert J. Levy, MD, as the principal investigator of a research project titled “Pediatric Transcatheter Valve Replacements: Preventing Device Failure due to Structural Degeneration" that also will focus on CHD with a concentration on Tetralogy of Fallot (TOF). These “blue babies” have insufficient oxygen and need cardiac surgery early in life.
+        Amy Throckmorton, associate professor, Ken Barbee, professor and 
+        deputy director, and Kara Spiller, assistant professor, all in 
+        BIOMED, are members of two 'dream teams' of investigators who will 
+        shape innovative solutions to address unmet pediatric medical needs, 
+        as part of a research partnership with The Children’s Hospital of 
+        Philadelphia (CHOP), Drexel University, and The Hebrew University of 
+        Jerusalem. The joint projects each will receive $250K over two years 
+        in institutional funding, as administrators seek external investors 
+        interested in advancing exciting pediatric translational research with 
+        commercial viability. One dream team will be based at Drexel, with Dr. 
+        Throckmorton as the principal investigator of the “Giving Kids a 
+        Chance” project that will investigate a new intravascular blood pump 
+        for pediatric patients with congenital heart disease (CHD). Drs. 
+        Barbee and Spiller are members of a second dream team based at CHOP, 
+        with Robert J. Levy, MD, as the principal investigator of a research 
+        project titled “Pediatric Transcatheter Valve Replacements: 
+        Preventing Device Failure due to Structural Degeneration" that also 
+        will focus on CHD with a concentration on Tetralogy of Fallot (TOF). 
+        These “blue babies” have insufficient oxygen and need cardiac surgery 
+        early in life.
     url: "http://www.drexel.edu/now/features/archive/2014/July/Drexel-CHOP-Hebrew-Dream-Teams/"
     images: 
       - "throckmorton.jpeg"
@@ -17,40 +537,45 @@ news:
       - "Dr. Kara Spiller"
 
 
-  - title: "Dr. Joshua Jacobs and Colleagues Receive a Multi-Site Grant for a Study on Brain Injury Recovery"
+  - title: 
+      >
+        Dr. Joshua Jacobs and Colleagues Receive a Multi-Site Grant for a 
+        Study on Brain Injury Recovery
     anchor: "brain-injury-recovery"
-    date: "7-15-14"
+    date: 7-15-14
     lines:
       - >
-        Dr. Joshua Jacobs, assistant professor in BIOMED, will join a $22.5 million, 4-year research project titled “Restoring Active Memory,” in which he will explore the use of brain stimulation to help recover memories and cognitive abilities of people who have suffered a traumatic brain injury. The research is funded by the Defense Advanced Research Projects Agency (DARPA) and is affiliated with President Barack Obama’s Brain Research through Advancing Innovative Neurotechnologies initiative. This large-scale project is coordinated among seven hospital sites, including Thomas Jefferson University (TJU), the Hospital of the University of Pennsylvania, Dartmouth University, Emory University, NIH, the Mayo Clinic, and the University of Washington. Dr. Jacobs is involved in the TJU hospital site.
+        Dr. Joshua Jacobs, assistant professor in BIOMED, will join a $22.5 
+        million, 4-year research project titled “Restoring Active Memory,” in 
+        which he will explore the use of brain stimulation to help recover 
+        memories and cognitive abilities of people who have suffered a 
+        traumatic brain injury. The research is funded by the Defense Advanced 
+        Research Projects Agency (DARPA) and is affiliated with President 
+        Barack Obama’s Brain Research through Advancing Innovative 
+        Neurotechnologies initiative. This large-scale project is coordinated 
+        among seven hospital sites, including Thomas Jefferson University 
+        (TJU), the Hospital of the University of Pennsylvania, Dartmouth 
+        University, Emory University, NIH, the Mayo Clinic, and the University 
+        of Washington. Dr. Jacobs is involved in the TJU hospital site.
     url: "http://thetriangle.org/news/study-explores-brain-injury-recovery/"
     images: 
       - "jacobs.gif"
     people:
       - "Dr. Joshua Jacobs"
- # - title: "Michael Koerner Will Present His Paper on Multisensory Interface for 5D Stem Cell Image Volumes at the 2014 IEEE Engineering in Medicine and Biology Conference (EMBC)"
-  # anchor: ""
-  #   date: "6-5-14"
-  #   lines:
-  #     - "Michael Koerner, undergraduate student in BIOMED, will present his paper titled 'Multisensory Interface for 5D Stem Cell Image Volumes' (Co-authors: E. Wait, M. Winter, C. Bjornsson, S.K. Goderie, S. Temple, and A.R Cohen) at the IEEE Engineering in Medicine and Biology Conference (EMBC) in Chicago, IL, August 26–30, 2014."
-  # url: "" 
-  # images: 
-    # - ""
 
-  # - title: "Raha Dastgheyb Receives Travel Grant To Present a Poster at the 2014 National Neurotrauma Society Symposium"
-    # anchor: ""
-  #   date: "6-5-14"
-  #   lines:
-  #     - 'Raha Dastgheyb, PhD candidate in BIOMED (Advisor: K. Barbee), was selected to receive a $500 travel grant to attend the 2014 National Neurotrauma Society Symposium in San Francisco, CA, June 29–July 2, 2014. Raha will present her poster titled "Secondary Membrane Damage and the Potential for Membrane-Targeted Neuroprotection."'
-  # url: "" 
-  # images: 
-    # - ""
-
-  - title: "Raha Dastgheyb Wins 1st Place in the Graduate Poster Presentation Category at the 2014 Northeast Bioengineering (NEBEC) Conference"
+  - title: 
+      >
+        Raha Dastgheyb Wins 1st Place in the Graduate Poster Presentation 
+        Category at the 2014 Northeast Bioengineering (NEBEC) Conference
     anchor: "graduate-poster-presentation"
-    date: "6-5-14"
+    date: 6-5-14
     lines:
-      - 'Raha Dastgheyb, PhD candidate in BIOMED (Advisor: K. Barbee), won 1st Place in the graduate poster presentation category at the 2014 Northeast Bioengineering Conference (NEBEC) at Northeastern University in Boston, MA, April 5-7, 2013. Raha won for the poster titled “The Role of Intracellular Calcium in Axonal Injury."'
+      - >
+        Raha Dastgheyb, PhD candidate in BIOMED (Advisor: K. Barbee), won 1st 
+        Place in the graduate poster presentation category at the 2014 
+        Northeast Bioengineering Conference (NEBEC) at Northeastern University 
+        in Boston, MA, April 5-7, 2013. Raha won for the poster titled “The 
+        Role of Intracellular Calcium in Axonal Injury."
     url: ""
     images: 
       - "Raha-Dastgheyb.jpg"
@@ -58,29 +583,69 @@ news:
       - "Raha Dastghyeb"
       # - "dastgheyb.jpeg"
 
-  - title: "Ellen Giranda, Allison Kosydar, Caitlin Kealy, Michael McNichol, and Renee Nester Win First Place in the 2014 BIOMED Senior Design Competition and the Faculty Choice Award in the 2014 CoE Senior Design Competition"
+  - title: 
+      >
+        Ellen Giranda, Allison Kosydar, Caitlin Kealy, Michael McNichol, and 
+        Renee Nester Win First Place in the 2014 BIOMED Senior Design 
+        Competition and the Faculty Choice Award in the 2014 CoE Senior Design 
+        Competition
     anchor: "senior-design-competition"
-    date: "6-3-14"
+    date: 6-3-14
     lines:
-      - 'Ellen Giranda, Allison Kosydar, Caitlin Kealy, Michael McNichol, and Renee Nester, all undergraduate students in BIOMED (Advisors: Kenneth Barbee, Vinay Nadkarni, and Benjamin Abella), won First Place in the 2014 School of Biomedical Engineering, Science, and Health Systems Senior Design Competition and the Faculty Choice Award in the 2014 College of Engineering (CoE) Senior Design Competition for their project titled "Shivering Detection Method for Adult Cardiac Arrest Patients Undergoing Targeted Temperature Management.” The two Runner-Up teams are listed below and will be honored along with the First Place team at the 2014 BIOMED Commencement and Honors Celebration on June 14, 2014.'
-      - 'Runner-Up Team 1: “Optimized Vesicle-based Drug Delivery System for the Delivery of a Syk Inhibitor to Mitigate the Effects of UV-radiation”'
-      - 'Members: Chelsey Calvo, Jhan-Duc Duclos, Stephane Guillou, and Jennifer Wilkin'
-      - 'Advisor: Andres Kriete'
-      - 'Runner-Up Team 2: “Development of a Solution for Biofilms in Chronic Wounds”'
-      - 'Members: Francis DiGennaro, Siddharth Joshi, Niraj Maniar, Dylan Narsingh, and Kevin Sacherman'
-      - 'Advisor: Michael Neidrauer'
+      - >
+        Ellen Giranda, Allison Kosydar, Caitlin Kealy, Michael McNichol, and 
+        Renee Nester, all undergraduate students in BIOMED (Advisors: Kenneth 
+        Barbee, Vinay Nadkarni, and Benjamin Abella), won First Place in the 
+        2014 School of Biomedical Engineering, Science, and Health Systems 
+        Senior Design Competition and the Faculty Choice Award in the 2014 
+        College of Engineering (CoE) Senior Design Competition for their 
+        project titled "Shivering Detection Method for Adult Cardiac Arrest 
+        Patients Undergoing Targeted Temperature Management.” The two 
+        Runner-Up teams are listed below and will be honored along with the 
+        First Place team at the 2014 BIOMED Commencement and Honors 
+        Celebration on June 14, 2014.
+      - >
+        Runner-Up Team 1: “Optimized Vesicle-based Drug Delivery System for 
+        the Delivery of a Syk Inhibitor to Mitigate the Effects of UV-radiation”
+      - >
+        Members: Chelsey Calvo, Jhan-Duc Duclos, Stephane Guillou, and 
+        Jennifer Wilkin
+      - >
+        Advisor: Andres Kriete
+      - >
+        Runner-Up Team 2: “Development of a Solution for Biofilms in Chronic 
+        Wounds”
+      - >
+        Members: Francis DiGennaro, Siddharth Joshi, Niraj Maniar, Dylan 
+        Narsingh, and Kevin Sacherman
+      - >
+        Advisor: Michael Neidrauer
     url: ""
     images: 
       - ""
     people:
       - ""
 
-  - title: "Dr. Yinghui Zhong and Colleagues Receive a College of Medicine Philadelphia Health Education Corporation (PHEC) Grant To Study Chronic Tissue Response and Brain Tissue Integration of Novel Brain Electrodes"
+  - title: 
+      >
+        Dr. Yinghui Zhong and Colleagues Receive a College of Medicine 
+        Philadelphia Health Education Corporation (PHEC) Grant To Study 
+        Chronic Tissue Response and Brain Tissue Integration of Novel Brain 
+        Electrodes
     anchor: "zhong-phec-grant"
-    date: "6-2-14"
+    date: 6-2-14
     lines:
       - > 
-        Drs. Yinghui Zhong, assistant professor in BIOMED (Co-PI), Simon Giszter (CoM – PI), and Denise Garcia (CoM – Co-PI), received a 1-year $75K Philadelphia Health Education Corporation (PHEC) grant for the project "In-vivo 2 Photon Imaging of Neural Plasticity in Mouse Cortex to Compare Chronic Responses to the Drexel Braided Electrodes vs. Standard Microwires, with and without Hydrogel Delivered Trophins." The goal of the project is to study chronic tissue response and brain tissue integration of novel brain electrodes by releasing neurotrophins using non-invasive in-vivo 2-photo imaging so the brain-electrode interface is not disrupted.
+        Drs. Yinghui Zhong, assistant professor in BIOMED (Co-PI), Simon 
+        Giszter (CoM – PI), and Denise Garcia (CoM – Co-PI), received a 
+        1-year $75K Philadelphia Health Education Corporation (PHEC) grant 
+        for the project "In-vivo 2 Photon Imaging of Neural Plasticity in 
+        Mouse Cortex to Compare Chronic Responses to the Drexel Braided 
+        Electrodes vs. Standard Microwires, with and without Hydrogel Delivered 
+        Trophins." The goal of the project is to study chronic tissue response 
+        and brain tissue integration of novel brain electrodes by releasing 
+        neurotrophins using non-invasive in-vivo 2-photo imaging so the brain-
+        electrode interface is not disrupted.
     url: ""
     images: 
       - "Yinghui-Zhong.jpg"
