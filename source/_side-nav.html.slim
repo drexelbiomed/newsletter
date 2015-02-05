@@ -7,11 +7,12 @@ td valign="top" width="#{data.config.sidebar.to_i}"
   ul(style="list-style: none; padding-left: 8px;")
     / Loop through archive years
     - data.archives.years.each do |years_list|
-      h3= years_list.year
+      h3= years_list.year.sub(/20\d\d/){|s| s+"-"}
       / Loop through each years newsletters
       - years_list.newsletters.each do |newsletter| 
         li(style="margin: 5px 0; font-size: 12px;") 
-          = link_to newsletter.quarter, "../#{newsletter.quarter.downcase+years_list.year.to_s}"
+          / Since years_list.year is a range... must append a '-' like YYYY-YY
+          = link_to newsletter.quarter, "../#{newsletter.quarter.downcase+years_list.year.sub(/20\d\d/){|s| s+"-"}}"
 
         / if frontmatter id matches this pages url
         - if ("#{current_page.data.id}" == "#{newsletter.quarter.downcase+years_list.year.to_s}")

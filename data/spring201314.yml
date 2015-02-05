@@ -76,8 +76,8 @@ news:
       - 'Rosemary Bastian, PhD candidate in BIOMED (Advisors: I. Chaiken and A. Shieh), and Tony Yu, BS/MS student in BIOMED (Advisor: K. Spiller), won the 2014 Drexel Commencement Awards for Outstanding Doctoral and Masters Dissertations in the Physical Life Sciences Category for their theses titled "Irreversible Breakdown of HIV-1 by Peptide Triazole Thiols and Multivalent Gold Nanoparticle Conjugates" and "Design and Validation of a Mathematical Model to Describe Macrophage Dynamics in Wound Healing," respectively. They will be recognized for their achievements at Commencement on June 14, 2014 in the Daskalakis Athletic Center.'
     url: ""
     images: 
-      - "Rosemary-Bastian.jpeg"
-      - "Tony-Yu.jpeg"
+      - "Rosemary-Bastian.jpg"
+      - "Tony-Yu.jpg"
     people:
       - "Rosemary Bastian"
       - "Tony Yu"
@@ -116,7 +116,7 @@ news:
         John Lee, MD/PhD candidate in CoM and BIOMED (Advisor: S. Giszter), won 2nd Place in the MD/PhD category at the College of Medicine's Medical Student Research Day for the poster titled "Investigating Combination Therapies of Robot Rehabilitation and Viral Delivery of Brain-Derived Neurotrophic Factor (BDNF) in Treating Adult Spinal Cord Injury (SCI)."
     url: ""
     images: 
-      - "John-Lee.jpeg"
+      - "John-Lee.jpg"
     people:
       - "John Lee"
 
@@ -200,7 +200,7 @@ news:
         Dr. Uri Hershberg, assistant professor in BIOMED, and Donna Farber (Columbia University – PI) received an $89.2K NIH Program Project Grant for the project “Tissue Compartmentalization of Human Lymphocytes.”
     url: ""
     images: 
-      - "Uri-Hershberg.jpeg"
+      - "Uri-Hershberg.jpg"
     people:
       - "Dr. Uri Hershberg"
 
