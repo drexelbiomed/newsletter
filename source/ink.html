@@ -63,6 +63,9 @@ a img {
   border: none;
 }
 
+a img.social-media { 
+  padding-right: 5px;
+}
 p {
   margin: 0 0 0 10px;
 }
@@ -340,8 +343,8 @@ h1 {font-size: 30px;}
 h2 {font-size: 28px;}
 h3 {font-size: 24px;}
 h4 {font-size: 22px;}
-h5 {font-size: 20px;}
-h6 {font-size: 20px;}
+h5 {font-size: 16px;}
+h6 {font-size: 16px;}
 body, table.body, p, td {font-size: 14px;line-height:19px;}
 
 p.lead, p.lede, p.leed {
@@ -408,8 +411,8 @@ h6 a:visited {
 /* Panels */
 
 .panel {
-  background: #f2f2f2;
-  border: 1px solid #d9d9d9;
+  /*background: #f2f2f2;
+  border: 1px solid #d9d9d9;*/
   padding: 10px !important;
 }
 
@@ -730,17 +733,17 @@ body.outlook p {
     .template-label {
       color: #ffffff;
       font-weight: bold;
-      font-size: 11px;
+      font-size: 16px;
     }
 
     .callout .wrapper {
       padding-bottom: 20px;
     }
 
-    .callout .panel {
+    /*.callout .panel {
       background: #ECF8FF;
       border-color: #b9e5ff;
-    }
+    }*/
 
     .header {
       background: #07294D;
@@ -781,7 +784,23 @@ body.outlook p {
   </style>
 </head>
 <body>
-  <!-- #comment# -->
+  <!-- <cfif Len(comment) gt 2> -->
+  <table class="row callout">
+  <tr>
+    <td class="wrapper last">
+
+      <table class="twelve columns">
+        <tr>
+          <td class="panel">
+            <p>#comment#</p>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  </table>
+  <!-- </cfif> -->
   <table class="body">
     <tr>
       <td class="center" align="center" valign="top">
@@ -798,15 +817,14 @@ body.outlook p {
 
                         <table class="twelve columns">
                           <tr>
-                            <td class="six sub-columns">
+                            <td class="eight sub-columns" style="text-align:left; vertical-align:middle;">
+                              <span class="template-label">BIOMED #type#</span>
+                              
+                            </td>
+                            <td class="four sub-columns last" style="text-align:right; vertical-align:middle;">
                               <a href="http://biomed.drexel.edu">
                                 <img src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine_WHITE_Yellow.png">
                               </a>
-                              <!-- <img src="#IMAGES_HREF#Biomed_TwoLine_WHITE_Yellow.png"> -->
-                            </td>
-                            <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                              <span class="template-label">BIOMED Ph.D. Research Proposal</span>
-                              <!-- <span class="template-label">BIOMED #type#</span> -->
                             </td>
                             <td class="expander"></td>
                           </tr>
@@ -832,42 +850,40 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1>Hi, Susan Calvin</h1>
-                            <!-- <h1>#title#</h1> -->
+                            <!-- <h1>Hi, Susan Calvin</h1> -->
+                            <h1>#title#</h1>
                             <p>
                               <strong>
-                                Date: <span class="highlight">Phasellus dictum</span> at <span class="highlight">sapien a neque</span><br>
-                                Location: <span class="highlight">luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae</span>
-                                <!-- Date: <span class="red">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span> at <span class="red">#TimeFormat(edate, "h:mm tt")#</span><br>
-                                Location: <span class="red">#building#, Room: #room#</span> -->
+                                Date: <span class="highlight">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span> at <span class="highlight">#TimeFormat(edate, "h:mm tt")#</span><br>
+                                Location: <span class="highlight">#building#,</span> Room: <span class="highlight">#room#</span>
                             </strong>
                             </p>
                             <!-- <cfif Len(spkinfo) gt 2> -->
                               <p>
                                 <strong>Speaker(s): </strong>
                                 <br>
-                                <!-- #spkinfo# -->
+                                #spkinfo#
                               </p>
                             <!-- </cfif> -->
                             <!-- <cfif Len(body) gt 2> -->
                               <p>
                                 <strong>Details: </strong>
                                 <br>
-                                <!-- #body# -->
-                                Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. consequat vel lacus. Sed iaculis pulvinar ligula, ornare fringilla ante viverra et. In hac habitasse platea dictumst. Donec vel orci mi, eu congue justo. Integer eget odio est, eget malesuada lorem. Aenean sed tellus dui, vitae viverra risus. Nullam massa sapien, pulvinar eleifend fringilla id, convallis eget nisi. Mauris a sagittis dui. Pellentesque non lacinia mi. Fusce sit amet libero sit amet erat venenatis sollicitudin vitae vel eros. Cras nunc sapien, interdum sit amet porttitor ut, congue quis urna.
+                                #body#
                               </p>
                             <!-- </cfif> -->
                             <!-- <cfif Len(biosketch) gt 2> -->
                               <p>
                                 <strong>Biosketch: </strong>
-                                <!-- #biosketch# -->
+                                <br>
+                                #biosketch#
                               </p>
                             <!-- </cfif> -->
                             <!-- <cfif Len(directions) gt 2> -->
                               <p>
                                 <strong>Directions: </strong>
                                 <br>
-                                <!-- #directions# -->
+                                #directions#
                               </p>
                             <!-- </cfif> -->
                           </td>
@@ -879,23 +895,6 @@ body.outlook p {
                   </tr>
                 </table>
 
-                <!-- <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table> -->
-
                 <table class="row footer">
                   <tr>
                     <td class="wrapper">
@@ -903,38 +902,15 @@ body.outlook p {
                       <table class="six columns">
                         <tr>
                           <td class="left-text-pad">
-
                             <h5>Connect With Us:</h5>
-
-                            <table class="tiny-button facebook">
+                            <table>
                               <tr>
-                                <td>
-                                  <a href="https://www.facebook.com/DrexelBIOMED">Facebook</a>
-                                </td>
+                                <td class="text-pad" style="width: 25px !important;"><a href="https://www.facebook.com/DrexelBIOMED"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/facebook_icon_sm.png" alt="Facebook" class="social-media" /></a></td>
+                                <td style="width: 28px !important;" width="25"><a href="https://www.linkedin.com/groups?home=&gid=4587558&trk=anet_ug_hm"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/linkedin_icon_sm.png" alt="LinkedIn" class="social-media" /></a></td>
                               </tr>
                             </table>
 
                             <br>
-
-                            <!-- <table class="tiny-button twitter"> 
-                              <tr>
-                                <td>
-                                  <a href="#">Twitter</a>
-                                </td>
-                              </tr>
-                            </table>
-                            -->
-
-                            <br>
-
-                            <!-- <table class="tiny-button google-plus">
-                              <tr>
-                                <td>
-                                  <a href="#">Google +</a>
-                                </td>
-                              </tr>
-                            </table> -->
-
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -957,26 +933,6 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
-
-
-<!--                 <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td align="center">
-                            <center>
-                              <p style="text-align:center;"><a href="http://biomed.drexel.edu">biomed.drexel.edu</a></p>
-                            </center>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table> -->
 
               <!-- container end below -->
               </td>
