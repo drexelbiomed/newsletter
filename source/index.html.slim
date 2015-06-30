@@ -8,4 +8,6 @@ ul
     - if index.match(/.html.slim/) && !(index.match("index.html") || index.match(/^_/))
       li
         h2= link_to index.sub(".html.slim", "").sub("-", " "), index.sub(".slim", "")
-  / - index.
+    - if index.match(/.html.erb/) && !(index.match("index.html") || index.match(/^_/))
+      li
+        h2= link_to index.sub(".html.erb", "").sub("-", " "), index.sub(".erb", "")

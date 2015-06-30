@@ -1,0 +1,128 @@
+---
+layout: "ink"
+---
+<table class="row header">
+  <tr>
+    <td class="center" align="center">
+      <center>
+        <table class="container">
+          <tr>
+            <td class="wrapper last">
+              <table class="twelve columns">
+                <tr>
+                  <td class="center">
+                    <a href="http://biomed.drexel.edu">
+                      <img class="center" src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine_White.png" alt="Drexel School of Biomedical Engineering, Science and Health Systems">
+                    </a>
+                  </td>
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+<table class="container">
+  <tr>
+    <td>
+      <table class="row content">
+        <tr>
+          <td class="wrapper last">
+            <table class="twelve columns">
+              <tr>
+                <td class="text-pad">
+                  <!-- <h1>Hi, Susan Calvin</h1> -->
+                  <h1>#title#</h1>
+                  <span class="template-label">BIOMED #type#</span>
+                  <br><br>
+                  <p>
+                    <strong>
+                      Date: <span class="highlight">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span> at <span class="highlight">#TimeFormat(edate, "h:mm tt")#</span><br>
+                      Location: <span class="highlight">#building#</span>, Room: <span class="highlight">#room#</span>
+                  </strong>
+                  </p>
+                  <!-- <cfif Len(spkinfo) gt 2> -->
+                    <p>
+                      <strong>Speaker(s): </strong>
+                      <br>
+                      #spkinfo#
+                    </p>
+                  <!-- </cfif> -->
+                  <!-- <cfif Len(body) gt 2> -->
+                    <p>
+                      <strong>Details: </strong>
+                      <br>
+                      #body#
+                    </p>
+                  <!-- </cfif> -->
+                  <!-- <cfif Len(biosketch) gt 2> -->
+                    <p>
+                      <strong>Biosketch: </strong>
+                      <br>
+                      #biosketch#
+                    </p>
+                  <!-- </cfif> -->
+                  <!-- <cfif Len(directions) gt 2> -->
+                    <p>
+                      <strong>Directions: </strong>
+                      <br>
+                      #directions#
+                    </p>
+                  <!-- </cfif> -->
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="row footer">
+        <tr>
+          <td class="wrapper">
+            <table class="six columns">
+              <tr>
+                <td class="last text-pad">
+                  <p>
+                    Drexel University<br>
+                    School of Biomedical Engineering, <br>Science and Health Systems<br>
+                    3141 Chestnut Street<br>
+                    Philadelphia, PA 19104<br>
+                    <br>
+                  </p>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="wrapper last">
+            <table class="six columns">
+              <tr>
+                <td class="left-text-pad">
+                  <h5>Connect with BIOMED</h5>
+                  <p>
+                    Phone: 215.895.2215<br>
+                    Email: <a href="mailto:biomed@drexel.edu">biomed@drexel.edu</a><br>
+                  </p>
+                  <table>
+                    <tr>
+                      <td class="text-pad-right" style="width: 25px !important;"><a href="https://www.facebook.com/DrexelBIOMED"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/facebook_icon_sm.png" alt="Facebook" class="social-media" /></a></td>
+                      <td style="width: 28px !important;" width="25"><a href="https://www.linkedin.com/groups?home=&gid=4587558&trk=anet_ug_hm"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/linkedin_icon_sm.png" alt="LinkedIn" class="social-media" /></a></td>
+                    </tr>
+                  </table>
+                  <!-- <h5>Contact Info:</h5> -->
+                  <br>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    <!-- container end below -->
+    <br>
+    </td>
+  </tr>
+</table>
