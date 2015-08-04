@@ -5,18 +5,22 @@
   background: #006699;
 }
 
-.container:first-of-type { 
+.container:first-of-type {
   background: none;
 }
 
-.container .content {
+.container .content, .container .title {
   background-color: #ffffff;
-  border-top: 5px solid #ffc600;
-  border-bottom: 5px solid #f0f1f4;
+  /*border-top: 5px solid #ffc600;*/
+  /*border-bottom: 1px solid #cccccc;*/
 }
 
-.container:last-of-type { 
+.container:last-of-type {
   /*background: none;*/
+}
+
+.date {
+  background-color: #D0D3D4;
 }
 
 h1 {
@@ -34,6 +38,9 @@ span.template-label {
   text-transform: uppercase;
   font-size: 12px;
 }
+span.highlight {
+  color: #D14124;
+}
 
 .panel {
   background-color: #ffffff;
@@ -42,6 +49,7 @@ span.template-label {
 }
 
 .footer {
+  border-top: 1px solid #cccccc;
   background-color: #ffffff;
 }
 
