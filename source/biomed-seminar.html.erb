@@ -11,8 +11,8 @@ layout: "ink"
               <table class="twelve columns">
                 <tr>
                   <td class="center">
-                    <a href="http://biomed.drexel.edu">
-                      <img class="center" src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine_White.png" alt="Drexel School of Biomedical Engineering, Science and Health Systems">
+                    <a href="http://biomed.drexel.edu/new04">
+                      <img class="center" src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine.png" alt="Drexel School of Biomedical Engineering, Science and Health Systems">
                     </a>
                   </td>
                   <td class="expander"></td>
@@ -28,14 +28,12 @@ layout: "ink"
 <table class="container">
   <tr>
     <td>
-      <table class="row title">
+      <table class="row label">
         <tr>
           <td class="wrapper last">
             <table class="twelve columns">
               <tr>
                 <td class="text-pad">
-                  <!-- <h1>Hi, Susan Calvin</h1> -->
-                  <h1>#title#</h1>
                   <span class="template-label">BIOMED #type#</span>
                 </td>
                 <td class="expander"></td>
@@ -44,59 +42,71 @@ layout: "ink"
           </td>
         </tr>
       </table>
-      <table class="row date">
+      <table class="row title">
         <tr>
           <td class="wrapper">
+            <table class="seven columns">
+              <tr>
+                <td class="text-pad-left">
+                  <h1>#title#</h1>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="wrapper last">
+            <table class="five columns">
+              <tr>
+                <td class="panel">
+                  <p>
+                    <strong>
+                      Date: <span class="highlight">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span><br>
+                      Time: <span class="highlight">#TimeFormat(edate, "h:mm tt")#</span><br>
+                      Location: <span class="highlight">#building#
+                      Room: #room#</span>
+                    </strong>
+                  </p>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="row content">
+        <tr>
+          <td class="wrapper last">
             <table class="twelve columns">
               <tr>
                 <td class="text-pad">
+                <!-- <cfif Len(spkinfo) gt 2> -->
                   <p>
-                    <strong>
-                      Date: <span class="highlight">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span> at <span class="highlight">#TimeFormat(edate, "h:mm tt")#</span><br>
-                      Location: <span class="highlight">#building#</span>, Room: <span class="highlight">#room#</span>
-                  </strong>
+                    <strong>Speaker(s): </strong>
+                    <br>
+                    #spkinfo#
                   </p>
-                </td>
-              </tr>
-            </td>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table class="row content">
-      <tr>
-        <td class="wrapper">
-          <table class="twelve columns">
-            <tr>
-              <td class="text-pad">
-                  <!-- <cfif Len(spkinfo) gt 2> -->
-                    <p>
-                      <strong>Speaker(s): </strong>
-                      <br>
-                      #spkinfo#
-                    </p>
-                  <!-- </cfif> -->
-                  <!-- <cfif Len(body) gt 2> -->
-                    <p>
-                      <strong>Details: </strong>
-                      <br>
-                      #body#
-                    </p>
-                  <!-- </cfif> -->
-                  <!-- <cfif Len(biosketch) gt 2> -->
-                    <p>
-                      <strong>Biosketch: </strong>
-                      <br>
-                      #biosketch#
-                    </p>
-                  <!-- </cfif> -->
-                  <!-- <cfif Len(directions) gt 2> -->
-                    <p>
-                      <strong>Directions: </strong>
-                      <br>
-                      #directions#
-                    </p>
-                  <!-- </cfif> -->
+                <!-- </cfif> -->
+                <!-- <cfif Len(body) gt 2> -->
+                  <p>
+                    <strong>Details: </strong>
+                    <br>
+                    #body#
+                  </p>
+                <!-- </cfif> -->
+                <!-- <cfif Len(biosketch) gt 2> -->
+                  <p>
+                    <strong>Biosketch: </strong>
+                    <br>
+                    #biosketch#
+                  </p>
+                <!-- </cfif> -->
+                <!-- <cfif Len(directions) gt 2> -->
+                  <p>
+                    <strong>Directions: </strong>
+                    <br>
+                    #directions#
+                  </p>
+                <!-- </cfif> -->
                 </td>
                 <td class="expander"></td>
               </tr>
@@ -106,10 +116,10 @@ layout: "ink"
       </table>
       <table class="row footer">
         <tr>
-          <td class="wrapper">
+          <td class="wrapper last">
             <table class="twelve columns">
               <tr>
-                <td class="last text-pad center">
+                <td class="text-pad center">
                   <center>
                     <table>
                       <tr>
@@ -119,12 +129,13 @@ layout: "ink"
                       </tr>
                     </table>
                     <p class="center">
+                      <a href="http://biomed.drexel.edu/new04">BIOMED Home</a> –
                       Phone: <a href="tel:+12158952215">215-895-2215</a> –
                       Email: <a href="mailto:biomed@drexel.edu">biomed@drexel.edu</a><br>
                     </p>
                     <p class="center">
                       <small>
-                      Drexel University |
+                      Drexel University
                       School of Biomedical Engineering, Science and Health Systems <br>
                       3141 Chestnut Street |
                       Philadelphia, PA 19104<br>
@@ -139,7 +150,11 @@ layout: "ink"
           </td>
         </tr>
       </table>
-    <!-- container end below -->
+      <!-- container end below -->
+      <br>
+      <br>
+      <br>
+      <br>
     </td>
   </tr>
 </table>
