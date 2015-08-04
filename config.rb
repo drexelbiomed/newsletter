@@ -32,6 +32,8 @@
 # Helpers
 ###
 require 'date'
+require 'slim'
+Slim::Engine.disable_option_validator!
 
 helpers do
   def bme_path
@@ -97,4 +99,9 @@ configure :build do
   activate :inliner
   # activate :minify_html
   # activate :imageoptim
+  ignore "*.jpg"
+  ignore "*.jpeg"
+  ignore "*.gif"
+  ignore "*.psd"
+  ignore "images/*"
 end
