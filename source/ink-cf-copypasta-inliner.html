@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
   </head>
-  <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0;"><style type="text/css">
+  <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0; padding: 0;"><style type="text/css">
 a:hover {
 color: ##2795b6 !important;
 }
@@ -61,13 +61,13 @@ table.button:active td {
 background: ##2795b6 !important;
 }
 table.button:hover td a {
-color: ##fff !important;
+color: ##ffffff !important;
 }
 table.button:visited td a {
-color: ##fff !important;
+color: ##ffffff !important;
 }
 table.button:active td a {
-color: ##fff !important;
+color: ##ffffff !important;
 }
 table.button:hover td {
 background: ##2795b6 !important;
@@ -130,16 +130,16 @@ table.large-button td a:visited {
 color: ##ffffff !important;
 }
 table.secondary:hover td {
-background: ##d0d0d0 !important; color: ##555;
+background: ##d0d0d0 !important; color: ##555555;
 }
 table.secondary:hover td a {
-color: ##555 !important;
+color: ##555555 !important;
 }
 table.secondary td a:visited {
-color: ##555 !important;
+color: ##555555 !important;
 }
 table.secondary:active td a {
-color: ##555 !important;
+color: ##555555 !important;
 }
 table.success:hover td {
 background: ##457a1a !important;
@@ -147,18 +147,9 @@ background: ##457a1a !important;
 table.alert:hover td {
 background: ##970b0e !important;
 }
-table.facebook:hover td {
-background: ##2d4473 !important;
-}
-table.twitter:hover td {
-background: ##0087bb !important;
-}
-table.google-plus:hover td {
-background: ##CC0000 !important;
-}
 @media only screen and (max-width: 600px) {
   table[class="body"] img {
-    width: auto !important; height: auto !important;
+    max-width: auto !important; max-height: auto !important;
   }
   table[class="body"] center {
     min-width: 0 !important;
@@ -317,109 +308,101 @@ background: ##CC0000 !important;
     display: none !important;
   }
   table[class="body"] .show-for-small {
-    display: inherit !important;
+    display: block !important; width: auto !important; overflow: visible !important;
   }
   table[class="body"] .hide-for-desktop {
-    display: inherit !important;
-  }
-  table[class="body"] .right-text-pad {
-    padding-left: 10px !important;
-  }
-  table[class="body"] .left-text-pad {
-    padding-right: 10px !important;
+    display: block !important; width: auto !important; overflow: visible !important;
   }
 }
 </style>
-  <cfif Len(comment) gt 2>
-  <table class="row callout" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 20px;" align="left" valign="top">
-
-      <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="panel" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px;" align="left" valign="top">
-            <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">#comment#</p>
-          </td>
-          <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-        </tr></table></td>
-  </tr></table></cfif><table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" valign="top" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
-        <center style="width: 100%; min-width: 580px;">
-
-          <table class="row header" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; background: ##07294D; padding: 0px;" bgcolor="##07294D"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
-                <center style="width: 100%; min-width: 580px;">
-
-                  <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
-
-                        <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="eight sub-columns text-pad-left" style="text-align: left; vertical-align: middle; word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; min-width: 0px; width: 66.666666%; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="middle">
-                              <span class="template-label" style="color: ##ffffff; font-weight: bold; font-size: 18px;">BIOMED #type#</span>
-                              
-                            </td>
-                            <td class="four sub-columns last text-pad-right" style="text-align: right; vertical-align: middle; word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; min-width: 0px; width: 33.333333%; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px 0px;" align="right" valign="middle">
-                              <a href="http://biomed.drexel.edu" style="color: ##2ba6cb; text-decoration: none;">
-                                <img src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine_WHITE_Yellow.png" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-                            </td>
-                            <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-                          </tr></table></td>
-                    </tr></table></center>
-              </td>
-            </tr></table><table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
-
-                <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
-
-                      <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
-                            <h1 style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 28px; margin: 0; padding: 0;" align="left">#title#</h1>
-                            <br /><p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                              <strong>
-                                Date: <span class="highlight" style="color: ##DE7C00;">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span> at <span class="highlight" style="color: ##DE7C00;">#TimeFormat(edate, "h:mm tt")#</span><br />
-                                Location: <span class="highlight" style="color: ##DE7C00;">#building#</span>, Room: <span class="highlight" style="color: ##DE7C00;">#room#</span>
-                            </strong>
-                            </p>
-                            <cfif Len(spkinfo) gt 2>
-                              <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                                <strong>Speaker(s): </strong>
-                                <br />
-                                #spkinfo#
-                              </p>
-                            </cfif>
-                            <cfif Len(body) gt 2>
-                              <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                                <strong>Details: </strong>
-                                <br />
-                                #body#
-                              </p>
-                            </cfif>
-                            <cfif Len(biosketch) gt 2>
-                              <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                                <strong>Biosketch: </strong>
-                                <br />
-                                #biosketch#
-                              </p>
-                            </cfif>
-                            <cfif Len(directions) gt 2>
-                              <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                                <strong>Directions: </strong>
-                                <br />
-                                #directions#
-                              </p>
-                            </cfif>
-                          </td>
-                          <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-                        </tr></table></td>
-                  </tr></table><table class="row footer" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: ##ebebeb; margin: 0; padding: 10px 20px 0px 0px;" align="left" bgcolor="##ebebeb" valign="top">
-
-                      <table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="left-text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 10px;" align="left" valign="top">
-                            <h5 style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; word-break: normal; font-size: 16px; margin: 0; padding: 0 0 10px;" align="left">Connect With Us:</h5>
-                            <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                              Phone: 215.895.2215<br />
-                              Email: <a href="mailto:biomed@drexel.edu" style="color: ##2ba6cb; text-decoration: none;">biomed@drexel.edu</a><br /></p>
-                            <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="width: 25px !important; word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="top"><a href="https://www.facebook.com/DrexelBIOMED" style="color: ##2ba6cb; text-decoration: none;"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/facebook_icon_sm.png" alt="Facebook" class="social-media" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; padding-right: 5px; border: none;" align="left" /></a></td><td style="width: 28px !important; word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" width="25" align="left" valign="top"><a href="https://www.linkedin.com/groups?home=&amp;gid=4587558&amp;trk=anet_ug_hm" style="color: ##2ba6cb; text-decoration: none;"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/linkedin_icon_sm.png" alt="LinkedIn" class="social-media" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; padding-right: 5px; border: none;" align="left" /></a></td></tr></table><br /></td><td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td></tr></table></td><td class="wrapper last" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: ##ebebeb; margin: 0; padding: 10px 0px 0px;" align="left" bgcolor="##ebebeb" valign="top"><table class="six columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 280px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="last right-text-pad" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top">
-                            <p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
-                              Drexel University<br />
-                              School of Biomedical Engineering, <br />Science and Health Systems<br />
-                              3141 Chestnut Street<br />
-                              Philadelphia, PA 19104
-                            </p><p style="color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left"><a href="http://biomed.drexel.edu" style="color: ##2ba6cb; text-decoration: none;">biomed.drexel.edu</a></p>
-                          </td>
-                          <td class="expander" style="word-break: keep-all; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
-                        </tr></table></td>
-                  </tr></table><!-- container end below --></td>
-            </tr></table></center>
-      </td>
-    </tr></table></body>
+    <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: ##006699; margin: 0; padding: 0;" bgcolor="##006699"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+          <center style="width: 100%; min-width: 580px;">
+            <!-- Email Content -->
+            <table class="row header" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; padding: 0px;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" valign="top">
+      <center style="width: 100%; min-width: 580px;">
+        <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; background: none; margin: 0 auto; padding: 0;" background="none"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+              <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                    <a href="http://biomed.drexel.edu" style="color: ##2ba6cb; text-decoration: none;">
+                      <img class="center" src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine_White.png" alt="Drexel School of Biomedical Engineering, Science and Health Systems" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto; border: none;" align="none" /></a>
+                  </td>
+                  <td class="expander" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+                </tr></table></td>
+          </tr></table></center>
+    </td>
+  </tr></table><table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+      <table class="row title" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: ##ffffff; padding: 0px;" bgcolor="##ffffff"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper last" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
+                  <!-- <h1>Hi, Susan Calvin</h1> -->
+                  <h1 style="color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-align: left; line-height: 1.3; word-break: normal; font-size: 28px; text-transform: uppercase; font-color: ##333333; margin: 0; padding: 0;" align="left">#title#</h1>
+                  <span class="template-label" style="text-transform: uppercase; font-size: 12px;">BIOMED #type#</span>
+                </td>
+                <td class="expander" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+              </tr></table></td>
+        </tr></table><table class="row date" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: ##D0D3D4; padding: 0px;" bgcolor="##D0D3D4"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
+            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
+                  <p style="color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
+                    <strong>
+                      Date: <span class="highlight" style="color: ##D14124;">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span> at <span class="highlight" style="color: ##D14124;">#TimeFormat(edate, "h:mm tt")#</span><br />
+                      Location: <span class="highlight" style="color: ##D14124;">#building#</span>, Room: <span class="highlight" style="color: ##D14124;">#room#</span>
+                  </strong>
+                  </p>
+                </td>
+              </tr></table></td>
+      </tr></table><table class="row content" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; background: ##ffffff; padding: 0px;" bgcolor="##ffffff"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
+          <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px;" align="left" valign="top">
+                  <cfif Len(spkinfo) gt 2>
+                    <p style="color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
+                      <strong>Speaker(s): </strong>
+                      <br />
+                      #spkinfo#
+                    </p>
+                  </cfif>
+                  <cfif Len(body) gt 2>
+                    <p style="color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
+                      <strong>Details: </strong>
+                      <br />
+                      #body#
+                    </p>
+                  </cfif>
+                  <cfif Len(biosketch) gt 2>
+                    <p style="color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
+                      <strong>Biosketch: </strong>
+                      <br />
+                      #biosketch#
+                    </p>
+                  </cfif>
+                  <cfif Len(directions) gt 2>
+                    <p style="color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="left">
+                      <strong>Directions: </strong>
+                      <br />
+                      #directions#
+                    </p>
+                  </cfif>
+                </td>
+                <td class="expander" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+              </tr></table></td>
+        </tr></table><table class="row footer" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; border-top-style: solid; border-top-width: 1px; border-top-color: ##cccccc; background: ##ffffff; padding: 0px;" bgcolor="##ffffff"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="wrapper" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 20px 0px 0px;" align="left" valign="top">
+            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 580px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="last text-pad center" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: center; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px 10px;" align="center" valign="top">
+                  <center style="width: 100%; min-width: 580px;">
+                    <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; padding: 0;"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="text-pad-right" style="width: 25px !important; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 10px 10px 0px;" align="left" valign="top"><a href="https://www.facebook.com/DrexelBIOMED" style="color: ##2ba6cb; text-decoration: none;"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/facebook_icon_sm.png" alt="Facebook" class="social-media" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a></td>
+                        <td style="width: 28px !important; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" width="25" align="left" valign="top"><a href="https://www.linkedin.com/groups?home=&amp;gid=4587558&amp;trk=anet_ug_hm" style="color: ##2ba6cb; text-decoration: none;"><img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/linkedin_icon_sm.png" alt="LinkedIn" class="social-media" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a></td>
+                        <td style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="left" valign="top"><img src="http://google-analytics.com/collect?v=1&amp;tid=UA-48789419-1&amp;cid=555&amp;t=event&amp;ec=email&amp;ea=open&amp;el=seminar" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;" align="left" /></td>
+                      </tr></table><p class="center" style="text-align: center; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="center">
+                      Phone: <a href="tel:+12158952215" style="color: ##2ba6cb; text-decoration: none;">215-895-2215</a> –
+                      Email: <a href="mailto:biomed@drexel.edu" style="color: ##2ba6cb; text-decoration: none;">biomed@drexel.edu</a><br /></p>
+                    <p class="center" style="text-align: center; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="center">
+                      <small style="font-size: 10px;">
+                      Drexel University |
+                      School of Biomedical Engineering, Science and Health Systems <br />
+                      3141 Chestnut Street |
+                      Philadelphia, PA 19104<br /><br /></small>
+                    </p>
+                  </center>
+                </td>
+                <td class="expander" style="word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: ##222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top"></td>
+              </tr></table></td>
+        </tr></table><!-- container end below --></td>
+  </tr></table></center>
+        </td>
+      </tr></table></body>
 </html>
