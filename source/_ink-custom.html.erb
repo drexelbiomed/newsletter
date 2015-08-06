@@ -2,7 +2,7 @@
 
 /* Custom Styles Go Here */
 .body {
-  background: #006699;
+  background: #f0f0f0;
 }
 
 .container:first-of-type {
@@ -15,18 +15,34 @@
   /*border-bottom: 1px solid #cccccc;*/
 }
 
+.container .label {
+  background-color: #ffc600;
+  border-bottom: 2px solid #FF8F1C;
+}
+
+span.template-label {
+  font-size: 15px;
+  color: #07294D;
+  font-weight: bold;
+}
+
+.social-media {
+  max-width: 28px !important;
+  display: inline-block;
+  padding: 0px 3px;
+}
+
 .container:last-of-type {
   /*background: none;*/
 }
 
 .date {
-  background-color: #D0D3D4;
+  background-color: #ffffff;
 }
 
 h1 {
-  text-transform: uppercase;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: normal;
   font-color: #333333;
 }
 
@@ -34,23 +50,25 @@ h5 {
   font-size: 16px;
 }
 
-span.template-label {
-  text-transform: uppercase;
-  font-size: 12px;
-}
 span.highlight {
-  color: #D14124;
+  color: #006699;
+  /*color: #D14124;*/
 }
 
-.panel {
-  background-color: #ffffff;
-  border: none;
-  border-top: 3px solid #B7BF10;
+
+.panel p {
+  color: #222222;
 }
 
 .footer {
   border-top: 1px solid #cccccc;
   background-color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  table[class="body"] img.social-media {
+    max-width: 28px !important;
+  }
 }
 
 </style>
