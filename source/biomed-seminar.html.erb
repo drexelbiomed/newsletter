@@ -10,10 +10,35 @@ layout: "ink"
             <td class="wrapper last">
               <table class="twelve columns">
                 <tr>
-                  <td class="center">
-                    <a href="http://biomed.drexel.edu/new04">
-                      <img class="center" src="http://biomed.drexel.edu/new04/Images/Biomed_TwoLine.png" alt="Drexel School of Biomedical Engineering, Science and Health Systems">
+                  <td class="seven sub-columns">
+                    <a href="http://drexel.edu/biomed">
+                      <img src="http://drexel.edu/~/media/Images/biomed/email/Biomed_TwoLine_small.ashx?la=en&hash=293FA5AE29E84E4FBEFCF3F514C42D36" alt="Drexel School of Biomedical Engineering, Science and Health Systems">
                     </a>
+                  </td>
+                  <td class="one sub-columns"></td>
+                  <td class="four sub-columns last pad event-type" >
+                    <p><strong>//Category//</strong></p>
+                  </td>
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+<table class="row stripe"> <!-- Styles go on the row -->
+  <tr>
+    <td class="center" align="center"> <!-- Center the container -->
+      <center>
+        <table class="container"> <!-- Container restricts the content width -->
+          <tr>
+            <td class="wrapper last"> <!-- Wrapper stays on the inner table -->
+              <table class="twelve columns">
+                <tr>
+                  <td>
                   </td>
                   <td class="expander"></td>
                 </tr>
@@ -28,34 +53,21 @@ layout: "ink"
 <table class="container">
   <tr>
     <td>
-      <table class="row label">
-        <tr>
-          <td class="wrapper">
-            <table class="twelve columns">
-              <tr>
-                <td class="text-pad">
-                  <span class="template-label">BIOMED #type#</span>
-                </td>
-                <td class="expander"></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
       <table class="row title">
         <tr>
           <td class="wrapper">
             <table class="twelve columns">
               <tr>
-                <td class="text-pad-left">
-                  <h1>#title#</h1>
+                <td class="panel">
+                  <h1>
+                    <a href="#//Webcast URL//">//Title//</a>
+                  </h1>
                   <br>
                   <p>
                     <strong>
-                      Date: <span class="highlight">#MonthAsString(Month(edate))# #Day(edate)#, #Year(edate)#</span><br>
-                      Time: <span class="highlight">#TimeFormat(edate, "h:mm tt")#</span><br>
-                      Location: <span class="highlight">#building#
-                      Room: #room#</span>
+                      Date: <span class="highlight">//Weekday, MM/DD/YYY//</span><br>
+                      Time: <span class="highlight">//h:mm tt//</span><br>
+                      Location: <span class="highlight">//Location//</span>
                     </strong>
                   </p>
                 </td>
@@ -75,28 +87,33 @@ layout: "ink"
                   <p>
                     <strong>Speaker(s): </strong>
                     <br>
-                    #spkinfo#
+                    //Speaker(s)//
                   </p>
                 <!-- </cfif> -->
                 <!-- <cfif Len(body) gt 2> -->
                   <p>
                     <strong>Details: </strong>
                     <br>
-                    #body#
+                    //Details//
                   </p>
                 <!-- </cfif> -->
+                  <p>
+                    <strong>
+                      <a href="#//Webcast URL//">Watch Webcast</a>
+                    </strong>
+                  </p>
                 <!-- <cfif Len(biosketch) gt 2> -->
                   <p>
                     <strong>Biosketch: </strong>
                     <br>
-                    #biosketch#
+                    //Biosketch//
                   </p>
                 <!-- </cfif> -->
                 <!-- <cfif Len(directions) gt 2> -->
                   <p>
                     <strong>Directions: </strong>
                     <br>
-                    #directions#
+                    //Directions//
                   </p>
                 <!-- </cfif> -->
                 </td>
@@ -117,10 +134,10 @@ layout: "ink"
                       <tr>
                         <td class="center">
                           <a href="https://www.facebook.com/DrexelBIOMED">
-                            <img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/facebook_icon_sm.png" alt="Facebook" class="center social-media" />
+                            <img src="http://drexel.edu/~/media/Images/biomed/email/facebook_icon_sm.ashx?la=en&hash=65F925D356C94F91AA30F0A04F67F254" alt="Facebook" class="center social-media" />
                           </a>
                           <a href="https://www.linkedin.com/grp/home?gid=4587558">
-                            <img src="http://biomed.drexel.edu/new04/Content/newsletter/summer2014/images/linkedin_icon_sm.png" alt="LinkedIn" class="center social-media" />
+                            <img src="http://drexel.edu/~/media/Images/biomed/email/linkedin_icon_sm.ashx?la=en&hash=60FD89AFADCC4458A93369242EA7C639" alt="LinkedIn" class="center social-media" />
                           </a>
                         </td>
                         <td>
@@ -130,7 +147,7 @@ layout: "ink"
                       </tr>
                     </table>
                     <p class="center">
-                      <a href="http://biomed.drexel.edu/new04">BIOMED Home</a> –
+                      <a href="http://drexel.edu/biomed">BIOMED Home</a> –
                       Phone: <a href="tel:+12158952215">215-895-2215</a> –
                       Email: <a href="mailto:biomed@drexel.edu">biomed@drexel.edu</a><br>
                     </p>
