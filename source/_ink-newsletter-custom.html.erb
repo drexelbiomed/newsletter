@@ -6,28 +6,52 @@ body, table.body {
 }
 
 .row.header {
-  background: #006699;
+  /*background: #006699;*/
 }
 
-.panel.heading {
-  background: #07294D;
+.heading {
+  background: inherit;
   border: none;
 }
 
-.panel.blue {
+.blue {
   background: #07294D;
 }
 
-.panel.green {
+.teal {
+  background: #006298;
+}
+
+.green {
   background: #949300;
 }
 
-.panel.orange {
+.orange {
   background: #DE7C00;
 }
 
-.panel.heading p, .panel.heading h1,.panel.heading h2 {
+.red {
+  background: #971B2F;
+}
+
+.gold {
+  background: #ffc600;
+}
+
+.dark-grey {
+  background: #333333;
+}
+
+.heading p, .heading h1,.heading h2 {
+  color: #ffc600;
+}
+
+.green .heading p, .green .heading h1,.green .heading h2, .orange .heading p, .orange .heading h1,.orange .heading h2 {
   color: #EEEEEE;
+}
+
+.gold .heading p, .gold .heading h1,.gold .heading h2 {
+  color: #07294D;
 }
 
 h1 {
@@ -37,10 +61,10 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-color: #333333;
-  line-height: 26px;
+  line-height: 1em;
 }
 
 h3 {
@@ -50,5 +74,20 @@ h3 {
   line-height: 24px;
 }
 
+.row.footer {
+  border-top: 2em solid #EEEEEE;
+  background: #E1E1E0;
+}
+
+.row.top {
+  background: #DDD;
+}
+
+.top p {
+  margin: 0px;
+  font-size: 12px;
+  line-height: 10px;
+
+}
 
 </style>
