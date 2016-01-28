@@ -5,8 +5,17 @@ body, table.body {
   background: none;
 }
 
+body, table.body, p, td {
+  font-size: 15px;line-height:24px;
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  font-family: Helvetica, Arial, sans-serif;
+  /*font-weight: 100;*/
+}
+
 .row.header {
-  /*background: #07294d;*/
+  background: #07294d;
 }
 
 .heading {
@@ -64,8 +73,14 @@ table.dark-grey .container td {
 }
 
 .heading p, .heading h1,.heading h2 {
+  /*font-family: Helvetica, Arial, sans-serif;*/
+  font-family: Helvetica, Arial, sans-serif;
   color: #ffc600;
   /*color: #07294d;*/
+}
+
+.no-pad {
+  padding: 0 0 0 0;
 }
 
 .green .heading p, .green .heading h1,.green .heading h2, .orange .heading p, .orange .heading h1,.orange .heading h2 {
@@ -94,6 +109,11 @@ h3 {
   font-weight: normal;
   font-color: #333333;
   line-height: 24px;
+  padding: 0 0 .4em 0;
+}
+
+img {
+  padding: 0 0 .4em 0;
 }
 
 .row.footer {
