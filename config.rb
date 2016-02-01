@@ -70,7 +70,11 @@ activate :inliner
 
 activate :deploy do |deploy|
   deploy.build_before = true # default: false
-  deploy.method = :git
+  deploy.method = :ftp
+  deploy.host            = data.ftp.host
+  deploy.path            = data.ftp.path
+  deploy.user            = data.ftp.user
+  deploy.password        = data.ftp.password
   # Optional Settings
   # deploy.remote   = "custom-remote" # remote name or git url, default: origin
   # deploy.branch   = "custom-branch" # default: gh-pages
@@ -93,11 +97,11 @@ configure :build do
   activate :relative_assets
 
   # Or use a different image path
-  # set :http_prefix, "/biomed-newsletter/images/"
+  set :http_prefix, "/labs/newsletter"
 
   # activate :gzip
   activate :inliner
-  # activate :minify_html
+  activate :minify_html
   # activate :imageoptim
   ignore "*.jpg"
   ignore "*.jpeg"

@@ -19,3 +19,5 @@
 *.psd
 *.xlsx
 *.xls
+
+/data/ftp.yml
