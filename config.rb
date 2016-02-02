@@ -108,4 +108,5 @@ configure :build do
   ignore "*.gif"
   ignore "*.psd"
   ignore "images/*"
+  ignore ".git/"
 end
