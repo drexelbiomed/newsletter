@@ -1,0 +1,48 @@
+<table class="container content">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper last" style="padding-top: 0px;">
+            <table class="twelve columns">
+              <tr>
+                <td class="panel heading green">
+                  <h2>Student Awards and Honors</h2>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content">
+  <tr>
+    <td>
+      <% students.each do |student| %>
+        <table class="row">
+          <tr>
+            <td class="wrapper last border-bottom">
+              <table class="twelve columns">
+                <tr>
+                  <td class="three sub-columns text-pad">
+                    <%= image_tag student.img %>
+                  </td>
+                  <td class="nine sub-columns last">
+                    <h3>
+                      <%= link_to student.title, student.url %>
+                    </h3>
+                    <p><%= student.text %></p>
+                  </td>
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    </td>
+  </tr>
+</table>

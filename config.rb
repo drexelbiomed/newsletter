@@ -36,13 +36,32 @@ require 'slim'
 Slim::Engine.disable_option_validator!
 
 helpers do
+
   def bme_path
     "http://www.biomed.drexel.edu/new04/Content/newsletter/"
   end
+
   def format_date(stringy)
     Date.strptime(stringy, '%m-%d-%y').strftime("%B %d, %Y")
   end
+
+  def data_file
+    current_page.data.data_file
+  end
+
+  def spotlight
+    return eval("data."+"#{data_file}.spotlight")
+  end
+
+  def students
+    return eval("data."+"#{data_file}.students")
+  end
+
+  def faculty
+    return eval("data."+"#{data_file}.faculty")
+  end
 end
+
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
