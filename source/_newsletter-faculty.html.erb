@@ -27,14 +27,20 @@
             <table class="twelve columns">
               <tr>
                 <td class="six sub-columns text-pad vertical-divider">
-                  <% faculty.select.each_with_index{ |_, i| i.even? }.each do |fac| %>
+                  <% facultys = faculty.select.each_with_index{ |_, i| i.even? } %>
+                  <% facultys.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
                     <h3><%= link_to fac.title, fac.url %></h3>
-                    <p class="border-bottom"><%= fac.text %></p>
+                    <% if  i < facultys.size - 1 %>
+                      <p class="border-bottom"><%= fac.text %></p>
+                    <% end %>
+                    <% if  i == facultys.size - 1 %>
+                      <p><%= fac.text %></p>
+                    <% end %>
                   <% end %>
                 </td>
                 <td class="six sub-columns text-pad">
-                  <% faculty.select.each_with_index{ |_, i| i.odd? }.each do |fac| %>
+                  <% faculty.select.each_with_index{ |_, i| i.odd? }.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
                     <h3><%= link_to fac.title, fac.url %></h3>
                     <p class="border-bottom"><%= fac.text %></p>
