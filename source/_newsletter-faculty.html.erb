@@ -43,7 +43,12 @@
                   <% faculty.select.each_with_index{ |_, i| i.odd? }.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
                     <h3><%= link_to fac.title, fac.url %></h3>
-                    <p class="border-bottom"><%= fac.text %></p>
+                    <% if  i < facultys.size - 1 %>
+                      <p class="border-bottom"><%= fac.text %></p>
+                    <% end %>
+                    <% if  i == facultys.size - 1 %>
+                      <p><%= fac.text %></p>
+                    <% end %>
                   <% end %>
                 </td>
                 <td class="expander"></td>

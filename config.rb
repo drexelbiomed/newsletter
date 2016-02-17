@@ -60,6 +60,10 @@ helpers do
   def faculty
     return eval("data."+"#{data_file}.faculty")
   end
+
+  def alumni
+    return eval("data."+"#{data_file}.alumni")
+  end
 end
 
 
