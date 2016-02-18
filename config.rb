@@ -33,6 +33,7 @@
 ###
 require 'date'
 require 'slim'
+
 Slim::Engine.disable_option_validator!
 
 helpers do
@@ -89,8 +90,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-activate :inliner
-
 activate :deploy do |deploy|
   deploy.build_before = true # default: false
   deploy.method = :ftp
@@ -123,7 +122,6 @@ configure :build do
   set :http_prefix, "/labs/newsletter"
 
   # activate :gzip
-  activate :inliner
   activate :minify_html
   # activate :imageoptim
   ignore "*.jpg"
