@@ -32,7 +32,8 @@
                   </td>
                   <td class="nine sub-columns last">
                     <h3>
-                      <%= link_to student.title, student.url %>
+                      <%= tag :a, :href => "#{student.url + google_utm('student_awards')}" %>
+                        <%= student.title %>
                     </h3>
                     <p><%= student.text %></p>
                   </td>

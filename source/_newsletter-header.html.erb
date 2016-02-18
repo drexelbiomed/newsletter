@@ -18,6 +18,9 @@
                       <img style="display: inline;" src="http://drexel.edu/~/media/Images/biomed/email/linkedin15x15.ashx" width="15" height="15" alt=" " />
                     <% end %>
                   </td>
+                  <td>
+                    <%= tag :img, :src => "#{track_opens_url}" %>
+                  </td>
                   <td class="expander"></td>
                 </tr>
               </table>
@@ -38,9 +41,8 @@
               <table class="twelve columns">
                 <tr>
                   <td style="padding: 0px">
-                    <% link_to "http://drexel.edu/biomed" do %>
+                    <%= tag :a, :href => "http://drexel.edu/biomed#{google_utm('home_logo')}" %>
                       <img class="no-pad" src="http://drexel.edu/~/media/Images/biomed/email/newsletter-top-white-gold.ashx" alt="Drexel University School of Biomedical Engineering, Science and Health Systems" />
-                    <% end %>
                   <td class="expander"></td>
                 </tr>
               </table>

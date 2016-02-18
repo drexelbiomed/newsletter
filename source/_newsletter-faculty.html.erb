@@ -30,7 +30,10 @@
                   <% facultys = faculty.select.each_with_index{ |_, i| i.even? } %>
                   <% facultys.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
-                    <h3><%= link_to fac.title, fac.url %></h3>
+                    <h3>
+                      <%= tag :a, :href => "#{fac.url + google_utm('faculty_awards')}" %>
+                        <%= fac.title %>
+                    </h3>
                     <% if  i < facultys.size - 1 %>
                       <p class="border-bottom"><%= fac.text %></p>
                     <% end %>
@@ -42,7 +45,10 @@
                 <td class="six sub-columns text-pad">
                   <% faculty.select.each_with_index{ |_, i| i.odd? }.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
-                    <h3><%= link_to fac.title, fac.url %></h3>
+                    <h3>
+                      <%= tag :a, :href => "#{fac.url + google_utm('faculty_awards')}" %>
+                        <%= fac.title %>
+                    </h3>
                     <% if  i < facultys.size - 1 %>
                       <p class="border-bottom"><%= fac.text %></p>
                     <% end %>

@@ -32,7 +32,8 @@
                   </td>
                   <td class="four sub-columns">
                     <p class="link">
-                      <%= link_to alum.title, alum.url %>
+                      <%= tag :a, :href => "#{alum.url + google_utm('alumni_awards')}" %>
+                        <%= alum.title %>
                     </p>
                   </td>
                 <% end %>

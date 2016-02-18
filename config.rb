@@ -33,6 +33,7 @@
 ###
 require 'date'
 require 'slim'
+require 'uri'
 
 Slim::Engine.disable_option_validator!
 
@@ -51,19 +52,49 @@ helpers do
   end
 
   def spotlight
-    return eval("data."+"#{data_file}.spotlight")
+    eval("data."+"#{data_file}.spotlight")
   end
 
   def students
-    return eval("data."+"#{data_file}.students")
+    eval("data."+"#{data_file}.students")
   end
 
   def faculty
-    return eval("data."+"#{data_file}.faculty")
+    eval("data."+"#{data_file}.faculty")
   end
 
   def alumni
-    return eval("data."+"#{data_file}.alumni")
+    eval("data."+"#{data_file}.alumni")
+  end
+
+  def utm_source
+    "newsletter"
+  end
+
+  def utm_medium
+    "email"
+  end
+
+  # def utm_term
+    # depends on where in the newsletter it is
+    # i.e. alumni, spotlight, students, faculty
+  # end
+
+  def utm_campaign
+    # grab info directly from YAML file
+    eval("data."+"#{data_file}.campaign")
+  end
+
+  def google_utm(utm_term)
+    "?utm_source=#{utm_source}"+
+    "&utm_medium=#{utm_medium}"+
+    "&utm_term=#{utm_term}"+
+    "&utm_campaign=#{utm_campaign}"
+
+  end
+
+  def track_opens_url
+    "http://google-analytics.com/collect?v=1&tid=UA-48789419-1&cid=555&t=event&ec=email&ea=open&el=#{utm_campaign}"
   end
 end
 
