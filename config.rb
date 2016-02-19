@@ -105,6 +105,7 @@ end
 # Reload the browser automatically whenever files change
 activate :livereload
 
+# page '/biomed-newsletter-inline.html', :layout => false
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -120,6 +121,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+
 
 activate :deploy do |deploy|
   deploy.build_before = true # default: false
@@ -153,7 +156,7 @@ configure :build do
   set :http_prefix, "/labs/newsletter"
 
   # activate :gzip
-  activate :minify_html
+  # activate :minify_html
   # activate :imageoptim
   ignore "*.jpg"
   ignore "*.jpeg"
