@@ -75,6 +75,31 @@ helpers do
     "email"
   end
 
+  def home_link
+      html = '<a href="http://drexel.edu/biomed'
+      html += google_utm('home_logo')
+      html += '">'
+
+  end
+
+  def end_link
+    "</a>"
+  end
+
+  def a_href(section, index=999)
+    if index == 999
+      html = '<a href="'
+      html += eval("#{section}.url")
+      html += google_utm('spotlight')
+      html += '">'
+    else
+      html = '<a href="'
+      html += eval("#{section}"+"["+"#{index}"+"].url")
+      html += google_utm("#{section}")
+      html += '">'
+    end
+  end
+
   # def utm_term
     # depends on where in the newsletter it is
     # i.e. alumni, spotlight, students, faculty

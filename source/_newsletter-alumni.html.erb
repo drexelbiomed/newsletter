@@ -26,14 +26,15 @@
           <td class="wrapper last border-bottom">
             <table class="twelve columns">
               <tr>
-                <% alumni[0..1].each do |alum| %>
+                <% alumni[0..1].each_with_index do |alum,i| %>
                   <td class="two sub-columns text-pad">
                     <%= image_tag alum.img %>
                   </td>
                   <td class="four sub-columns">
                     <p class="link">
-                      <%= tag :a, :href => "#{alum.url + google_utm('alumni_awards')}" %>
+                      <%= a_href("alumni", i) %>
                         <%= alum.title %>
+                      <%= end_link %>
                     </p>
                   </td>
                 <% end %>
@@ -48,13 +49,15 @@
           <td class="wrapper last">
             <table class="twelve columns">
               <tr>
-                <% alumni[2..3].each do |alum| %>
+                <% alumni[2..3].each_with_index do |alum,i| %>
                   <td class="two sub-columns text-pad">
                     <%= image_tag alum.img %>
                   </td>
                   <td class="four sub-columns">
                     <p class="link">
-                      <%= link_to alum.title, alum.url %>
+                      <%= a_href("alumni", i) %>
+                        <%= alum.title %>
+                      <%= end_link %>
                     </p>
                   </td>
                 <% end %>

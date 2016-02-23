@@ -21,7 +21,7 @@
 <table class="container content">
   <tr>
     <td>
-      <% students.each do |student| %>
+      <% students.each_with_index do |student,i| %>
         <table class="row">
           <tr>
             <td class="wrapper last border-bottom">
@@ -32,8 +32,9 @@
                   </td>
                   <td class="nine sub-columns last">
                     <h3>
-                      <%= tag :a, :href => "#{student.url + google_utm('student_awards')}" %>
+                      <%= a_href("students", i) %>
                         <%= student.title %>
+                      <%= end_link %>
                     </h3>
                     <p><%= student.text %></p>
                   </td>

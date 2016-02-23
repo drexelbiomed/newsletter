@@ -31,14 +31,16 @@
             <table class="twelve columns">
               <tr>
                 <td class="text-pad">
-                  <%= tag :a, :href => "#{spotlight.url + google_utm('spotlight')}" %>
+                  <%= a_href("spotlight") %>
                     <%= image_tag spotlight.img %>
+                  <%= end_link %>
 
                   <img src="" />
                   <br>
                   <h3 class="lead">
-                    <%= tag :a, :href => "#{spotlight.url + google_utm('spotlight')}" %>
+                    <%= a_href("spotlight") %>
                       <%= spotlight.title %>
+                    <%= end_link %>
                   </h3>
                   <p class="lead">
                     <%= spotlight.text %>

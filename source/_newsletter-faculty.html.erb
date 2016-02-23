@@ -31,8 +31,9 @@
                   <% facultys.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
                     <h3>
-                      <%= tag :a, :href => "#{fac.url + google_utm('faculty_awards')}" %>
+                      <%= a_href("faculty", i) %>
                         <%= fac.title %>
+                      <%= end_link %>
                     </h3>
                     <% if  i < facultys.size - 1 %>
                       <p class="border-bottom"><%= fac.text %></p>
@@ -46,8 +47,9 @@
                   <% faculty.select.each_with_index{ |_, i| i.odd? }.each_with_index do |fac, i| %>
                     <%= image_tag fac.img, class: "center" %>
                     <h3>
-                      <%= tag :a, :href => "#{fac.url + google_utm('faculty_awards')}" %>
+                      <%= a_href("faculty", i) %>
                         <%= fac.title %>
+                      <%= end_link %>
                     </h3>
                     <% if  i < facultys.size - 1 %>
                       <p class="border-bottom"><%= fac.text %></p>
