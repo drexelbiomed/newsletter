@@ -79,7 +79,6 @@ helpers do
       html = '<a href="http://drexel.edu/biomed'
       html += google_utm('home_logo')
       html += '">'
-
   end
 
   def end_link
@@ -111,10 +110,7 @@ helpers do
   end
 
   def google_utm(utm_term)
-    "?utm_source=#{utm_source}"+
-    "&utm_medium=#{utm_medium}"+
-    "&utm_term=#{utm_term}"+
-    "&utm_campaign=#{utm_campaign}"
+    "?utm_source=#{utm_source}&amp;utm_medium=#{utm_medium}&amp;utm_term=#{utm_term}&amp;utm_campaign=#{utm_campaign}"
 
   end
 
