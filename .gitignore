@@ -19,3 +19,9 @@
 *.psd
 *.xlsx
 *.xls
+
+/data/ftp.yml
+# Ignore application configuration
+/config/application.yml
+
+sendAnEmail.rb

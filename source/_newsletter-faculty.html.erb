@@ -1,0 +1,70 @@
+<table class="container content ">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper last" style="padding-top: 0px;">
+            <table class="twelve columns last">
+              <tr>
+                <td class="panel heading red">
+                  <h2>Faculty / Staff Awards and Honors</h2>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
+            <table class="twelve columns">
+              <tr>
+                <td class="six sub-columns text-pad vertical-divider">
+                  <% facultys = faculty.select.each_with_index{ |_, i| i.even? } %>
+                  <% facultys.each_with_index do |fac, i| %>
+                    <%= image_tag fac.img, class: "center" %>
+                    <h3>
+                      <%= a_href("faculty", i) %>
+                        <%= fac.title %>
+                      <%= end_link %>
+                    </h3>
+                    <% if  i < facultys.size - 1 %>
+                      <p class="border-bottom"><%= fac.text %></p>
+                    <% end %>
+                    <% if  i == facultys.size - 1 %>
+                      <p><%= fac.text %></p>
+                    <% end %>
+                  <% end %>
+                </td>
+                <td class="six sub-columns text-pad">
+                  <% faculty.select.each_with_index{ |_, i| i.odd? }.each_with_index do |fac, i| %>
+                    <%= image_tag fac.img, class: "center" %>
+                    <h3>
+                      <%= a_href("faculty", i) %>
+                        <%= fac.title %>
+                      <%= end_link %>
+                    </h3>
+                    <% if  i < facultys.size - 1 %>
+                      <p class="border-bottom"><%= fac.text %></p>
+                    <% end %>
+                    <% if  i == facultys.size - 1 %>
+                      <p><%= fac.text %></p>
+                    <% end %>
+                  <% end %>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

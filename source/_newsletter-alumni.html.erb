@@ -1,0 +1,72 @@
+<table class="container content">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper last" style="padding-top: 0px;">
+            <table class="twelve columns last">
+              <tr>
+                <td class="panel heading yellow">
+                  <h2>Alumni Awards and Honors</h2>
+                </td>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content">
+  <tr>
+    <td>
+      <table class="row">
+        <tr>
+          <td class="wrapper last border-bottom">
+            <table class="twelve columns">
+              <tr>
+                <% alumni[0..1].each_with_index do |alum,i| %>
+                  <td class="two sub-columns text-pad">
+                    <%= image_tag alum.img %>
+                  </td>
+                  <td class="four sub-columns">
+                    <p class="link">
+                      <%= a_href("alumni", i) %>
+                        <%= alum.title %>
+                      <%= end_link %>
+                    </p>
+                  </td>
+                <% end %>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="row">
+        <tr>
+          <td class="wrapper last">
+            <table class="twelve columns">
+              <tr>
+                <% alumni[2..3].each_with_index do |alum,i| %>
+                  <td class="two sub-columns text-pad">
+                    <%= image_tag alum.img %>
+                  </td>
+                  <td class="four sub-columns">
+                    <p class="link">
+                      <%= a_href("alumni", i) %>
+                        <%= alum.title %>
+                      <%= end_link %>
+                    </p>
+                  </td>
+                <% end %>
+                <td class="expander"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
