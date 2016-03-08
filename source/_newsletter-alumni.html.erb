@@ -21,52 +21,30 @@
 <table class="container content">
   <tr>
     <td>
-      <table class="row">
-        <tr>
-          <td class="wrapper last border-bottom">
-            <table class="twelve columns">
-              <tr>
-                <% alumni[0..1].each_with_index do |alum,i| %>
-                  <td class="two sub-columns text-pad">
+      <% alumni.each_with_index do |alum,i| %>
+        <table class="row">
+          <tr>
+            <td class="wrapper last border-bottom">
+              <table class="twelve columns">
+                <tr>
+                  <td class="three sub-columns text-pad">
                     <%= image_tag alum.img %>
                   </td>
-                  <td class="four sub-columns">
-                    <p class="link">
+                  <td class="nine sub-columns last">
+                    <h3>
                       <%= a_href("alumni", i) %>
                         <%= alum.title %>
                       <%= end_link %>
-                    </p>
+                    </h3>
+                    <p><%= alum.text %></p>
                   </td>
-                <% end %>
-                <td class="expander"></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-      <table class="row">
-        <tr>
-          <td class="wrapper last">
-            <table class="twelve columns">
-              <tr>
-                <% alumni[2..3].each_with_index do |alum,i| %>
-                  <td class="two sub-columns text-pad">
-                    <%= image_tag alum.img %>
-                  </td>
-                  <td class="four sub-columns">
-                    <p class="link">
-                      <%= a_href("alumni", i) %>
-                        <%= alum.title %>
-                      <%= end_link %>
-                    </p>
-                  </td>
-                <% end %>
-                <td class="expander"></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+                  <td class="expander"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      <% end %>
     </td>
   </tr>
 </table>
