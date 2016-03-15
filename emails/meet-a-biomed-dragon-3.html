@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles and Reset */
+
+#outlook a {
+  padding:0;
+}
+
+body{
+  width:100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  margin:0;
+  padding:0;
+}
+
+  /* .ExternalClass applies to Outlook.com (the artist formerly known as Hotmail)  */
+
+.ExternalClass {
+  width:100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+#backgroundTable {
+  margin:0;
+  padding:0;
+  width:100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline:none;
+  text-decoration:none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse !important;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  height: 1px;
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  width: 580px;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+table.row {
+  padding: 0px;
+  width: 100%;
+  position: relative;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 10px 20px 0px 0px;
+  position: relative;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 10px;
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 10px;
+}
+
+td.sub-column, td.sub-columns {
+  min-width: 0px;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one { width: 30px; }
+table.two { width: 80px; }
+table.three { width: 130px; }
+table.four { width: 180px; }
+table.five { width: 230px; }
+table.six { width: 280px; }
+table.seven { width: 330px; }
+table.eight { width: 380px; }
+table.nine { width: 430px; }
+table.ten { width: 480px; }
+table.eleven { width: 530px; }
+table.twelve { width: 580px; }
+
+table.one center { min-width: 30px; }
+table.two center { min-width: 80px; }
+table.three center { min-width: 130px; }
+table.four center { min-width: 180px; }
+table.five center { min-width: 230px; }
+table.six center { min-width: 280px; }
+table.seven center { min-width: 330px; }
+table.eight center { min-width: 380px; }
+table.nine center { min-width: 430px; }
+table.ten center { min-width: 480px; }
+table.eleven center { min-width: 530px; }
+table.twelve center { min-width: 580px; }
+
+table.one .panel center { min-width: 10px; }
+table.two .panel center { min-width: 60px; }
+table.three .panel center { min-width: 110px; }
+table.four .panel center { min-width: 160px; }
+table.five .panel center { min-width: 210px; }
+table.six .panel center { min-width: 260px; }
+table.seven .panel center { min-width: 310px; }
+table.eight .panel center { min-width: 360px; }
+table.nine .panel center { min-width: 410px; }
+table.ten .panel center { min-width: 460px; }
+table.eleven .panel center { min-width: 510px; }
+table.twelve .panel center { min-width: 560px; }
+
+.body .columns td.one,
+.body .column td.one { width: 8.333333%; }
+.body .columns td.two,
+.body .column td.two { width: 16.666666%; }
+.body .columns td.three,
+.body .column td.three { width: 25%; }
+.body .columns td.four,
+.body .column td.four { width: 33.333333%; }
+.body .columns td.five,
+.body .column td.five { width: 41.666666%; }
+.body .columns td.six,
+.body .column td.six { width: 50%; }
+.body .columns td.seven,
+.body .column td.seven { width: 58.333333%; }
+.body .columns td.eight,
+.body .column td.eight { width: 66.666666%; }
+.body .columns td.nine,
+.body .column td.nine { width: 75%; }
+.body .columns td.ten,
+.body .column td.ten { width: 83.333333%; }
+.body .columns td.eleven,
+.body .column td.eleven { width: 91.666666%; }
+.body .columns td.twelve,
+.body .column td.twelve { width: 100%; }
+
+td.offset-by-one { padding-left: 50px; }
+td.offset-by-two { padding-left: 100px; }
+td.offset-by-three { padding-left: 150px; }
+td.offset-by-four { padding-left: 200px; }
+td.offset-by-five { padding-left: 250px; }
+td.offset-by-six { padding-left: 300px; }
+td.offset-by-seven { padding-left: 350px; }
+td.offset-by-eight { padding-left: 400px; }
+td.offset-by-nine { padding-left: 450px; }
+td.offset-by-ten { padding-left: 500px; }
+td.offset-by-eleven { padding-left: 550px; }
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 10px;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 10px;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 580px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding:10px;
+}
+
+.two-up td {
+  width:270px;
+}
+
+.three-up td {
+  width:173px;
+}
+
+.four-up td {
+  width:125px;
+}
+
+.five-up td {
+  width:96px;
+}
+
+.six-up td {
+  width:76px;
+}
+
+.seven-up td {
+  width:62px;
+}
+
+.eight-up td {
+  width:52px;
+}
+
+/* Alignment and Visibility Classes */
+
+table.center, td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center,
+p.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+  width:0;
+  mso-hide:all;
+  overflow:hidden;
+}
+
+.show-for-small *,
+.hide-for-desktop * {
+  mso-hide:all;
+}
+
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  color: #222222;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  padding:0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
+h4 {font-size: 28px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
+body, table.body, p, td {font-size: 14px;line-height:19px;}
+
+p.lead, p.lede, p.leed {
+  font-size: 18px;
+  line-height:21px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 10px;
+}
+
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2795b6 !important;
+}
+
+a:active {
+  color: #2795b6 !important;
+}
+
+a:visited {
+  color: #2ba6cb !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #2ba6cb;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #2ba6cb !important;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #2ba6cb !important;
+}
+
+/* Panels */
+
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 10px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #2ba6cb;
+  border: 1px solid #2284a1;
+  color: #ffffff;
+  padding: 8px 0;
+  line-height: initial !important;
+}
+
+table.tiny-button td {
+  padding: 5px 0;
+}
+
+table.small-button td {
+  padding: 8px 0;
+}
+
+table.medium-button td {
+  padding: 12px 0;
+}
+
+table.large-button td {
+  padding: 21px 0;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #ffffff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #ffffff !important;
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555555;
+}
+
+table.secondary td a {
+  color: #555555;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+table.success:hover td {
+  background: #457a1a !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+table.alert:hover td {
+  background: #970b0e !important;
+}
+
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] img {
+    max-width: auto !important;
+    max-height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    display: block !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one { width: 8.333333% !important; }
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two { width: 16.666666% !important; }
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three { width: 25% !important; }
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four { width: 33.333333% !important; }
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five { width: 41.666666% !important; }
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six { width: 50% !important; }
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven { width: 58.333333% !important; }
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight { width: 66.666666% !important; }
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine { width: 75% !important; }
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten { width: 83.333333% !important; }
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven { width: 91.666666% !important; }
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve { width: 100% !important; }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display : block !important;
+    width : auto !important;
+    overflow : visible !important;
+  }
+}
+</style>
+    <style type="text/css">
+
+/* Custom Styles Go Here */
+body, table.body {
+  background: #eeeeee;
+}
+
+body, table.body, p, td {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  font-family: Helvetica, Arial, sans-serif;
+  /*font-weight: 100;*/
+}
+
+table.columns td.no-pad-bottom,
+table.column td.no-pad-bottom {
+  padding-bottom: 0px;
+}
+
+table.success td {
+  background: #ffc600;
+  border: none;
+}
+
+table.success:hover td {
+  background: #ffc600 !important;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  color: #07294d;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #07294d !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #07294d !important;
+}
+
+p {
+  /*font-size: 14px;
+  line-height: 22px;*/
+  font-size: 13px;
+  line-height: 19px;
+}
+
+p.lead {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+p.link a, p.link a:visited, p.link a:hover {
+  font-weight: bold;
+  color: #07294d !important;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  font-color: #07294d;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: normal;
+  font-color: #07294d;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #07294d;
+  line-height: 1.4em;
+  padding: 0 0 .4em 0;
+}
+
+h3 a, h3 a:visited, h3 a:hover {
+  color: #07294d !important;
+  font-weight: bold;
+}
+
+h3.lead {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+img {
+  padding: 0 0 1em 0;
+}
+
+.vertical-divider {
+  border-right: 1px solid #E1E1E0;
+}
+
+.border-bottom {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E1E1E0;
+}
+
+.row.header {
+  background: #07294d;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  background: #ffffff;
+}
+
+.gold {
+  background: #ffc600;
+}
+
+.blue {
+  background: #07294d;
+}
+
+.light-grey {
+  background: #eeeeee;
+}
+
+.heading p, .heading h1, .heading h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #07294d;
+}
+
+.no-pad {
+  padding: 0 0 0 0 !important;
+}
+
+.green .heading p, .green .heading h1,.green .heading h2, .orange .heading p, .orange .heading h1,.orange .heading h2 {
+  color: #EEEEEE;
+}
+
+.gold .heading p, .gold .heading h1,.gold .heading h2 {
+  color: #07294D;
+}
+
+
+.row.footer {
+  border-top: 2px solid #ffc600;
+  background: #07294d;
+}
+
+.row.footer p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.row.top {
+  background: #052F53;
+  border-bottom: 1px solid #ffc600;
+}
+
+.top p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.panel.heading.red {
+  background: #FBD4D0;
+}
+.panel.heading.green {
+  background: #EDF6D8;
+}
+.panel.heading.yellow {
+  background: #FBF6E2;
+}
+.panel.heading.gold {
+  background: #ffc600;
+}
+table.facebook.tiny-button td, table.facebook.tiny-button:hover td {
+  background: #3b5998 !important;
+  border: none;
+}
+
+table.linkedin.tiny-button td, table.linkedin.tiny-button:hover td {
+   background: #007bb5 !important;
+   border: none;
+}
+
+img.icon {
+  max-width: 15px;
+  width: 15px;
+}
+
+img.logo {
+  max-width: 85%;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  table[class="body"] table.columns td.icon, table[class="body"] table.column td.icon {
+    width: 20px !important;
+  }
+  table[class="body"] table.columns td.label, table[class="body"] table.column td.label {
+    width: 100% !important;
+  }
+  img.icon {
+    max-width: 15px;
+    width: 15px;
+  }
+  img.logo {
+    max-width: 85%;
+    width: auto;
+  }
+}
+
+table.row.gold h1 {
+  color: #07294d;
+}
+
+table.row.blue h1 {
+  color: #ffc600;
+}
+
+</style>
+
+
+  </head>
+  <body style="min-width: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;text-align: left;line-height: 22px;font-size: 15px;background: #eeeeee;width: 100% !important;">
+    <table class="body" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;height: 100%;width: 100%;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #eeeeee;">
+      <tr style="padding: 0;vertical-align: top;text-align: left;">
+        <td class="center" align="center" valign="top" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+          <center style="width: 100%;min-width: 580px;">
+            <!-- Email Content -->
+            <table class="container" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row light-grey" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;background: #eeeeee;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="no-pad label" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;"><p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Winter 2016</p></td>
+                <td class="no-pad icon" width="20" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                  <a href="http://facebook.com/DrexelBIOMED" style="color: #2ba6cb;text-decoration: none;">
+                    <img class="icon" style="display: inline;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 15px;max-width: 15px;float: left;clear: both;padding: 0 0 1em 0;border: none;" src="http://drexel.edu/~/media/Images/biomed/email/facebook_icon_15x15.ashx" width="15" height="15" alt=" ">
+                  </a>
+                </td>
+                <td class="no-pad icon" width="20" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                  <a href="https://www.linkedin.com/groups?home=&amp;amp;gid=4587558&amp;amp;trk=anet_ug_hm" style="color: #2ba6cb;text-decoration: none;">
+                    <img class="icon" style="display: inline;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 15px;max-width: 15px;float: left;clear: both;padding: 0 0 1em 0;border: none;" src="http://drexel.edu/~/media/Images/biomed/email/linkedin15x15.ashx" width="15" height="15" alt=" ">
+                  </a>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;margin: 0 auto;"> <!-- Styles go on the row -->
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;"> <!-- Center the container -->
+        <table class="row blue" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;background: #07294d;width: 100%;position: relative;display: block;"> <!-- Container restricts the content width -->
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;"> <!-- Wrapper stays on the inner table -->
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                    <center style="width: 100%;min-width: 580px;">
+                      <a href="http://drexel.edu/biomed?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=home_logo&amp;utm_campaign=MeetABiomedDragon" style="color: #2ba6cb;text-decoration: none;">
+                        <img class="center logo" src="http://drexel.edu/~/media/Images/biomed/email/Biomed_TwoLine_WHITE_Gold.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 85%;float: none;clear: both;display: block;padding: 0 0 1em 0;border: none;margin: 0 auto;">
+                      </a>
+                    </center>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<table class="container" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;margin: 0 auto;"> <!-- Styles go on the row -->
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;"> <!-- Center the container -->
+        <table class="row gold" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;background: #ffc600;width: 100%;position: relative;display: block;"> <!-- Container restricts the content width -->
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;"> <!-- Wrapper stays on the inner table -->
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                    <center style="width: 100%;min-width: 580px;">
+                      <span class="heading" style="font-size: 24px;font-weight: bold;">Meet a BIOMED Dragon</span>
+                    </center>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last no-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad no-pad-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;padding-bottom: 0px;border-collapse: collapse !important;">
+                <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"></p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">
+                    Dear Accepted Student:
+                  </p>
+                   <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">
+                    Meet a BIOMED Dragon and learn about her experience as a graduate student who is completing the master’s of science <strong>(MS) in Biomedical Science program</strong> to set herself apart from other medical school applicants! Learn more about Philadelphia, which is the 5th largest R&D hub in the US, home to 5 medical schools and 26 hospitals located within the city limits, and one of the cities named in the top ten US Biotech Clusters.
+                  </p>
+                  <!-- <p><strong>MS in Biomedical Engineering with Graduate Co-op option</strong></p> -->
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;border-collapse: collapse !important;">
+            <table class="four columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 180px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                  <center style="width: 100%;min-width: 180px;">
+                    <img class="center" src="http://drexel.edu/~/media/Images/biomed/email/Kathy-Pham.aspx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: none;clear: both;display: block;padding: 0 0 1em 0;margin: 0 auto;">
+                    <p class="center" style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: center;line-height: 19px;font-size: 13px;"><small style="font-size: 10px;">Kathy Pham</small></p>
+                  </center>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;">
+                  <img src="http://google-analytics.com/collect?v=1&amp;tid=UA-48789419-1&amp;cid=555&amp;t=event&amp;ec=email&amp;ea=open&amp;el=MeetABiomedDragon" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="eight columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 380px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">
+                    Hi everyone! My name is Kathy Pham and I am currently a second year biomedical science (non-thesis) master's student at the School of Biomedical Engineering, Science and Health Systems. I started working towards my MS in the summer of 2014, promptly after graduating in May 2014 with a BS in Pharmaceutical Healthcare and Sciences. I am actually using my MS in biomedical science degree as a pathway to medical school or PA (Physician’s Assistant) school. The curriculum, although rigorous, is flexible enough to allow me to take the necessary pre-requisites for medical school admissions in addition to all of my graduate level requirements.
+                  </p>
+
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last no-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">I am also working on fulfilling my patient contact hours (a required component of a medical school application) with my School’s faculty clinical partners and collaborators at the Drexel University College of Medicine and the Children’s Hospital of Philadelphia. I believe that completing an MS in Biomedical Science makes me a more competitive, unique, and well-rounded medical school applicant than the usual preparation offered by post-bac pre-med programs. I will also have an actual graduate degree after the completion of the program, which allows me to pursue avenues other than medical school, should I choose to do so.</p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">
+                    My favorite course sequence has to be Math for the Biomedical Sciences I, II and III. By all means, I was not the greatest math student, nor do I enjoy math, but <a href="http://drexel.edu/biomed/faculty/core/ThrockmortonAmy/" style="color: #2ba6cb;text-decoration: none;">Dr. Amy Throckmorton</a> has been one of the best teachers I have ever encountered; she truly cares about how well you do and she always makes sure she gets to know you well enough to not make you feel like “just another student.” Completing an MS in Biomedical Science at an engineering unit such as this one, and enrolling in courses such as Dr. Throckmorton’s Math for the Biomedical Sciences course, provided me with a completely new, quantitative perspective of biology. I believe that the knowledge and perspective gained from this course and others I’ve completed will make me a more effective physician in the future. I can definitely state that pursuing a master’s degree in Biomedical Science has been one of the best decisions I have ever made! I am also very happy that Philadelphia has a great variety of medical schools, teaching hospitals, and pharmaceutical and biotechnology companies – I will have plenty of choices in my career path after graduation.
+                  </p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"><strong>About Philadelphia</strong></p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Philadelphia, Pennsylvania is one of the largest cities defined as a hub for biomedical and pharmaceutical firms. Philadelphia has a longstanding legacy as a leader in medical and pharmaceutical industries; the city’s extensive medical system also features 5 teaching hospitals including: Drexel University College of Medicine, University of Pennsylvania, Thomas Jefferson University, the Philadelphia College of Osteopathic Medicine, and Temple University. Philadelphia is also home to 15 leading life science / pharmaceutical companies in the region (such as GlaxoSmith Kline, Bristol-Myers Squibb, and Johnson and Johnson, to name a few), as well as multiple independent biomedical research institutes and numerous professional medical association headquarters.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last no-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="six columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 280px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"><strong> Learn more:</strong> Watch Greater Philadelphia's Health Care Innovation Collaborative video</p>
+                  <table class="button round success" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;width: 100%;overflow: hidden;">
+                    <tr style="padding: 0;vertical-align: top;text-align: left;">
+                      <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 8px 0;vertical-align: top;text-align: center;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: initial !important;font-size: 15px;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;display: block;background: #ffc600;border: none;border-color: #457a1a;-webkit-border-radius: 500px;-moz-border-radius: 500px;border-radius: 500px;border-collapse: collapse !important;width: auto !important;">
+                        <a href="https://www.youtube.com/watch?v=UBKghVEBs5s" style="color: #07294d;text-decoration: none;font-weight: bold;font-family: Helvetica, Arial, sans-serif;font-size: 16px;display: block;height: 100%;width: 100%;">&#9654; Watch the Video</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"> </p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">And please read: </p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"><a href="http://www.selectgreaterphiladelphia.com/industries/life-sciences-and-healthcare/" style="color: #2ba6cb;text-decoration: none;">Greater Philadelphia: Here for Making Great Discoveries</a>
+                  </p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"><a href="http://www.besthealthdegrees.com/careers/the-top-10-cities-with-the-most-health-care-jobs" style="color: #2ba6cb;text-decoration: none;">Ranking the Top 10 Cities with the Most Health Care Jobs</a></p>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+
+          <td class="wrapper last no-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="six columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 280px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;"><strong>Contact Us</strong></p>
+                  <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">If you have any questions about MS in Biomedical Engineering or Biomedical Science or the graduate co-op option please contact: Natalia Broz, Associate Director for Graduate Programs School of Biomedical Engineering, Science and Health Systems at <a href="mailto:njb33@drexel.edu" style="color: #2ba6cb;text-decoration: none;">njb33@drexel.edu</a></p>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row footer" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;border-top: 2px solid #ffc600;background: #07294d;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" align="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <p style="text-align: center;margin: 0;margin-bottom: 10px;color: #fff;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;line-height: 19px;font-size: 12px;">
+                    Contact: biomed@drexel.edu | 215.895.2215
+                  </p>
+                  <p style="text-align: center;margin: 0;margin-bottom: 10px;color: #fff;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;line-height: 19px;font-size: 12px;">
+                    © 2015 Drexel School of Biomedical Engineering, Science and Health Systems
+                  </p>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
