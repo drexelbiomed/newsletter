@@ -43,6 +43,10 @@ helpers do
     "http://www.biomed.drexel.edu/new04/Content/newsletter/"
   end
 
+  def newsletter_base_href
+    "http://biomed.drexel.edu/labs/newsletter/"
+  end
+
   def format_date(stringy)
     Date.strptime(stringy, '%m-%d-%y').strftime("%B %d, %Y")
   end
@@ -51,12 +55,24 @@ helpers do
     current_page.data.data_file
   end
 
+  def quarter_term
+    eval("data."+"#{data_file}.term")
+  end
+
+  def read_in_browser
+    newsletter_base_href + "#{quarter_term.downcase.gsub(" ", "-")}.html"
+  end
+
   def spotlight
     eval("data."+"#{data_file}.spotlight")
   end
 
   def students
     eval("data."+"#{data_file}.students")
+  end
+
+  def research
+    eval("data."+"#{data_file}.research")
   end
 
   def faculty
