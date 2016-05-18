@@ -79,6 +79,14 @@ helpers do
     eval("data."+"#{data_file}.faculty")
   end
 
+  def faculty_even
+    faculty.select.each_with_index{ |_, i| i.even? }
+  end
+
+  def faculty_odd
+    faculty.select.each_with_index{ |_, i| i.odd? }
+  end
+
   def alumni
     eval("data."+"#{data_file}.alumni")
   end
