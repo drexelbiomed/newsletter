@@ -9,7 +9,11 @@
                 <tr>
                   <td class="panel heading gold">
                     <h2>
-                      Spotlight: <%= spotlight.map{ |s| s.header }.join(" & ") %>
+                      <% if spotlight.length > 1 %>
+                        Spotlight: <%= spotlight.map{ |s| s.header }.join(" & ") %>
+                      <% else %>
+                        Spotlight: <%= spotlight.first.header %>
+                      <% end %>
                     </h2>
                   </td>
                   <td class="expander"></td>
