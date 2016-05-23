@@ -4,13 +4,22 @@ linkedin: https://www.linkedin.com/groups?home=&gid=4587558&trk=anet_ug_hm
 campaign: eNewsletterSpring2016
 
 spotlight:
-  header: BIOMED Co-op
+-
+  header: Clinical Co-op
   img: http://drexel.edu/~/media/Images/biomed/clinicla-immersion-co-op.ashx
   url: http://drexel.edu/biomed/academics/undergraduate-programs/clinical-immersion/
   title: >
     Translational Design Clinical Immersion Co-op
   text: >
     The Translational Design Clinical Immersion Co-op is part of an innovative new Junior Design / Senior Design program in the School of Biomedical Engineering, Sciences and Health Systems.  This program, funded by the National Institutes of Health, gives students, during their junior year, the opportunity to spend their co-op cycle working alongside clinicians and biomedical engineers to identify unmet clinical needs and translate novel technologies from bench to bedside.
+-
+  header: Alliance with SJTU
+  img: http://drexel.edu/~/media/Images/biomed/China-Partnership.ashx
+  url: http://drexel.edu/biomed/news-and-events/news/2016/April/Biomedical-China-Masters/
+  title: >
+    Drexel Furthers its Alliance with Shanghai Jiao Tong University
+  text: >
+    Drexel University students earning master’s degrees in biomedical engineering now have the option to complete part of their program in China, thanks to an expanded agreement with Med-X Research Institute of Shanghai Jiao Tong University (SJTU).
 
 students:
 -

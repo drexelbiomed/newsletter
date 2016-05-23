@@ -9,7 +9,7 @@
                 <tr>
                   <td class="panel heading gold">
                     <h2>
-                      Spotlight: <%= spotlight.header %>
+                      Spotlight: <%= spotlight.map{ |s| s.header }.join(" & ") %>
                     </h2>
                   </td>
                   <td class="expander"></td>
@@ -22,38 +22,40 @@
     </td>
   </tr>
 </table>
-<table class="container content">
-  <tr>
-    <td>
-      <table class="row">
-        <tr>
-          <td class="wrapper last">
-            <table class="twelve columns">
-              <tr>
-                <td class="text-pad">
-                  <%= a_href("spotlight") %>
-                    <%= image_tag spotlight.img %>
-                  <%= end_link %>
-
-                  <img src="" />
-                  <br>
-                  <h3 class="lead">
-                    <%= a_href("spotlight") %>
-                      <%= spotlight.title %>
+<% spotlight.each_with_index do |s, i| %>
+  <table class="container content">
+    <tr>
+      <td>
+        <table class="row">
+          <tr>
+            <td class="wrapper last">
+              <table class="twelve columns">
+                <tr>
+                  <td class="text-pad">
+                    <%= a_href("spotlight", i) %>
+                      <%= image_tag s.img %>
                     <%= end_link %>
-                  </h3>
-                  <p class="lead">
-                    <%= spotlight.text %>
-                  </p>
-                </td>
-                <td class="expander">
-                  <%= tag :img, :src => "#{track_opens_url}" %>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+
+                    <img src="" />
+                    <br>
+                    <h3 class="lead">
+                      <%= a_href("spotlight", i) %>
+                        <%= s.title %>
+                      <%= end_link %>
+                    </h3>
+                    <p class="lead">
+                      <%= s.text %>
+                    </p>
+                  </td>
+                  <td class="expander">
+                    <%= tag :img, :src => "#{track_opens_url}" %>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<% end %>
