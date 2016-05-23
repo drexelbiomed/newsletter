@@ -1,0 +1,1585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Client-specific Styles and Reset */
+
+#outlook a {
+  padding:0;
+}
+
+body{
+  width:100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  margin:0;
+  padding:0;
+}
+
+  /* .ExternalClass applies to Outlook.com (the artist formerly known as Hotmail)  */
+
+.ExternalClass {
+  width:100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+#backgroundTable {
+  margin:0;
+  padding:0;
+  width:100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline:none;
+  text-decoration:none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: 580px;
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 10px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse !important;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  height: 1px;
+  border: none;
+}
+
+/* Responsive Grid */
+
+table.body {
+  height: 100%;
+  width: 100%;
+}
+
+table.container {
+  width: 580px;
+  margin: 0 auto;
+  text-align: inherit;
+}
+
+table.row {
+  padding: 0px;
+  width: 100%;
+  position: relative;
+}
+
+table.container table.row {
+  display: block;
+}
+
+td.wrapper {
+  padding: 10px 20px 0px 0px;
+  position: relative;
+}
+
+table.columns,
+table.column {
+  margin: 0 auto;
+}
+
+table.columns td,
+table.column td {
+  padding: 0px 0px 10px;
+}
+
+table.columns td.sub-columns,
+table.column td.sub-columns,
+table.columns td.sub-column,
+table.column td.sub-column {
+  padding-right: 10px;
+}
+
+td.sub-column, td.sub-columns {
+  min-width: 0px;
+}
+
+table.row td.last,
+table.container td.last {
+  padding-right: 0px;
+}
+
+table.one { width: 30px; }
+table.two { width: 80px; }
+table.three { width: 130px; }
+table.four { width: 180px; }
+table.five { width: 230px; }
+table.six { width: 280px; }
+table.seven { width: 330px; }
+table.eight { width: 380px; }
+table.nine { width: 430px; }
+table.ten { width: 480px; }
+table.eleven { width: 530px; }
+table.twelve { width: 580px; }
+
+table.one center { min-width: 30px; }
+table.two center { min-width: 80px; }
+table.three center { min-width: 130px; }
+table.four center { min-width: 180px; }
+table.five center { min-width: 230px; }
+table.six center { min-width: 280px; }
+table.seven center { min-width: 330px; }
+table.eight center { min-width: 380px; }
+table.nine center { min-width: 430px; }
+table.ten center { min-width: 480px; }
+table.eleven center { min-width: 530px; }
+table.twelve center { min-width: 580px; }
+
+table.one .panel center { min-width: 10px; }
+table.two .panel center { min-width: 60px; }
+table.three .panel center { min-width: 110px; }
+table.four .panel center { min-width: 160px; }
+table.five .panel center { min-width: 210px; }
+table.six .panel center { min-width: 260px; }
+table.seven .panel center { min-width: 310px; }
+table.eight .panel center { min-width: 360px; }
+table.nine .panel center { min-width: 410px; }
+table.ten .panel center { min-width: 460px; }
+table.eleven .panel center { min-width: 510px; }
+table.twelve .panel center { min-width: 560px; }
+
+.body .columns td.one,
+.body .column td.one { width: 8.333333%; }
+.body .columns td.two,
+.body .column td.two { width: 16.666666%; }
+.body .columns td.three,
+.body .column td.three { width: 25%; }
+.body .columns td.four,
+.body .column td.four { width: 33.333333%; }
+.body .columns td.five,
+.body .column td.five { width: 41.666666%; }
+.body .columns td.six,
+.body .column td.six { width: 50%; }
+.body .columns td.seven,
+.body .column td.seven { width: 58.333333%; }
+.body .columns td.eight,
+.body .column td.eight { width: 66.666666%; }
+.body .columns td.nine,
+.body .column td.nine { width: 75%; }
+.body .columns td.ten,
+.body .column td.ten { width: 83.333333%; }
+.body .columns td.eleven,
+.body .column td.eleven { width: 91.666666%; }
+.body .columns td.twelve,
+.body .column td.twelve { width: 100%; }
+
+td.offset-by-one { padding-left: 50px; }
+td.offset-by-two { padding-left: 100px; }
+td.offset-by-three { padding-left: 150px; }
+td.offset-by-four { padding-left: 200px; }
+td.offset-by-five { padding-left: 250px; }
+td.offset-by-six { padding-left: 300px; }
+td.offset-by-seven { padding-left: 350px; }
+td.offset-by-eight { padding-left: 400px; }
+td.offset-by-nine { padding-left: 450px; }
+td.offset-by-ten { padding-left: 500px; }
+td.offset-by-eleven { padding-left: 550px; }
+
+td.expander {
+  visibility: hidden;
+  width: 0px;
+  padding: 0 !important;
+}
+
+table.columns .text-pad,
+table.column .text-pad {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.columns .left-text-pad,
+table.columns .text-pad-left,
+table.column .left-text-pad,
+table.column .text-pad-left {
+  padding-left: 10px;
+}
+
+table.columns .right-text-pad,
+table.columns .text-pad-right,
+table.column .right-text-pad,
+table.column .text-pad-right {
+  padding-right: 10px;
+}
+
+/* Block Grid */
+
+.block-grid {
+  width: 100%;
+  max-width: 580px;
+}
+
+.block-grid td {
+  display: inline-block;
+  padding:10px;
+}
+
+.two-up td {
+  width:270px;
+}
+
+.three-up td {
+  width:173px;
+}
+
+.four-up td {
+  width:125px;
+}
+
+.five-up td {
+  width:96px;
+}
+
+.six-up td {
+  width:76px;
+}
+
+.seven-up td {
+  width:62px;
+}
+
+.eight-up td {
+  width:52px;
+}
+
+/* Alignment and Visibility Classes */
+
+table.center, td.center {
+  text-align: center;
+}
+
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center,
+p.center {
+  text-align: center;
+}
+
+span.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+img.center {
+  margin: 0 auto;
+  float: none;
+}
+
+.show-for-small,
+.hide-for-desktop {
+  display: none;
+  width:0;
+  mso-hide:all;
+  overflow:hidden;
+}
+
+.show-for-small *,
+.hide-for-desktop * {
+  mso-hide:all;
+}
+
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  color: #222222;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  padding:0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
+h4 {font-size: 28px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
+body, table.body, p, td {font-size: 14px;line-height:19px;}
+
+p.lead, p.lede, p.leed {
+  font-size: 18px;
+  line-height:21px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+small {
+  font-size: 10px;
+}
+
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2795b6 !important;
+}
+
+a:active {
+  color: #2795b6 !important;
+}
+
+a:visited {
+  color: #2ba6cb !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #2ba6cb;
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: #2ba6cb !important;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: #2ba6cb !important;
+}
+
+/* Panels */
+
+.panel {
+  background: #f2f2f2;
+  border: 1px solid #d9d9d9;
+  padding: 10px !important;
+}
+
+.sub-grid table {
+  width: 100%;
+}
+
+.sub-grid td.sub-columns {
+  padding-bottom: 0;
+}
+
+/* Buttons */
+
+table.button,
+table.tiny-button,
+table.small-button,
+table.medium-button,
+table.large-button {
+  width: 100%;
+  overflow: hidden;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  display: block;
+  width: auto !important;
+  text-align: center;
+  background: #2ba6cb;
+  border: 1px solid #2284a1;
+  color: #ffffff;
+  padding: 8px 0;
+  line-height: initial !important;
+}
+
+table.tiny-button td {
+  padding: 5px 0;
+}
+
+table.small-button td {
+  padding: 8px 0;
+}
+
+table.medium-button td {
+  padding: 12px 0;
+}
+
+table.large-button td {
+  padding: 21px 0;
+}
+
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+table.tiny-button td a {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+table.small-button td a {
+  font-size: 16px;
+}
+
+table.medium-button td a {
+  font-size: 20px;
+}
+
+table.large-button td a {
+  font-size: 24px;
+}
+
+table.button:hover td,
+table.button:visited td,
+table.button:active td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:visited td a,
+table.button:active td a {
+  color: #ffffff !important;
+}
+
+table.button:hover td,
+table.tiny-button:hover td,
+table.small-button:hover td,
+table.medium-button:hover td,
+table.large-button:hover td {
+  background: #2795b6 !important;
+}
+
+table.button:hover td a,
+table.button:active td a,
+table.button td a:visited,
+table.tiny-button:hover td a,
+table.tiny-button:active td a,
+table.tiny-button td a:visited,
+table.small-button:hover td a,
+table.small-button:active td a,
+table.small-button td a:visited,
+table.medium-button:hover td a,
+table.medium-button:active td a,
+table.medium-button td a:visited,
+table.large-button:hover td a,
+table.large-button:active td a,
+table.large-button td a:visited {
+  color: #ffffff !important;
+}
+
+table.secondary td {
+  background: #e9e9e9;
+  border-color: #d0d0d0;
+  color: #555555;
+}
+
+table.secondary td a {
+  color: #555555;
+}
+
+table.secondary:hover td {
+  background: #d0d0d0 !important;
+  color: #555555;
+}
+
+table.secondary:hover td a,
+table.secondary td a:visited,
+table.secondary:active td a {
+  color: #555555 !important;
+}
+
+table.success td {
+  background: #5da423;
+  border-color: #457a1a;
+}
+
+table.success:hover td {
+  background: #457a1a !important;
+}
+
+table.alert td {
+  background: #c60f13;
+  border-color: #970b0e;
+}
+
+table.alert:hover td {
+  background: #970b0e !important;
+}
+
+table.radius td {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+table.round td {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* Outlook First */
+
+body.outlook p {
+  display: inline !important;
+}
+
+/*  Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+  table[class="body"] img {
+    max-width: auto !important;
+    max-height: auto !important;
+  }
+
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+
+  table[class="body"] .row {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper {
+    display: block !important;
+    padding-right: 0 !important;
+  }
+
+  table[class="body"] .columns,
+  table[class="body"] .column {
+    table-layout: fixed !important;
+    float: none !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    display: block !important;
+  }
+
+  table[class="body"] .wrapper.first .columns,
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+
+  table[class="body"] table.columns td,
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+
+  table[class="body"] .columns td.one,
+  table[class="body"] .column td.one { width: 8.333333% !important; }
+  table[class="body"] .columns td.two,
+  table[class="body"] .column td.two { width: 16.666666% !important; }
+  table[class="body"] .columns td.three,
+  table[class="body"] .column td.three { width: 25% !important; }
+  table[class="body"] .columns td.four,
+  table[class="body"] .column td.four { width: 33.333333% !important; }
+  table[class="body"] .columns td.five,
+  table[class="body"] .column td.five { width: 41.666666% !important; }
+  table[class="body"] .columns td.six,
+  table[class="body"] .column td.six { width: 50% !important; }
+  table[class="body"] .columns td.seven,
+  table[class="body"] .column td.seven { width: 58.333333% !important; }
+  table[class="body"] .columns td.eight,
+  table[class="body"] .column td.eight { width: 66.666666% !important; }
+  table[class="body"] .columns td.nine,
+  table[class="body"] .column td.nine { width: 75% !important; }
+  table[class="body"] .columns td.ten,
+  table[class="body"] .column td.ten { width: 83.333333% !important; }
+  table[class="body"] .columns td.eleven,
+  table[class="body"] .column td.eleven { width: 91.666666% !important; }
+  table[class="body"] .columns td.twelve,
+  table[class="body"] .column td.twelve { width: 100% !important; }
+
+  table[class="body"] td.offset-by-one,
+  table[class="body"] td.offset-by-two,
+  table[class="body"] td.offset-by-three,
+  table[class="body"] td.offset-by-four,
+  table[class="body"] td.offset-by-five,
+  table[class="body"] td.offset-by-six,
+  table[class="body"] td.offset-by-seven,
+  table[class="body"] td.offset-by-eight,
+  table[class="body"] td.offset-by-nine,
+  table[class="body"] td.offset-by-ten,
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+
+  table[class="body"] .right-text-pad,
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+
+  table[class="body"] .left-text-pad,
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+
+  table[class="body"] .hide-for-small,
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+
+  table[class="body"] .show-for-small,
+  table[class="body"] .hide-for-desktop {
+    display : block !important;
+    width : auto !important;
+    overflow : visible !important;
+  }
+}
+</style>
+    <style type="text/css">
+
+/* Custom Styles Go Here */
+body, table.body {
+  background: #eeeeee;
+}
+
+body, table.body, p, td {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  font-family: Helvetica, Arial, sans-serif;
+  /*font-weight: 100;*/
+}
+
+p {
+  /*font-size: 14px;
+  line-height: 22px;*/
+  font-size: 13px;
+  line-height: 19px;
+}
+
+p.lead {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+p.link a, p.link a:visited, p.link a:hover {
+  font-weight: bold;
+  color: #07294d !important;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  font-color: #07294d;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: normal;
+  font-color: #07294d;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  color: #07294d;
+  line-height: 1.4em;
+  padding: 0 0 .4em 0;
+}
+
+h3 a, h3 a:visited, h3 a:hover {
+  color: #07294d !important;
+  font-weight: bold;
+}
+
+h3.lead {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+img {
+  padding: 0 0 1em 0;
+}
+
+.vertical-divider {
+  border-right: 1px solid #E1E1E0;
+}
+
+.border-bottom {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E1E1E0;
+}
+
+.row.header {
+  background: #07294d;
+}
+
+.heading {
+  background: inherit;
+  border: none;
+}
+
+.content {
+  background: #ffffff;
+}
+
+.gold {
+  background: #ffc600;
+}
+
+.blue {
+  background: #07294d;
+}
+
+.heading p, .heading h1, .heading h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #07294d;
+}
+
+.no-pad {
+  padding: 0 0 0 0 !important;
+}
+
+.green .heading p, .green .heading h1,.green .heading h2, .orange .heading p, .orange .heading h1,.orange .heading h2 {
+  color: #EEEEEE;
+}
+
+.gold .heading p, .gold .heading h1,.gold .heading h2 {
+  color: #07294D;
+}
+
+
+.row.footer {
+  background: #ffc600;
+}
+
+.row.footer p {
+  font-size: 12px;
+}
+
+.row.top {
+  background: #052F53;
+  border-bottom: 1px solid #ffc600;
+}
+
+.top p {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 10px;
+  color: #ffffff;
+}
+
+.panel.heading.red {
+  background: #FBD4D0;
+}
+.panel.heading.green {
+  background: #EDF6D8;
+}
+.panel.heading.yellow {
+  background: #FBF6E2;
+}
+.panel.heading.gold {
+  background: #ffc600;
+}
+.panel.heading.orange {
+  background: #FFDBB6;
+}
+
+
+table.facebook.tiny-button td, table.facebook.tiny-button:hover td {
+  background: #3b5998 !important;
+  border: none;
+}
+
+table.linkedin.tiny-button td, table.linkedin.tiny-button:hover td {
+   background: #007bb5 !important;
+   border: none;
+}
+
+img.icon {
+  max-width: 15px;
+  width: 15px;
+}
+
+img.header-alt {
+  font-family: Georgia;
+  color: #ffc600;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  table[class="body"] table.columns td.icon, table[class="body"] table.column td.icon {
+    width: 20px !important;
+  }
+  table[class="body"] table.columns td.label, table[class="body"] table.column td.label {
+    width: 100% !important;
+  }
+  img.icon {
+    max-width: 15px;
+    width: 15px;
+  }
+}
+
+</style>
+
+  </head>
+  <body style="min-width: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;text-align: left;line-height: 22px;font-size: 15px;background: #eeeeee;width: 100% !important;">
+    <table class="body" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;height: 100%;width: 100%;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #eeeeee;">
+      <tr style="padding: 0;vertical-align: top;text-align: left;">
+        <td class="center" align="center" valign="top" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+          <center style="width: 100%;min-width: 580px;">
+            <!-- Email Content -->
+            <table class="row top" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;background: #052F53;border-bottom: 1px solid #ffc600;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td class="center" align="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <center style="width: 100%;min-width: 580px;">
+        <table class="container" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;margin: 0 auto;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="no-pad label" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;"><p style="margin: 0px;margin-bottom: 10px;color: #ffffff;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 10px;font-size: 14px;">Having trouble viewing this email? [ <a href="http://biomed.drexel.edu/labs/newsletter/spring-2016.html" style="color: #2ba6cb;text-decoration: none;">Read in Browser</a> ]</p></td>
+                  <td class="no-pad icon" width="20" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                    <a href="http://facebook.com/DrexelBIOMED" style="color: #2ba6cb;text-decoration: none;">
+                      <img class="icon" style="display: inline;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 15px;max-width: 15px;float: left;clear: both;padding: 0 0 1em 0;border: none;" src="http://drexel.edu/~/media/Images/biomed/email/facebook_icon_15x15.ashx" width="15" height="15" alt=" ">
+                    </a>
+                  </td>
+                  <td class="no-pad icon" width="20" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 0 0 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                    <a href="https://www.linkedin.com/groups?home=&amp;amp;gid=4587558&amp;amp;trk=anet_ug_hm" style="color: #2ba6cb;text-decoration: none;">
+                      <img class="icon" style="display: inline;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 15px;max-width: 15px;float: left;clear: both;padding: 0 0 1em 0;border: none;" src="http://drexel.edu/~/media/Images/biomed/email/linkedin15x15.ashx" width="15" height="15" alt=" ">
+                    </a>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+<table class="row header" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;background: #07294d;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td class="center" align="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <center style="width: 100%;min-width: 580px;">
+        <table class="container" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;margin: 0 auto;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last" style="padding: 0px;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td style="padding: 0px;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+                    <a href="http://drexel.edu/biomed?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=home_logo&amp;utm_campaign=eNewsletterSpring2016" style="color: #2ba6cb;text-decoration: none;">
+                      <img class="no-pad header-alt" src="http://drexel.edu/~/media/Images/biomed/email/newsletter-top-white-gold.ashx" alt="Drexel University | School of Biomedical Engineering, Science and Health Systems Quarterly Newsletter" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 0 0 !important;border: none;font-family: Georgia;color: #ffc600;font-style: italic;font-size: 30px;line-height: 48px;text-align: center;">
+                    </a>
+                  </td><td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+<table class="row content blue" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;background: #07294d;width: 100%;position: relative;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td class="center" align="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: center;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <center style="width: 100%;min-width: 580px;">
+        <table class="container" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;margin: 0 auto;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last" style="padding-top: 0px !important;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="panel heading gold" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #ffc600;border: none;border-collapse: collapse !important;">
+                    <h2 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1em;word-break: normal;font-size: 1.6em;font-color: #07294d;">
+                      Spotlight: BIOMED Co-op
+                    </h2>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <a href="http://drexel.edu/biomed/academics/undergraduate-programs/clinical-immersion/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=spotlight&amp;utm_campaign=eNewsletterSpring2016" style="color: #2ba6cb;text-decoration: none;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/clinicla-immersion-co-op.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;border: none;">
+                  </a>
+
+                  <img src="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  <br>
+                  <h3 class="lead" style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 24px;word-break: normal;font-size: 20px;">
+                    <a href="http://drexel.edu/biomed/academics/undergraduate-programs/clinical-immersion/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=spotlight&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                      Translational Design Clinical Immersion Co-op
+
+                    </a>
+                  </h3>
+                  <p class="lead" style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 22px;font-size: 15px;">
+                    The Translational Design Clinical Immersion Co-op is part of an innovative new Junior Design / Senior Design program in the School of Biomedical Engineering, Sciences and Health Systems.  This program, funded by the National Institutes of Health, gives students, during their junior year, the opportunity to spend their co-op cycle working alongside clinicians and biomedical engineers to identify unmet clinical needs and translate novel technologies from bench to bedside.
+
+                  </p>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;">
+                  <img src="http://google-analytics.com/collect?v=1&amp;tid=UA-48789419-1&amp;cid=555&amp;t=event&amp;ec=email&amp;ea=open&amp;el=eNewsletterSpring2016" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="padding-top: 0px;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="panel heading green" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #EDF6D8;border: none;border-collapse: collapse !important;">
+                  <h2 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1em;word-break: normal;font-size: 1.6em;font-color: #07294d;">Student Awards and Honors</h2>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Adam-Craig.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/May/Adam-Craig-Receives-a-David-L-Boren-Fellowship-for/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Adam Craig Receives a David L. Boren Fellowship for Overseas Study at Hebrew University of Jerusalem
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Adam Craig, PhD student in BIOMED (Advisor: U. Hershberg), received a $24K 1-year David L. Boren Fellowship for overseas study at Hebrew University of Jerusalem. Boren Fellows represent a vital pool of highly motivated individuals who wish to work in the federal national security arena. In exchange for funding, Boren Fellows commit to working in the federal government for at least one year after graduation.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Chau-Dang.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/May/Chau-Dang-Receives-a-2016-Drexel-University-Cooperative-Education-Award-for-Her-Work/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Chau Dang Receives a 2016 Drexel University Cooperative Education Award for Her Work on the Stability of a Lipid Molecule Important in the Study of Gaucher Disease
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Chau Dang, undergraduate student in BIOMED, with a concentration in biomaterials and tissue engineering, received a 2016 Drexel University Cooperative Education Award for her co-op with biotechnology company Amicus Therapeutics, where she examined the stability of a lipid molecule important in the study of Gaucher disease, which affects many of the body’s organs and tissues. Chau's discoveries on how samples may be exposed during analysis caused her employer to change how they handle samples in the lab.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Drexel_Dragon_HEX.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/April/Rebecca-Kitchmire-Danika-Meldrum-Shubhra-Rastogi-and-Bhavani-Singh-Are-Selected/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Rebecca Kitchmire, Danika Meldrum, Shubhra Rastogi, and Bhavani Singh Are Selected as 2016 BIOMED STAR (Students Tackling Advanced Research) Scholars
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Rebecca Kitchmire (Advisor: M. Wheatley), Danika Meldrum (Advisor: M. Wheatley), Shubhra Rastogi (Advisor: K. Spiller), and Bhavani Singh (Advisor: K. Spiller), were selected as 2016 BIOMED STAR Scholars.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Drexel_Dragon_HEX.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/April/Manyah-Kohli-Gabriela-HernandezMeza-and-Daryl-OmireMayor-Each-Receive-a-National-Science/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Manyah Kohli, Gabriela Hernandez-Meza, and Daryl Omire-Mayor Each Receive a National Science Foundation (NSF) Fellowship to Attend the 15th International Summer School on Biocomplexity, Biodesign and Bioinnovaton
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Manyah Kohli, BS student in BIOMED, Gabriela Hernandez-Meza, PhD student in BIOMED (Advisor: K. Izzetoglu), and Daryl Omire-Mayor, PhD student in BIOMED (Advisor: K. Pourrezaei), each received a National Science Foundation (NSF) Fellowship to attend the 15th International Summer School on Biocomplexity, Biodesign and Bioinnovation: from Gene to System, in Izmir, Turkey, from June 24–30, 2016.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Carli-Moorehead.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/April/Carli-Moorehead-Receives-a-Goldwater-Scholarship-for-Her-Research-on-Biomimetic-Tissue/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Carli Moorehead Receives a Goldwater Scholarship for Her Research on Biomimetic Tissue Regeneration and Repair Scaffolds
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Carli Moorehead, BS/MS in BIOMED and MSE, (Advisor: M. Marcolongo), received a two-year $7.5K Goldwater Scholarship for her work on biomimetic tissue regeneration and repair scaffolds. Carli began her research path as a STAR (Students Tackling Advanced Research) Scholar in the Cellular Biomechanics Lab in the School of Biomedical Engineering, Science and Health Systems, and extended her STAR work to achieve SuperNova Undergraduate Research Fellow status. The Barry Goldwater Scholarship and Excellence in Education Program seeks to provide “a continuing source of highly qualified scientists, mathematicians, and engineers by awarding scholarships to college students who intend to pursue careers in these fields.”
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Amanda-Pentecost.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/March/Amanda-Pentecost-Is-Awarded-a-2016-Whitaker-International-Fellowship-To-Conduct-Research/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Amanda Pentecost Is Awarded a 2016 Whitaker International Fellowship To Conduct Research in Korea
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Amanda Pentecost, dual PhD candidate in MSE and MS in BIOMED (Advisors: Y. Gogotsi and K. Spiller), was awarded a 2016 Whitaker International Fellowship to conduct research with Dr. Kwangmeyung Kim at the Center for Theragnosis, housed in the Biomedical Research Institute at the Korea Institute of Science and Technology (KIST) in Seoul, South Korea. Amanda's dissertation research focuses on using theranostic nanoparticles to increase the effectiveness of a common anti-inflammatory drug, dexamethasone, in preventing fibrous capsule formation and isolation of an implanted biomaterial. She has been designing and characterizing this novel drug delivery system, as well as testing it on a cellular lever. At KIST, Amanda will have access to high-level expertise and state-of-the-art microscopy and microscopic equipment needed to monitor the real-time distribution of nanoparticles within the body as well as their effectiveness in preventing fibrosis.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Drexel_Dragon_HEX.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/March/Hassaan-Pasha-Sheikh-and-Nohra-Murad-Are-Named-to-the-Provosts-Inaugural-Dragon24/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=students&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Hassaan Pasha Sheikh and Nohra Murad Are Named to the Provost's Inaugural Dragon'24 Student Advisory Group
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Hassaan Pasha Sheikh, BS student in BIOMED, and Nohra Murad, BS/MS student in BIOMED (Advisor: A. Throckmorton), were named to the Provost's inaugural Dragon'24 Student Advisory Group. The group consists of 24 student leaders representing the best and brightest from the diversity of programs, backgrounds, and cultures present, with the goal of developing an initial charter and devising a specific set of activities for the first two years of the group. In addition to special strategic initiatives, the Dragon'24 will lead a set of face-to-face brainstorming sessions with the Office of the Provost, as well as participate in ambassadorial opportunities for new students and faculty.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+    </td>
+  </tr>
+</table><table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="padding-top: 0px;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="panel heading orange" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #FFDBB6;border: none;border-collapse: collapse !important;">
+                  <h2 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1em;word-break: normal;font-size: 1.6em;font-color: #07294d;">Research Report</h2>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="twelve sub-columns text-pad last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 0px;width: 100%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      Expenditures Highlights
+
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">FY 2015 Research Expenditures increased 27% from FY 2014.  FY 2016 Research Expenditures are flat this year but are projected to be 13% above FY 2014, and 12% down from last year’s high of $5.5M.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="twelve sub-columns text-pad last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 0px;width: 100%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/research/image-005.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="twelve sub-columns text-pad last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 0px;width: 100%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      Proposal Submission Highlights
+
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Proposals submission increased by 37% ($10M) from FY 2014 to FY 2015 and by 39% ($15M) from FY 2015 to FY 2016 to date for a 6 year high of $54M so far.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="twelve sub-columns text-pad last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 0px;width: 100%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/research/image-007.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="twelve sub-columns text-pad last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 0px;width: 100%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      External Sponsored Project Award Highlights
+
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Annual Award amount for FY 2015 grew by 117% ($5.4M) more than doubling $2.5M from FY 2014.  As of the third quarter reporting, we are up by 19% ($1M) from last year for a total to date of $6.5M.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="twelve sub-columns text-pad last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 0px;width: 100%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/research/image-008.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+    </td>
+  </tr>
+</table><table class="container content " style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="padding-top: 0px;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns last" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="panel heading red" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #FBD4D0;border: none;border-collapse: collapse !important;">
+                  <h2 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1em;word-break: normal;font-size: 1.6em;font-color: #07294d;">Faculty / Staff Awards and Honors</h2>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="six sub-columns text-pad vertical-divider" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-right: 1px solid #E1E1E0;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 50%;border-collapse: collapse !important;">
+
+                    <img class="center" src="http://drexel.edu/~/media/Images/biomed/faculty/moxon-karen.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: none;clear: both;display: block;padding: 0 0 1em 0;margin: 0 auto;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/May/Dr-Karen-Moxon-and-Colleagues-Receive-a-3M-NIH-Grant-for-Their-Enhancing-Supraspinal/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=faculty_even&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Dr. Karen Moxon and Colleagues Receive a $3M NIH Grant for Their Enhancing Supraspinal Plasticity to Improve Functional Recovery After Spinal Cord Project
+
+                      </a>
+                    </h3>
+
+                      <p class="border-bottom" style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;">Drs. Karen Moxon, professor and associate director for research in BIOMED (PI), and John Bethea (CoAS – Co-PI), received a 5-year mult-PI $3M NIH R01 grant for the project titled “Enhancing Supraspinal Plasticity to Improve Functional Recovery After SCI.” It is becoming increasingly evident that plasticity within supraspinal networks, induced by therapeutic interventions, is necessary for optimal recovery of function after spinal cord injury. The goal of this project is to study the impact of a range of novel therapeutic interventions on neuronal and glial plasticity in the central nervous system to understand how to improve behavioral outcomes after severe, mid-thoracic spinal cord injury.
+</p>
+
+
+
+                    <img class="center" src="http://drexel.edu/~/media/Images/biomed/faculty/wheatley-margaret.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: none;clear: both;display: block;padding: 0 0 1em 0;margin: 0 auto;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/April/Dr-Margaret-Wheatley-Is-Quoted-in-a-Philadelphia-Inquirer-Story-on-Drug-Delivery-Pioneer/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=faculty_even&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Dr. Margaret Wheatley Is Quoted in a Philadelphia Inquirer Story on Drug Delivery Pioneer Dr. Robert S. Langer
+
+                      </a>
+                    </h3>
+
+
+                      <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Dr. Margaret Wheatley, John M. Reid Professor in BIOMED, was quoted in an April 21, 2016 Philadelphia Inquirer story about her experience as a former postdoctoral fellow in the lab of Dr. Robert S. Langer, a drug delivery pioneer and recipient of the 2016 Franklin Medal in the Life Sciences.
+</p>
+
+
+                </td>
+                <td class="six sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 50%;border-collapse: collapse !important;">
+
+                    <img class="center" src="http://drexel.edu/~/media/Images/biomed/faculty/ayaz-hasan.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: none;clear: both;display: block;padding: 0 0 1em 0;margin: 0 auto;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/April/Dr-Hasan-Ayaz-CoAuthors-an-Article-Accepted-for-Publication-in-the-Journal-Frontiers/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=faculty_odd&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Dr. Hasan Ayaz Co-Authors an Article Accepted for Publication in the Journal Frontiers in Human Neuroscience
+
+                      </a>
+                    </h3>
+
+                      <p class="border-bottom" style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;">Dr. Hasan Ayaz, research associate professor in BIOMED, co-authored an original research article titled "Into The Wild: Neuroergonomic Differentiation of Hand-Held and Augmented Reality Wearable Displays During Outdoor Navigation with Functional Near Infrared Spectroscopy" that was accepted for publication in the journal Frontiers in Human Neuroscience (Co-authors: R. Mckendrick, R. Parasuraman, R. Murtza, A. Formwalt, W. Baccus, and M. Paczynski). The article demonstrates the use of wireless and wearable fNIRS at an extreme, such as monitoring the brains of people walking outdoors. It is also a usability study for hand-held and head-mounted navigation aids.
+</p>
+
+
+
+                    <img class="center" src="http://drexel.edu/~/media/Images/biomed/people/Drexel_Dragon_HEX.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: none;clear: both;display: block;padding: 0 0 1em 0;margin: 0 auto;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/March/Drs-Lin-Han-Uri-Hershberg-Hualou-Liang-Adrian-Shieh-Wan-Shih-Yinghui-Zhong-and-Colleagues/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=faculty_odd&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        The following faculty in BIOMED are 2016 Commonwealth Universal Research Enhancement (CURE) Program grant awardees:
+
+                      </a>
+                    </h3>
+
+
+                      <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">The following faculty in BIOMED are 2016 Commonwealth Universal Research Enhancement (CURE) Program grant awardees:<br> • Dr. Lin Han <br> • Dr. Uri Hershberg <br> • Dr. Hualou Liang <br> • Dr. Adrian Shieh <br> • Dr. Wan Shih <br> • Dr. Yinghui Zhong <br>
+</p>
+
+
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table><table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="padding-top: 0px;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns last" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="panel heading yellow" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;background: #FBF6E2;border: none;border-collapse: collapse !important;">
+                  <h2 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;margin: 0;text-align: left;line-height: 1em;word-break: normal;font-size: 1.6em;font-color: #07294d;">Alumni Awards and Honors</h2>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Drexel_Dragon_HEX.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/March/Dhairya-Pujara-Michael-Gormley-and-Dalia-ElSherif-Are-Named-to-the-2016-Drexel-40-Under-40/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=alumni&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Dhairya Pujara, Michael Gormley, and Dalia El-Sherif Are Named to the 2016 Drexel '40 Under 40'
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Dhairya Pujara, MS Biomedical Engineering ’12 and founder CEO at Ycenter; Michael Gormley, PhD Biomedical Engineering ’08 and principal scientist at Janssen Research and Development; and Dalia El-Sherif, PhD Biomedical Science ’03 and founder, Daylan Consulting Group, were all named to the 2016 Drexel '40 under 40', the annual compendium of Drexel’s most innovative, impressive and inspiring young alumni.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Bozkurt-Alper.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/February/Alper-Bozkurt-Receives-an-NSF-Faculty-Early-Career-Development-Award-for-His-Bioelectrophotonic/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=alumni&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Alper Bozkurt Receives an NSF Faculty Early Career Development Award for His Bio-electro-photonic Microsystem Interfaces Project
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Alper Bozkurt, alumnus in BIOMED (MS '04), assistant professor of electrical and computer engineering at North Carolina State University, received a $500K 5-year Faculty Early Career Development Award from the National Science Foundation (NSF) for the project titled "Bio-electro-photonic Microsystem Interfaces for Small Animals." Known as the NSF CAREER Award, it is one of the highest honors given by NSF to young faculty in science and engineering. The NSF's Division of Electrical, Communications and Cyber Systems is supporting Dr. Bozkurt's research for this project.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;display: block;">
+          <tr style="padding: 0;vertical-align: top;text-align: left;">
+            <td class="wrapper last border-bottom" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-bottom: 10px;border-bottom: 1px solid #E1E1E0;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+              <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+                <tr style="padding: 0;vertical-align: top;text-align: left;">
+                  <td class="three sub-columns text-pad" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-left: 10px;padding-right: 10px;width: 25%;border-collapse: collapse !important;">
+                    <img src="http://drexel.edu/~/media/Images/biomed/people/Drexel_Dragon_HEX.ashx" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: left;clear: both;display: block;padding: 0 0 1em 0;">
+                  </td>
+                  <td class="nine sub-columns last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;min-width: 0px;padding-right: 0px;width: 75%;border-collapse: collapse !important;">
+                    <h3 style="color: #07294d;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0 0 .4em 0;margin: 0;text-align: left;line-height: 1.4em;word-break: normal;font-size: 1em;">
+                      <a href="http://drexel.edu/biomed/news-and-events/news/2016/January/Dr-Sorin-Siegler-and-Mary-Milone-Coinvent-a-Cervical-Spine-Protection-Apparatus/?utm_source=newsletter&amp;utm_medium=email&amp;utm_term=alumni&amp;utm_campaign=eNewsletterSpring2016" style="color: #07294d !important;text-decoration: none;font-weight: bold;">
+                        Dr. Sorin Siegler and Mary Milone Co-invent a Cervical Spine Protection Apparatus
+
+                      </a>
+                    </h3>
+                    <p style="margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 13px;">Dr. Sorin Siegler, alumnus in BIOMED (PhD '82), professor in MEM, and Mary Milone, alumna in BIOMED (BS '07; MS '10), product development engineer at Merit Medical Systems, Inc., co-invented "Cervical Spine Protection Apparatus and Methods of Use." The apparatus is designed to protect a wearer from incurring cervical spinal injuries, and/or to reduce the severity of cervical spine injuries without substantially compromising the normal functional range of motion of the wearer's cervical spine. The patent was assigned to Drexel University.
+</p>
+                  </td>
+                  <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+    </td>
+  </tr>
+</table><table class="container content" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;background: #ffffff;width: 580px;margin: 0 auto;">
+  <tr style="padding: 0;vertical-align: top;text-align: left;">
+    <td style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;border-collapse: collapse !important;">
+      <table class="row footer" style="border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;width: 100%;position: relative;background: #ffc600;display: block;">
+        <tr style="padding: 0;vertical-align: top;text-align: left;">
+          <td class="wrapper last" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;position: relative;padding-right: 0px;border-collapse: collapse !important;">
+            <table class="twelve columns" style="border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;margin: 0 auto;width: 580px;">
+              <tr style="padding: 0;vertical-align: top;text-align: left;">
+                <td class="text-pad" align="center" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;padding-left: 10px;padding-right: 10px;border-collapse: collapse !important;">
+                  <p style="text-align: center;margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;line-height: 19px;font-size: 12px;">
+                    Contact: biomed@drexel.edu | 215.895.2215
+                  </p>
+                  <p style="text-align: center;margin: 0;margin-bottom: 10px;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;padding: 0;line-height: 19px;font-size: 12px;">
+                    © 2015 Drexel School of Biomedical Engineering, Science and Health Systems
+                  </p>
+                </td>
+                <td class="expander" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: Helvetica, Arial, sans-serif;font-weight: normal;margin: 0;line-height: 22px;font-size: 15px;visibility: hidden;width: 0px;border-collapse: collapse !important;"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
