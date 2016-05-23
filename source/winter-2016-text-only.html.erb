@@ -12,10 +12,12 @@ Read online - http://biomed.drexel.edu/labs/newsletter/winter-2016.html <br>
 
 Spotlight <br>
 ======================= <br>
-<%= spotlight.title %> <br><br>
-<%= spotlight.text %> <br>
-  <a href="#"><%= spotlight.url %> </a>
-<br><br>
+<% spotlight.each do |s| %>
+  <%= s.title %> <br><br>
+  <%= s.text %> <br>
+    <a href="#"><%= s.url %> </a>
+  <br><br>
+<% end %>
 
 Student Awards and Highlights <br>
 ======================= <br>
