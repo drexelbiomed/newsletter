@@ -35,10 +35,20 @@
                       <%= end_link %>
                     </h3>
                     <% if  i < faculty_even.size - 1 %>
-                      <p class="border-bottom"><%= fac.text %></p>
+                      <p class="border-bottom">
+                        <%= fac.text %>
+                        <%= a_href("faculty_even", i) %>
+                          &rarr; Read More
+                        <%= end_link %>
+                      </p>
                     <% end %>
                     <% if  i == faculty_even.size - 1 %>
-                      <p><%= fac.text %></p>
+                      <p>
+                        <%= fac.text %>
+                        <%= a_href("faculty_even", i) %>
+                          &rarr; Read More
+                        <%= end_link %>
+                      </p>
                     <% end %>
                   <% end %>
                 </td>
@@ -51,10 +61,20 @@
                       <%= end_link %>
                     </h3>
                     <% if  i < faculty_odd.size - 1 %>
-                      <p class="border-bottom"><%= fac.text %></p>
+                      <p class="border-bottom">
+                        <%= fac.text %>
+                        <%= a_href("faculty_odd", i) %>
+                          &rarr; Read More
+                        <%= end_link %>
+                      </p>
                     <% end %>
                     <% if  i == faculty_odd.size - 1 %>
-                      <p><%= fac.text %></p>
+                      <p>
+                        <%= fac.text %>
+                        <%= a_href("faculty_odd", i) %>
+                          &rarr; Read More
+                        <%= end_link %>
+                      </p>
                     <% end %>
                   <% end %>
                 </td>

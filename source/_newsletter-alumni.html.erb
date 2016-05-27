@@ -36,7 +36,12 @@
                         <%= alum.title %>
                       <%= end_link %>
                     </h3>
-                    <p><%= alum.text %></p>
+                    <p>
+                      <%= alum.text %>
+                      <%= a_href("alumni", i) %>
+                        &rarr; Read More
+                      <%= end_link %>
+                    </p>
                   </td>
                   <td class="expander"></td>
                 </tr>
