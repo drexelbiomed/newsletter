@@ -23,6 +23,13 @@ spotlight:
 
 students:
 -
+  img: http://drexel.edu/~/media/Images/biomed/people/Valerie-Tutwiler.ashx
+  url: http://drexel.edu/biomed/news-and-events/news/2016/May/Valerie-Tutwiler-Receives-a-2016-American-Heart-Association-Predoctoral-Fellowship/
+  title: >
+    Valerie Tutwiler Receives a 2016 American Heart Association Predoctoral Fellowship
+  text: >
+    Valerie Tutwiler, PhD candidate in BIOMED (Advisors: K. Spiller and J. Weisel, UPenn), received a prestigious American Heart Association (AHA) 2-year $52K Predoctoral Fellowship for her research titled, “Blood Clot Contraction: Relation to Cell Stiffness and Fibrinolysis.”
+-
   img: http://drexel.edu/~/media/Images/biomed/people/Adam-Craig.ashx
   url: http://drexel.edu/biomed/news-and-events/news/2016/May/Adam-Craig-Receives-a-David-L-Boren-Fellowship-for/
   title: >
@@ -34,9 +41,9 @@ students:
   img: http://drexel.edu/~/media/Images/biomed/people/Chau-Dang.ashx
   url: http://drexel.edu/biomed/news-and-events/news/2016/May/Chau-Dang-Receives-a-2016-Drexel-University-Cooperative-Education-Award-for-Her-Work/
   title: >
-    Chau Dang Receives a 2016 Drexel University Cooperative Education Award for Her Work on the Stability of a specific Lipid Molecule
+    Chau Dang Receives a 2016 Drexel University Cooperative Education Award for Her Work on the Stability of a Specific Lipid Molecule
   text: >
-    Chau Dang, undergraduate student in BIOMED, with a concentration in biomaterials and tissue engineering, received a 2016 Drexel University Cooperative Education Award for her co-op with Amicus Therapeutics, a biotechnology company where she examined the stability of a lipid molecule that's important in the study of Gaucher disease, which affects many of the body’s organs and tissues. Chau's discoveries on how samples may be exposed during analysis caused her employer to change how they handle samples in the lab.
+    Chau Dang, undergraduate student in BIOMED, with a concentration in biomaterials and tissue engineering, received a 2016 Drexel University Cooperative Education Award for her co-op with Amicus Therapeutics, a biotechnology company where she examined the stability of a lipid molecule that's important in the study of Gaucher's disease, which affects many of the body’s organs and tissues.
 
 -
   img: http://drexel.edu/~/media/Images/biomed/people/STAR-scholars.ashx
@@ -85,7 +92,7 @@ research:
   title: >
     Expenditures Highlights
   text: >
-    FY 2015 Research Expenditures increased 27% from FY 2014 and FY 2016 Research Expenditures are flat.
+    FY 2015 Research Expenditures increased 27% from FY 2014, and FY 2016 Research Expenditures are flat.
 
 -
   img: http://drexel.edu/~/media/Images/biomed/research/image-007.ashx
