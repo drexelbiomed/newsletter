@@ -7,14 +7,14 @@
             <td class="wrapper last">
               <table class="twelve columns">
                 <tr>
-                  <td class="no-pad label"><p>Having trouble viewing this email? [ <%= link_to "Read in Browser", read_in_browser %> ]</p></td>
+                  <td class="no-pad label"><p>Having trouble viewing this email? [ <%= link_to "Read in Browser", read_in_browser, target: "_blank" %> ]</p></td>
                   <td class="no-pad icon" width="20">
-                    <% link_to "#{data.winter2016.facebook}" do %>
+                    <% link_to "#{data.winter2016.facebook}", target: "_blank" do %>
                       <img class="icon" style="display: inline;" src="http://drexel.edu/~/media/Images/biomed/email/facebook_icon_15x15.ashx" width="15" height="15" alt=" " />
                     <% end %>
                   </td>
                   <td class="no-pad icon" width="20">
-                    <% link_to "#{data.winter2016.linkedin}" do %>
+                    <% link_to "#{data.winter2016.linkedin}", target: "_blank" do %>
                       <img class="icon" style="display: inline;" src="http://drexel.edu/~/media/Images/biomed/email/linkedin15x15.ashx" width="15" height="15" alt=" " />
                     <% end %>
                   </td>

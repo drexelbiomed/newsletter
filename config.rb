@@ -100,7 +100,7 @@ helpers do
   end
 
   def home_link
-      html = '<a href="http://drexel.edu/biomed'
+      html = '<a target="_blank" href="http://drexel.edu/biomed'
       html += google_utm('home_logo')
       html += '">'
   end
@@ -111,12 +111,12 @@ helpers do
 
   def a_href(section, index=999)
     if index == 999
-      html = '<a href="'
+      html = '<a target="_blank" href="'
       html += eval("#{section}.url")
       html += google_utm('spotlight')
       html += '">'
     else
-      html = '<a href="'
+      html = '<a target="_blank" href="'
       html += eval("#{section}"+"["+"#{index}"+"].url")
       html += google_utm("#{section}")
       html += '">'
