@@ -1,0 +1,48 @@
+---
+layout: timeline
+title: Drexel BIOMED Newsletters
+newsletters:
+  - date: June 1, 2016
+    title: Spring Newsletter 2016
+    image: http://drexel.edu/~/media/Images/biomed/China-Partnership.ashx
+    url: spring-2016.html
+    blurb: Drexel furthers its alliance with SJTU, and student, faculty, alumni news, and research highlights.
+  - date: March 19, 2016
+    title: Winter Newsletter 2016
+    image: http://drexel.edu/~/media/Images/biomed/translational-design.ashx
+    url: winter-2016.html
+    blurb: Translational design clinical immersion co-op, and student, faculty, alumni news and research highlights.
+
+---
+<header>
+  <h1><%= current_page.data.title %></h1>
+  <div class="cd-nugget-info">
+    <a href="http://drexel.edu/biomed">
+      <span>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+          <polygon class="cd-nugget-info-arrow" points="15,7 4.4,7 8.4,3 7,1.6 0.6,8 0.6,8 0.6,8 7,14.4 8.4,13 4.4,9 15,9 "></polygon>
+        </svg>
+      </span>
+      Back to School of BIOMED
+    </a>
+  </div> <!-- cd-nugget-info -->
+</header>
+
+<section id="cd-timeline" class="cd-container">
+  <% current_page.data.newsletters.each do |news| %>
+  <div class="cd-timeline-block">
+    <div class="cd-timeline-img cd-picture">
+      <img src="https://cdn3.iconfinder.com/data/icons/sympletts-part-7/128/newspaper-128.png" alt="Picture">
+    </div> <!-- cd-timeline-img -->
+
+    <div class="cd-timeline-content">
+      <%= tag :img, src: "#{news.image}", alt: " " %>
+      <h2><%= news.title %></h2>
+      <p><%= news.blurb %></p>
+      <%= link_to "Read more", news.url, class: "cd-read-more" %>
+
+      <span class="cd-date"><%= news.date %></span>
+    </div> <!-- cd-timeline-content -->
+  </div> <!-- cd-timeline-block -->
+  <% end %>
+</section> <!-- cd-timeline -->
