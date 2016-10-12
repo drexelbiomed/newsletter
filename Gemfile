@@ -2,6 +2,9 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+
+gem "bourbon"
+
 gem "middleman", "~>3.2.2"
 # gem 'middleman-inliner'
 gem 'middleman-minify-html'
