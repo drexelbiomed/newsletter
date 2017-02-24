@@ -1,0 +1,112 @@
+---
+layout: ffe2-newsletter
+data_file: deansMessage
+---
+<table class="row drexel-blue">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns no-pb yellow-border-bottom">
+        <%= home_link %>
+          <img class="no-pad header-alt" src="http://drexel.edu/~/media/Images/biomed/email/biomed-logo-slim.ashx" alt="Drexel University | School of Biomedical Engineering, Science and Health Systems" />
+        <%= end_link %>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+
+<table class="row">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+        <p>Congratulations on your offer of admission to Drexel University's School of Biomedical Engineering, Science and Health Systems (BIOMED)! We are impressed with your achievements thus far, and our faculty and staff are dedicated to your future success!</p>
+        <p>At Drexel, you will have many opportunities for a rigorous technical education, cutting-edge research experiences, close mentoring relationships with world-class faculty, professional development, paid cooperative learning employment, entrepreneurship support and career services. In addition, you will live in Philadelphia, the 5th largest city in the US, with all of its history, culture, and diversity.</p>
+        <p>I invite you to continue to learn more about the many advantages you will receive as a Drexel BIOMED student by reviewing our online resources. Please do not hesitate to contact me at <a href="mailto:pwb35@drexel.edu">pwb35@drexel.edu</a>, or Dr. Amy Throckmorton at 215-895-2791 or <a href="mailto:alt82@drexel.edu">alt82@drexel.edu</a>. </p>
+        <p>I hope you will schedule a visit and attend one of the upcoming Accepted Students Days. An excellent, exciting education awaits you! Join us and let's make the world healthier for all!</p>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row">
+  <tbody>
+    <tr>
+      <th class="first small-3 large-2 columns">
+        <img src="http://drexel.edu/~/media/Images/biomed/email/Dean-Paul-Brandt-Rauf-thumbnail.ashx" alt="">
+      </th>
+      <th class="last small-9 large-10 columns" valign="middle">
+        <p>Sincerely,</p>
+        <p>
+          Paul W. Brandt-Rauf, MD, DrPH, ScD <br>
+          <em>Dean and Distinguished University Professor</em>
+        </p>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row light-grey">
+  <tbody>
+    <tr>
+      <th class="first small-12 large-6 columns pad-top">
+        <img src="http://www.drexel.edu/~/media/Images/biomed/email/drexel-campus.ashx" alt="Students walking under shady trees along Lancaster Walk">
+        <h6 class="pad-top">Accepted Students Days</h6>
+        <p>At Accepted Students Days, you'll have the chance to meet your future classmates; chat with current students, faculty, and alumni; and get firsthand experience of student life here at Drexel and in Philadelphia.</p>
+        <table class="button radius large primary">
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <%= link_to "Register Now", "http://drexel.edu/undergrad/visit/events#{gua('register')}" %>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="expander">
+              <%= tag :img, :src => "#{track_opens_url}" %>
+            </td>
+          </tr>
+        </table>
+      </th>
+      <th class="last small-12 large-6 columns pad-top">
+        <img src="http://www.drexel.edu/~/media/Images/biomed/email/biomed-classroom.aspx" alt="Students Learning in a Biomed classroom">
+        <h6 class="pad-top">Why Biomed?</h6>
+        <p>The School of Biomedical Engineering, Science, and Health Systems offers excellent opportunities for undergraduate students, such as the <a href="http://www.drexel.edu/biomed/academics/undergraduate-programs/star-scholars?utm_source=biomed_email&utm_medium=email&utm_term=star&utm_campaign=dean_message">STAR Scholars Program</a>. For more information about these programs, please visit the link below.</p>
+        <table class="button radius">
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td>
+                    <%= link_to "Learn More", "http://drexel.edu/biomed/accepted#{gua('accepted')}" %>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+<table class="row">
+  <tbody>
+    <tr>
+      </th>
+      <th class="first small-12 large-6 columns pad-top">
+        <% link_to "http://www.drexel.edu/biomed/academics/undergraduate-programs/star-scholars#{gua('star')}" do %>
+          <img src="http://www.drexel.edu/~/media/Images/biomed/email/ryan-benjamin.ashx" alt="STAR Scholar Ryan Banjamin">
+        <% end %>
+      <th class="last small-12 large-6 columns pad-top">
+        <h6>STAR Scholars Program</h6>
+        <p>The STAR (Students Tackling Advanced Research) Scholars Program allows first-year students to participate in faculty-mentored research, scholarship, or creative work during the summer after their freshman year. </p>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+
+<!--%= partial "newsletter-footer" %-->

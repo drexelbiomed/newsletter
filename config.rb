@@ -34,17 +34,18 @@
 require 'date'
 require 'slim'
 require 'uri'
+require 'premailer'
 
 Slim::Engine.disable_option_validator!
 
 helpers do
 
   def bme_path
-    "http://www.biomed.drexel.edu/new04/Content/newsletter/"
+    "http://www.biomed.drexel.edu/media/newsletter/"
   end
 
   def newsletter_base_href
-    "http://biomed.drexel.edu/labs/newsletter/"
+    "http://biomed.drexel.edu/media/newsletter/"
   end
 
   def format_date(stringy)
@@ -92,7 +93,7 @@ helpers do
   end
 
   def utm_source
-    "newsletter"
+    eval("data."+"#{data_file}.source")
   end
 
   def utm_medium
@@ -101,7 +102,7 @@ helpers do
 
   def home_link
       html = '<a target="_blank" href="http://drexel.edu/biomed'
-      html += google_utm('home_logo')
+      html += ga('home_logo')
       html += '">'
   end
 
@@ -113,12 +114,12 @@ helpers do
     if index == 999
       html = '<a target="_blank" href="'
       html += eval("#{section}.url")
-      html += google_utm('spotlight')
+      html += ga('spotlight')
       html += '">'
     else
       html = '<a target="_blank" href="'
       html += eval("#{section}"+"["+"#{index}"+"].url")
-      html += google_utm("#{section}")
+      html += ga("#{section}")
       html += '">'
     end
   end
@@ -133,9 +134,12 @@ helpers do
     eval("data."+"#{data_file}.campaign")
   end
 
-  def google_utm(utm_term)
+  def ga(utm_term)
     "?utm_source=#{utm_source}&amp;utm_medium=#{utm_medium}&amp;utm_term=#{utm_term}&amp;utm_campaign=#{utm_campaign}"
+  end
 
+  def gua(utm_term)
+    "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_term=#{utm_term}&utm_campaign=#{utm_campaign}"
   end
 
   def track_opens_url
