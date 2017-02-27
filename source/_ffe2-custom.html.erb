@@ -49,6 +49,8 @@ th {
   font-size: 14px;
   line-height: 150%; }
 
+table.button td, table.button td table td, table.button td table td a { line-height: 100%; }
+
 a {
   color: #006699;
   text-decoration: none; }
@@ -89,32 +91,36 @@ h6.pad-top {
 .off-yellow {
   color: #bb9613; }
 
+.margin-bottom-fix, p.margin-bottom-fix {
+  margin: 0;
+  Margin: 0; }
+
+.p-space {
+  display: block;
+  height: 10px;
+  font-size: 10px;
+  line-height: 10px;
+}
+
 table.button a img.social-icon {
   display: inline; }
-
-/* Remove Border on Default Buttons */
-
-table.button table td {
-  border: 0px solid transparent; }
-  table.button table td a {
-    border: 0 solid transparent; }
 
 /* Drexel Yellow Button */
 table.button.primary table td, table.button.small.primary table td, table.button.large.primary table td  {
   background: #ffc600;
   color: #07294d;
-  border: 0px solid transparent; }
+  border: 0px solid #ffc600; }
 
 table.button.primary table a, table.button.small.primary table a, table.button.large.primary table a  {
   color: #07294d;
-  border: 0px solid transparent; }
+  border: 0px solid #ffc600; }
 
 table.button.primary:hover table td, table.button.small.primary:hover table td, table.button.large.primary:hover table td  {
   background: #ffc600;
   color: #07294d; }
 
 table.button.primary:hover table a, table.button.small.primary:hover table a, table.button.large.primary:hover table a  {
-  border: 0px solid transparent; }
+  border: 0px solid #ffc600; }
 
 table.button.primary:hover table td a, table.button.small.primary:hover table td a, table.button.large.primary:hover table td a  {
   color: #07294d; }
