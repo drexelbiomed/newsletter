@@ -9,13 +9,45 @@ td {
   border-collapse: collapse !important;
 }
 
+.preheader {
+  display: none;
+  font-size: 1px;
+  line-height: 1px;
+  max-height: 0px;
+  max-width: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+span.blue-link {
+  color: #0a0a0a !important;
+  text-decoration: none !important;
+}
+
+.drexel-blue img {
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+p.float-center, p.lead.float-center {
+  text-align: center;
+}
+
 body,
 table.body,
 p,
 td,
 th {
   font-size: 14px;
-  line-height: 1.5; }
+  line-height: 150%; }
 
 a {
   color: #006699;
@@ -60,6 +92,35 @@ h6.pad-top {
 table.button a img.social-icon {
   display: inline; }
 
+/* Default Buttons */
+
+table.button {
+  width: auto;
+  margin: 0 0 16px 0;
+  Margin: 0 0 16px 0; }
+  table.button table td {
+    text-align: left;
+    color: #fefefe;
+    background: #2199e8;
+    border: 0px solid transparent; }
+    table.button table td a {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fefefe;
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px 8px 16px;
+      border: 0 solid transparent;
+      border-radius: 3px; }
+  table.button.radius table td {
+    border-radius: 3px;
+    border: none; }
+  table.button.rounded table td {
+    border-radius: 500px;
+    border: none; }
+
+
 /* Drexel Yellow Button */
 table.button.primary table td, table.button.small.primary table td, table.button.large.primary table td  {
   background: #ffc600;
@@ -68,14 +129,14 @@ table.button.primary table td, table.button.small.primary table td, table.button
 
 table.button.primary table a, table.button.small.primary table a, table.button.large.primary table a  {
   color: #07294d;
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.primary:hover table td, table.button.small.primary:hover table td, table.button.large.primary:hover table td  {
   background: #ffc600;
   color: #07294d; }
 
 table.button.primary:hover table a, table.button.small.primary:hover table a, table.button.large.primary:hover table a  {
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.primary:hover table td a, table.button.small.primary:hover table td a, table.button.large.primary:hover table td a  {
   color: #07294d; }
@@ -90,18 +151,18 @@ table.button.primary table td a:visited, table.button.small.primary table td a:v
 table.button.twitter table td, table.button.small.twitter table td, table.button.large.twitter table td  {
   background: #4099FF;
   color: #fefefe;
-  border: 0px solid #ffc600; }
+  border: 0px solid transparent; }
 
 table.button.twitter table a, table.button.small.twitter table a, table.button.large.twitter table a  {
   color: #fefefe;
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.twitter:hover table td, table.button.small.twitter:hover table td, table.button.large.twitter:hover table td  {
   background: #4099FF;
   color: #fefefe; }
 
 table.button.twitter:hover table a, table.button.small.twitter:hover table a, table.button.large.twitter:hover table a  {
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.twitter:hover table td a, table.button.small.twitter:hover table td a, table.button.large.twitter:hover table td a  {
   color: #fefefe; }
@@ -116,18 +177,18 @@ table.button.twitter table td a:visited, table.button.small.twitter table td a:v
 table.button.facebook table td, table.button.small.facebook table td, table.button.large.facebook table td  {
   background: #3b5998;
   color: #fefefe;
-  border: 0px solid #ffc600; }
+  border: 0px solid transparent; }
 
 table.button.facebook table a, table.button.small.facebook table a, table.button.large.facebook table a  {
   color: #fefefe;
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.facebook:hover table td, table.button.small.facebook:hover table td, table.button.large.facebook:hover table td  {
   background: #3b5998;
   color: #fefefe; }
 
 table.button.facebook:hover table a, table.button.small.facebook:hover table a, table.button.large.facebook:hover table a  {
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.facebook:hover table td a, table.button.small.facebook:hover table td a, table.button.large.facebook:hover table td a  {
   color: #fefefe; }
@@ -142,18 +203,18 @@ table.button.facebook table td a:visited, table.button.small.facebook table td a
 table.button.youtube table td, table.button.small.youtube table td, table.button.large.youtube table td  {
   background: #e52d27;
   color: #fefefe;
-  border: 0px solid #ffc600; }
+  border: 0px solid transparent; }
 
 table.button.youtube table a, table.button.small.youtube table a, table.button.large.youtube table a  {
   color: #fefefe;
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.youtube:hover table td, table.button.small.youtube:hover table td, table.button.large.youtube:hover table td  {
   background: #e52d27;
   color: #fefefe; }
 
 table.button.youtube:hover table a, table.button.small.youtube:hover table a, table.button.large.youtube:hover table a  {
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.youtube:hover table td a, table.button.small.youtube:hover table td a, table.button.large.youtube:hover table td a  {
   color: #fefefe; }
@@ -168,18 +229,18 @@ table.button.youtube table td a:visited, table.button.small.youtube table td a:v
 table.button.instagram table td, table.button.small.instagram table td, table.button.large.instagram table td  {
   background: #4c68d7;
   color: #fefefe;
-  border: 0px solid #ffc600; }
+  border: 0px solid transparent; }
 
 table.button.instagram table a, table.button.small.instagram table a, table.button.large.instagram table a  {
   color: #fefefe;
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.instagram:hover table td, table.button.small.instagram:hover table td, table.button.large.instagram:hover table td  {
   background: #4c68d7;
   color: #fefefe; }
 
 table.button.instagram:hover table a, table.button.small.instagram:hover table a, table.button.large.instagram:hover table a  {
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.instagram:hover table td a, table.button.small.instagram:hover table td a, table.button.large.instagram:hover table td a  {
   color: #fefefe; }
@@ -194,18 +255,18 @@ table.button.instagram table td a:visited, table.button.small.instagram table td
 table.button.linkedin table td, table.button.small.linkedin table td, table.button.large.linkedin table td  {
   background: #007bb5;
   color: #fefefe;
-  border: 0px solid #ffc600; }
+  border: 0px solid transparent; }
 
 table.button.linkedin table a, table.button.small.linkedin table a, table.button.large.linkedin table a  {
   color: #fefefe;
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.linkedin:hover table td, table.button.small.linkedin:hover table td, table.button.large.linkedin:hover table td  {
   background: #007bb5;
   color: #fefefe; }
 
 table.button.linkedin:hover table a, table.button.small.linkedin:hover table a, table.button.large.linkedin:hover table a  {
-  border: 0 solid transparent; }
+  border: 0px solid transparent; }
 
 table.button.linkedin:hover table td a, table.button.small.linkedin:hover table td a, table.button.large.linkedin:hover table td a  {
   color: #fefefe; }

@@ -7,10 +7,12 @@ data_file: deansMessage
     <tr>
       <th class="first last small-12 large-12 columns no-pb yellow-border-bottom">
         <%= home_link %>
-          <img class="no-pad header-alt" src="http://drexel.edu/~/media/Images/biomed/email/biomed-logo-slim.ashx" alt="Drexel University | School of Biomedical Engineering, Science and Health Systems" />
+          <img class="no-pad" src="http://drexel.edu/~/media/Images/biomed/email/biomed-logo-slim.ashx" alt="Drexel University | School of Biomed" />
         <%= end_link %>
       </th>
-      <th class="expander"></th>
+      <th class="expander">
+        <%= tag :img, :src => "#{track_opens_url}" %>
+      </th>
     </tr>
   </tbody>
 </table>
@@ -21,7 +23,7 @@ data_file: deansMessage
       <th class="first last small-12 large-12 columns pad-top">
         <p>Congratulations on your offer of admission to Drexel University's School of Biomedical Engineering, Science and Health Systems (BIOMED)! We are impressed with your achievements thus far, and our faculty and staff are dedicated to your future success!</p>
         <p>At Drexel, you will have many opportunities for a rigorous technical education, cutting-edge research experiences, close mentoring relationships with world-class faculty, professional development, paid cooperative learning employment, entrepreneurship support and career services. In addition, you will live in Philadelphia, the 5th largest city in the US, with all of its history, culture, and diversity.</p>
-        <p>I invite you to continue to learn more about the many advantages you will receive as a Drexel BIOMED student by reviewing our online resources. Please do not hesitate to contact me at <a href="mailto:pwb35@drexel.edu">pwb35@drexel.edu</a>, or Dr. Amy Throckmorton at 215-895-2791 or <a href="mailto:alt82@drexel.edu">alt82@drexel.edu</a>. </p>
+        <p>I invite you to continue to learn more about the many advantages you will receive as a Drexel BIOMED student by reviewing our online resources. Please do not hesitate to contact me at <a href="mailto:pwb35@drexel.edu">pwb35@drexel.edu</a>, or Dr. Amy Throckmorton at <span class="blue-link">215.895.2791</span> or <a href="mailto:alt82@drexel.edu">alt82@drexel.edu</a>.</p>
         <p>I hope you will schedule a visit and attend one of the upcoming Accepted Students Days. An excellent, exciting education awaits you! Join us and let's make the world healthier for all!</p>
       </th>
       <th class="expander"></th>
@@ -64,7 +66,6 @@ data_file: deansMessage
               </table>
             </td>
             <td class="expander">
-              <%= tag :img, :src => "#{track_opens_url}" %>
             </td>
           </tr>
         </table>
