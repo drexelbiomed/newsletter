@@ -5,16 +5,18 @@ Drexel University | School of Biomed
 ( http://drexel.edu/biomed?utm_source=biomed_email&utm_medium=email&utm_term=home_logo&utm_campaign=dean_message )
 
 
+Dear *|FNAME|*,
+
 Congratulations on your offer of admission to Drexel
-University's School of Biomedical Engineering, Science and Health
-Systems (BIOMED)! We are impressed with your achievements thus
-far, and our faculty and staff are dedicated to your future
+University's School of Biomedical Engineering, Science, and
+Health Systems (BIOMED)! We are impressed with your achievements
+thus far, and our faculty and staff are dedicated to your future
 success!
 
 At Drexel, you will have many opportunities for a rigorous
-technical education, cutting-edge research experiences, close
-mentoring relationships with world-class faculty, professional
-development, paid cooperative learning employment,
+applied science education, cutting-edge research experiences,
+close mentoring relationships with world-class faculty,
+professional development, cooperative learning experiences,
 entrepreneurship support and career services. In addition, you
 will live in Philadelphia, the 5th largest city in the US, with
 all of its history, culture, and diversity.
