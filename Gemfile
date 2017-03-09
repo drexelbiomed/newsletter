@@ -7,8 +7,8 @@ gem "bourbon"
 
 gem "middleman", "~>3.2.2"
 # gem 'middleman-inliner'
-gem 'middleman-minify-html'
-gem "middleman-deploy"
+# gem 'middleman-minify-html'
+gem "middleman-deploy", '~> 1.0'
 
 gem "premailer"
 

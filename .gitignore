@@ -21,7 +21,10 @@
 *.xls
 
 /data/ftp.yml
+/data/ftp.yaml
 # Ignore application configuration
 /config/application.yml
+
+.ruby-version
 
 sendAnEmail.rb
