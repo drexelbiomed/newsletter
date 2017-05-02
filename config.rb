@@ -102,7 +102,11 @@ helpers do
 
   def home_link
       html = '<a target="_blank" href="http://drexel.edu/biomed'
-      html += ga('home_logo')
+      if environment == :development
+        # "This is in development"
+      else
+        html += ga('home_logo')
+      end
       html += '">'
   end
 
@@ -110,8 +114,8 @@ helpers do
     "</a>"
   end
 
-  def a_href(section, index=999)
-    if index == 999
+  def a_href(section, index=888)
+    if index == 888
       html = '<a target="_blank" href="'
       html += eval("#{section}.url")
       html += ga('spotlight')
@@ -130,20 +134,37 @@ helpers do
   # end
 
   def utm_campaign
-    # grab info directly from YAML file
-    eval("data."+"#{data_file}.campaign")
+    if environment == :development
+      # "This is in development"
+    else
+      # grab info directly from YAML file
+      eval("data."+"#{data_file}.campaign")
+    end
   end
 
   def ga(utm_term)
-    "?utm_source=#{utm_source}&amp;utm_medium=#{utm_medium}&amp;utm_term=#{utm_term}&amp;utm_campaign=#{utm_campaign}"
+    if environment == :development
+      # "This is in development"
+    else
+      "?utm_source=#{utm_source}&amp;utm_medium=#{utm_medium}&amp;utm_term=#{utm_term}&amp;utm_campaign=#{utm_campaign}"
+    end
   end
 
   def gua(utm_term)
-    "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_term=#{utm_term}&utm_campaign=#{utm_campaign}"
+    if environment == :development
+      # "This is in development"
+    else
+      "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_term=#{utm_term}&utm_campaign=#{utm_campaign}"
+    end
   end
 
   def track_opens_url
-    "http://google-analytics.com/collect?v=1&tid=UA-48789419-1&cid=555&t=event&ec=email&ea=open&el=#{utm_campaign}"
+    if environment == :development
+      # "This is in development"
+      "http://placehold.it/1x1"
+    else
+      "http://google-analytics.com/collect?v=1&tid=UA-48789419-1&cid=555&t=event&ec=email&ea=open&el=#{utm_campaign}"
+    end
   end
 end
 
