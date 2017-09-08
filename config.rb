@@ -32,13 +32,26 @@
 # Helpers
 ###
 require 'date'
+require 'time'
 require 'slim'
 require 'uri'
 require 'premailer'
+require 'rss'
+require 'open-uri'
+require 'htmlentities'
 
 Slim::Engine.disable_option_validator!
 
 helpers do
+  def rss_url
+    'http://drexel.edu/biomed/news-and-events/rss'
+  end
+
+  def rss_feed
+    open(rss_url) do |rss|
+      feed = RSS::Parser.parse(rss)
+    end
+  end
 
   def bme_path
     "http://www.biomed.drexel.edu/media/newsletter/"

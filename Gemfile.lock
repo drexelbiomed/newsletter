@@ -140,6 +140,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   figaro
+  htmlentities
   mail
   middleman (~> 3.2.2)
   middleman-deploy
@@ -148,7 +149,6 @@ DEPENDENCIES
   premailer
   slim
   spreadsheet
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.14.4
+   1.15.1

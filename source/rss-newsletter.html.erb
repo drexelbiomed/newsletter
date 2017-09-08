@@ -1,0 +1,10 @@
+<h1><%= rss_feed.channel.description %></h1>
+<h2><%= rss_feed.channel.title %></h2>
+<p><%= link_to "Subscribe to RSS Feed", rss_feed.channel.link %></p>
+<br>
+<% rss_feed.items.each do |item| %>
+  <h2><%= link_to item.title, item.link %></h2>
+  <p><%= Date.parse("#{item.pubDate}", "%a, %b %e, %Y %H:%M:%S %z").strftime("%B %e, %Y")  %></p>
+  <%= HTMLEntities.new.decode(item.description) %>
+  <hr>
+<% end %>
