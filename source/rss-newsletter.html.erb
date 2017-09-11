@@ -1,10 +1,61 @@
-<h1><%= rss_feed.channel.description %></h1>
-<h2><%= rss_feed.channel.title %></h2>
-<p><%= link_to "Subscribe to RSS Feed", rss_feed.channel.link %></p>
-<br>
-<% rss_feed.items.each do |item| %>
-  <h2><%= link_to item.title, item.link %></h2>
-  <p><%= Date.parse("#{item.pubDate}", "%a, %b %e, %Y %H:%M:%S %z").strftime("%B %e, %Y")  %></p>
-  <%= HTMLEntities.new.decode(item.description) %>
-  <hr>
-<% end %>
+---
+layout: "ffe2-newsletter"
+source: biomed_email
+campaign: rss_newsletter
+---
+
+<table class="row drexel-blue" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns no-pb">
+        <!-- Preheader -->
+        <div class="preheader"></div>
+        <!-- Preheader End -->
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row drexel-blue collapse" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns no-pb">
+        <center>
+          <%= home_link %>
+            <img  class="float-center no-pad" align="center" src="http://drexel.edu/~/media/Images/biomed/email/biomed-logo-slim.ashx" alt="Drexel University | School of Biomed" />
+          <%= end_link %>
+        </center>
+      </th>
+      <th class="expander">
+      </th>
+    </tr>
+  </tbody>
+</table>
+
+<table class="row light-grey" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+        <!-- <p><%= link_to "Subscribe to RSS Feed", rss_feed.channel.link %></p> -->
+        <!-- <h1><%= rss_feed.channel.title %></h1> -->
+        <% rss_feed.items.each do |item| %>
+          <h3><%= link_to item.title, item.link %></h3>
+          <p><%= Date.parse("#{item.pubDate}", "%a, %b %e, %Y %H:%M:%S %z").strftime("%B %e, %Y")  %></p>
+          <%= item.description.gsub(/~\/media/,"http://drexel.edu/~/media") %>
+          <hr>
+        <% end %>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<!--%= partial "newsletter-footer" %-->

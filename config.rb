@@ -106,7 +106,7 @@ helpers do
   end
 
   def utm_source
-    eval("data."+"#{data_file}.source")
+    eval("data."+"#{data_file}.source") or current_page.data.source
   end
 
   def utm_medium
@@ -133,6 +133,8 @@ helpers do
       html += eval("#{section}.url")
       html += ga('spotlight')
       html += '">'
+    elsif index == 777
+
     else
       html = '<a target="_blank" href="'
       html += eval("#{section}"+"["+"#{index}"+"].url")
@@ -151,7 +153,16 @@ helpers do
       # "This is in development"
     else
       # grab info directly from YAML file
-      eval("data."+"#{data_file}.campaign")
+      eval("data."+"#{data_file}.campaign") or current_page.data.campaign
+    end
+  end
+
+  def utm_term
+    if environment == :development
+      # "This is in development"
+    else
+      # grab info directly from YAML file
+      eval("data."+"#{data_file}.term") or current_page.data.term
     end
   end
 
@@ -159,7 +170,7 @@ helpers do
     if environment == :development
       # "This is in development"
     else
-      "?utm_source=#{utm_source}&amp;utm_medium=#{utm_medium}&amp;utm_term=#{utm_term}&amp;utm_campaign=#{utm_campaign}"
+      "?utm_source=#{utm_source}&amp;utm_medium=#{utm_medium}&amp;utm_campaign=#{utm_campaign}"
     end
   end
 
@@ -167,7 +178,7 @@ helpers do
     if environment == :development
       # "This is in development"
     else
-      "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_term=#{utm_term}&utm_campaign=#{utm_campaign}"
+      "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_campaign=#{utm_campaign}"
     end
   end
 
