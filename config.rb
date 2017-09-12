@@ -106,7 +106,7 @@ helpers do
   end
 
   def utm_source
-    eval("data."+"#{data_file}.source") or current_page.data.source
+    current_page.data.source
   end
 
   def utm_medium
@@ -118,7 +118,7 @@ helpers do
       if environment == :development
         # "This is in development"
       else
-        html += ga('home_logo')
+        html += gua
       end
       html += '">'
   end
@@ -131,16 +131,24 @@ helpers do
     if index == 888
       html = '<a target="_blank" href="'
       html += eval("#{section}.url")
-      html += ga('spotlight')
+      html += gua
       html += '">'
     elsif index == 777
 
     else
       html = '<a target="_blank" href="'
       html += eval("#{section}"+"["+"#{index}"+"].url")
-      html += ga("#{section}")
+      html += gua
       html += '">'
     end
+  end
+
+  def link_me (title, link)
+      html = '<a target="_blank" href="'
+      html += link
+      html += '">'
+      html += title
+      html += '</a>'
   end
 
   # def utm_term
@@ -153,7 +161,7 @@ helpers do
       # "This is in development"
     else
       # grab info directly from YAML file
-      eval("data."+"#{data_file}.campaign") or current_page.data.campaign
+      current_page.data.campaign
     end
   end
 
@@ -162,11 +170,11 @@ helpers do
       # "This is in development"
     else
       # grab info directly from YAML file
-      eval("data."+"#{data_file}.term") or current_page.data.term
+      current_page.data.term
     end
   end
 
-  def ga(utm_term)
+  def ga
     if environment == :development
       # "This is in development"
     else
@@ -174,7 +182,7 @@ helpers do
     end
   end
 
-  def gua(utm_term)
+  def gua
     if environment == :development
       # "This is in development"
     else
