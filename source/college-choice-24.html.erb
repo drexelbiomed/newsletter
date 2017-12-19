@@ -1,0 +1,87 @@
+---
+layout: ffe2-mabd
+source: biomed_email
+campaign: college_choice
+preheader: "College Choice, a leading authority in college and university rankings and resources, put Drexel University at #24"
+---
+
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns no-pb">
+        <!-- Preheader -->
+        <div class="preheader"><%= current_page.data.preheader %></div>
+        <!-- Preheader End -->
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+        <center>
+          <!-- Biomed Logo -->
+          <%= home_link %>
+            <img class="float-center" align="center" alt=" Drexel University School of Biomedical Engineering" src="http://drexel.edu/~/media/Images/biomed/email/Biomed_TwoLine_small.ashx" />
+          <%= end_link %>
+          <!-- Biomed Logo End -->
+        </center>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row drexel-blue" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+        <center>
+          <h1 class="text-center white-text font-28">Drexel University has been ranked <span class="gold-text">among the 50 Best Master’s in Biomedical Engineering (BME) Degrees</span></h1>
+        </center>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row drexel-blue" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns">
+        <center>
+            <img class="float-center" align="center" alt=" " src="http://drexel.edu/~/media/Images/biomed/email/banner-sm.ashx" />
+        </center>
+      </th>
+      <th class="expander"><%= tag :img, :src => "#{track_opens_url}" %></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 pad-top columns">
+        <p>Philadelphia, PA – December, 2017</p>
+
+
+        <p class="lead">College Choice, a leading authority in college and university rankings and resources, put <strong>Drexel University at #24</strong>. Here is the full ranking of the <a href="https://www.collegechoice.net/rankings/masters-in-biomedical-engineering-degrees/">Best Master’s in Biomedical Engineering Degrees</a>.</p>
+
+        <p>The School of Biomedical Engineering, Science, and Health Systems is an internationally renowned center for research and instruction. As its name suggests, the school places a particular emphasis on collaboration among scientific disciplines. Students benefit from alliances not just within the University but with other agencies, major research centers, universities, and businesses, including FDA, Fox Chase Center Research Institute, Children’s Hospital of Philadelphia, Thomas Jefferson University, the University of Pennsylvania, Johnson &amp; Johnson, Exponent, and Integra Life Sciences.</p>
+
+        <p>The <a href="http://drexel.edu/biomed/academics/graduate-programs/biomedical-engineering-master-of-science-degree/">MS in Biomedical Engineering degree program</a> curriculum develops graduates who can identify and address unmet clinical, diagnostic, and healthcare needs by using their knowledge of modern theories, engineering systems, and mathematical and engineering tools. Biomedical engineers require the analytical tools and broad knowledge of modern engineering and science, fundamental understanding of the biological or physiological system, and familiarity with recent technological breakthroughs.</p>
+        <center>
+            <img class="float-center" align="center" alt=" " src="http://drexel.edu/~/media/Images/biomed/email/badge.ashx" />
+        </center>
+        <p>According to College Choice, the ranking is based on accreditation and three composite scores: institutional excellence, student satisfaction, and return on investment. The data from their ranking comes from the National Center for Education Statistics’ IPEDS database, U.S. News & World Report, Payscale, and individual college websites.  </p>
+        <p>In its description of Drexel University, College Choice noted the <a href="http://drexel.edu/biomed/news-and-events/news/2017/August/Throckmorton-Hartwell-Foundation-Award/">Hartwell Foundation recently awarded an associate professor</a> in the School of Biomedical Engineering with a grant to continue her research to aid children with heart defects.</p>
+
+        <p>
+          For further information please contact Natalia Broz at <%= mail_to "njb33@drexel.edu" %>.
+        </p>
+
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<!-- table.row>tbody>tr>th.first.last.small-12.large-12.columns -->
