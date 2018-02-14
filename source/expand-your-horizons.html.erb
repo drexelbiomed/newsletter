@@ -1,0 +1,106 @@
+---
+layout: ffe2-mabd
+source: biomed_email
+campaign: expand_your_horizons
+preheader: "Expand Your Horizons: Gain New Career Options As You Gain Quantitative Skills"
+---
+
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns no-pb">
+        <!-- Preheader -->
+        <div class="preheader"><%= current_page.data.preheader %></div>
+        <!-- Preheader End -->
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+        <center>
+          <!-- Biomed Logo -->
+          <%= home_link %>
+            <img class="float-center" align="center" alt=" Drexel University School of Biomedical Engineering" src="http://drexel.edu/~/media/Images/biomed/email/Biomed_TwoLine_small.ashx" />
+          <%= end_link %>
+          <!-- Biomed Logo End -->
+        </center>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row drexel-blue" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns pad-top">
+        <center>
+          <h1 class="text-center white-text font-28">Expand Your Horizons:</h1>
+          <p class="lead text-center">
+            <span class="gold-text font-22">Gain New Career Options</span>
+            <br>
+            <span class="gold-text font-18">As You Gain Quantitative Skills</span>
+          </p>
+        </center>
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 columns">
+        <center>
+            <img class="float-center" align="center" alt=" " src="http://drexel.edu/~/media/Images/biomed/email/grad-students-gattacca-sm.ashx" />
+        </center>
+      </th>
+      <th class="expander"><%= tag :img, :src => "#{track_opens_url}" %></th>
+    </tr>
+  </tbody>
+</table>
+<table class="row" role="presentation">
+  <tbody>
+    <tr>
+      <th class="first last small-12 large-12 pad-top columns">
+        <h1 class="text-center blue-text">MS in Biomedical Science (BMS)</h1>
+        <p class="lead">Our MS program in Biomedical Science (BMS) is ideal for students from non-engineering disciplines who wish to expand their career path choices beyond the traditional biomedical science opportunities and via rigorous quantitative skills preparation.</p>
+
+        <p>The curriculum enables students to gain the necessary knowledge to concentrate in Biomaterials and Tissue Engineering, Bioinformatics and Systems Biology, Neuroengineering and Neuroscience, or Biomechanics and Human Performance during the second year of the program. Upon completion of the BMS program, participants are able to successfully work on interdisciplinary teams with engineers and clinicians in academic and industry settings. With the guidance of a dedicated advisor, student, can further individualize and enrich their curricula by adding a complementary <%= link_to "Graduate Minor", "http://catalog.drexel.edu/graduateminors" %>, completing a research project under the guidance of a faculty member, and/or participating in <%= link_to "Graduate Co-op", "http://drexel.edu/scdc/co-op/graduate" %> to gain valuable industry experience prior to graduation. </p>
+        <p>The <%= link_to "core requirements", "http://catalog.drexel.edu/graduate/schoolofbiomedicalengineeringscienceandhealthsystems/biomedicalscience" %> for the BMS encompass approximately 45 course credits (most courses are three credits each) and can usually be completed within 2 years. Graduates of the program work in fields such as health care, pharmaceuticals, medical devices, biotechnology and others; continue clinical training in medicine, dentistry, or veterinary medicine; and/or pursue further graduate study, such as a doctorate degree.</p>
+        <p>Accepted students often hold undergraduate degrees in: </p>
+        <ul>
+          <li>Biology </li>
+          <li>Chemistry</li>
+          <li>Biochemistry </li>
+          <li>Biomedical/Biological Science </li>
+          <li>Computer Science </li>
+          <li>Mathematics </li>
+          <li>Public Health </li>
+        </ul>
+
+        <table class="button large primary">
+          <tr>
+            <td>
+              <table>
+                <tr>
+                  <td><a href="http://drexel.edu/grad/programs/biomed/biomedical-science">Apply Today</a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <p>
+          For further information please contact Natalia Broz at <%= mail_to "njb33@drexel.edu" %>.
+        </p>
+
+      </th>
+      <th class="expander"></th>
+    </tr>
+  </tbody>
+</table>
+<!-- table.row>tbody>tr>th.first.last.small-12.large-12.columns -->
