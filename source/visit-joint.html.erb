@@ -20,18 +20,18 @@ preheader: "Interested in visiting our campus in the beautiful city of Philadelp
 <table class="row drexel-blue" role="presentation">
   <tbody>
     <tr>
-      <th style="vertical-align: middle;" class="first pad-top small-6 large-6 columns" vertical-align="middle">
-        <a href="https://drexel.edu/biomed">
-          <img class="float-center white-text" align="center" alt=" Drexel University School of Biomedical Engineering" src="http://drexel.edu/~/media/Images/biomed/email/biomed-gold-white-primary-png.ashx" />
-        </a>
-      </th>
-      <th style="vertical-align: middle;" class="pad-top small-1 large-1 columns"><center><h2 class="white-text">+</h2></center></th>
       <th style="vertical-align: middle;" class="last pad-top small-5 large-5 columns" vertical-align="middle">
         <a href="https://drexel.edu/engineering">
           <img class="float-center white-text" align="center" alt=" Drexel University School of Biomedical Engineering" src="http://drexel.edu/~/media/Images/engineering/ui/Engineering_primary.ashx" />
         </a>
       </th>
-      <th class="expander"><%= tag :img, :src => "#{track_opens_url}" %></th>
+      <th style="vertical-align: middle;" class="pad-top small-1 large-1 columns"><center><h2 class="white-text">+</h2></center></th>
+      <th style="vertical-align: middle;" class="first pad-top small-5 large-5 columns" vertical-align="middle">
+        <a href="https://drexel.edu/biomed">
+          <img class="float-center white-text" align="center" alt=" Drexel University School of Biomedical Engineering" src="http://drexel.edu/~/media/Images/biomed/email/biomed-gold-white-primary-png.ashx" />
+        </a>
+      </th>
+      <th class="expander"></th>
     </tr>
   </tbody>
 </table>
@@ -39,8 +39,9 @@ preheader: "Interested in visiting our campus in the beautiful city of Philadelp
   <tbody>
     <tr>
       <th class="first last small-12 large-12 columns no-pb pad-top">
-        <h1 class="blue-text"><center>School of BIOMED and College of Engineering Group Visit and Open House</center></h1>
+        <h1 class="blue-text"><center>BIOMED and College of Engineering Group Visit and Open House</center></h1>
       </th>
+      <th class="expander"></th>
     </tr>
   </tbody>
 </table>
@@ -50,6 +51,7 @@ preheader: "Interested in visiting our campus in the beautiful city of Philadelp
       <th class="first last small-12 large-12 columns no-pb">
         <center>
           <img class="float-center" align="center" alt="Sunny Drexel Bossone with Clock" src="http://drexel.edu/~/media/Images/biomed/email/visit-campus.ashx" />
+          <%= tag :img, :src => "#{track_opens_url}" %>
         </center>
       </th>
       <th class="expander"></th>
