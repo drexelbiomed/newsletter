@@ -7,7 +7,7 @@ gem "htmlentities"
 
 gem "bourbon"
 
-gem "middleman", "~>3.2.2"
+gem "middleman", :github => "middleman/middleman", :branch => 'v3-stable'
 # gem 'middleman-inliner'
 gem 'middleman-minify-html'
 gem "middleman-deploy"

@@ -36,21 +36,59 @@ require 'time'
 require 'slim'
 require 'uri'
 require 'premailer'
-require 'rss'
 require 'open-uri'
 require 'htmlentities'
+require 'nokogiri'
 
 Slim::Engine.disable_option_validator!
 
 helpers do
-  def rss_url
-    'http://drexel.edu/biomed/news-and-events/rss'
+  def decode(this)
+    coder = HTMLEntities.new
+    string = this
+    coder.decode(string)
   end
 
-  def rss_feed
-    open(rss_url) do |rss|
-      feed = RSS::Parser.parse(rss)
+  def feed_xml
+    feed = Nokogiri::XML(open('https://drexel.edu/biomed/news-and-events/rss'))
+  end
+
+  def tree
+    tree = Hash.new { |hash, key| hash[key] = {} }
+  end
+
+  def fix_relative_img(link)
+    link.gsub(/~\/media/,"http://drexel.edu/~/media")
+  end
+
+  def parse_date(date)
+    Date.parse(date, "%a, %b %e, %Y %H:%M:%S %z").strftime("%B %e, %Y")
+  end
+
+  def feed
+    items = []
+    # Search for only rss "items"
+    # Iterate through the children elements i.e.
+    # Title, Description, GUID, pubDate
+    # Skip over randomly injected "text" or whitespace elements
+    # Structure into a hash format
+    feed_xml.css('rss item').each_with_index do |item, index|
+      details = []
+      item.children.each do |element|
+        if element.name != "text"
+          content = decode(element.inner_html)
+        end
+        details << content
+      end
+      # puts details
+
+      items << {:title       => details[1],
+                :description => fix_relative_img(details[3]),
+                :link        => details[5],
+                :pubDate     => parse_date(details[7]),
+                :guid        => details[9]}
     end
+    return items
   end
 
   def bme_path
@@ -61,8 +99,8 @@ helpers do
     "http://biomed.drexel.edu/media/newsletter/"
   end
 
-  def format_date(stringy)
-    Date.strptime(stringy, '%m-%d-%y').strftime("%B %d, %Y")
+  def format_date(string)
+    Date.strptime(string, '%m-%d-%y').strftime("%B %d, %Y")
   end
 
   def data_file
@@ -185,6 +223,7 @@ helpers do
   def gua
     if environment == :development
       # "This is in development"
+      "#"
     else
       "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_campaign=#{utm_campaign}"
     end
