@@ -1,6 +1,7 @@
 ---
 layout: ffe2-newsletter
-data_file: deansMessage
+source: biomed_email
+campaign: dean_message
 ---
 <table class="row drexel-blue" role="presentation">
   <tbody>
@@ -77,7 +78,7 @@ data_file: deansMessage
               <table>
                 <tr>
                   <td>
-                    <%= link_to "Register Now", "http://drexel.edu/undergrad/visit/events#{gua('register')}" %>
+                    <%= link_to "Register Now", "http://drexel.edu/undergrad/visit/events" %>
                   </td>
                 </tr>
               </table>
@@ -97,7 +98,7 @@ data_file: deansMessage
               <table>
                 <tr>
                   <td>
-                    <%= link_to "Learn More", "http://drexel.edu/biomed/accepted#{gua('accepted')}" %>
+                    <%= link_to "Learn More", "http://drexel.edu/biomed/accepted" %>
                   </td>
                 </tr>
               </table>
@@ -115,7 +116,7 @@ data_file: deansMessage
     <tr>
       </th>
       <th class="first small-12 large-6 columns pad-top">
-        <% link_to "http://www.drexel.edu/biomed/academics/undergraduate-programs/star-scholars#{gua('star')}" do %>
+        <% link_to "http://www.drexel.edu/biomed/academics/undergraduate-programs/star-scholars" do %>
           <img src="http://www.drexel.edu/~/media/Images/biomed/email/ryan-benjamin.ashx" alt="STAR Scholar Ryan Banjamin">
         <% end %>
       <th class="last small-12 large-6 columns pad-top">

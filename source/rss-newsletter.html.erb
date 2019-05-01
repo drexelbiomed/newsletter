@@ -50,13 +50,7 @@ campaign: rss_newsletter
   <tbody>
     <tr>
       <th class="first last small-12 large-12 columns pad-top">
-        <% feed.each do |item| %>
-          <p><strong><%= link_me item[:title], item[:link] + gua %></strong></p>
-          <p><em><%= item[:pubDate] %></em></p>
-          <%= item[:description] %>
 
-          <hr>
-        <% end %>
       </th>
       <th class="expander"></th>
     </tr>

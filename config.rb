@@ -144,21 +144,25 @@ helpers do
   end
 
   def utm_source
-    current_page.data.source
+    current_page.data.utm_source ||= current_page.data.source
   end
 
   def utm_medium
-    "email"
+    "HTML_Email"
   end
 
   def home_link
       html = '<a target="_blank" href="http://drexel.edu/biomed'
       if environment == :development
-        # "This is in development"
+        html += "#development"
+        html += '">'
+        html += "<!-- Analytics Tags: "
+        html += gua
+        html += " -->"
       else
         html += gua
+        html += '">'
       end
-      html += '">'
   end
 
   def end_link
@@ -195,12 +199,8 @@ helpers do
   # end
 
   def utm_campaign
-    if environment == :development
-      # "This is in development"
-    else
-      # grab info directly from YAML file
-      current_page.data.campaign
-    end
+    # grab info directly from YAML file
+    current_page.data.utm_campaign ||= current_page.data.campaign
   end
 
   def utm_term
@@ -208,8 +208,20 @@ helpers do
       # "This is in development"
     else
       # grab info directly from YAML file
-      current_page.data.term
+      current_page.data.term ||= current_page.data.term
     end
+  end
+
+  def utm_dp
+    current_page.data.utm_dp ||= ""
+  end
+
+  def utm_dt
+    current_page.data.utm_dt ||= ""
+  end
+
+  def utm_dl
+    current_page.data.utm_dl ||= ""
   end
 
   def ga
@@ -221,21 +233,20 @@ helpers do
   end
 
   def gua
-    if environment == :development
-      # "This is in development"
-      "#"
-    else
-      "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_campaign=#{utm_campaign}"
-    end
+    "?utm_source=#{utm_source}&utm_medium=#{utm_medium}&utm_campaign=#{utm_campaign}"
+  end
+
+  def tracking_id
+    "UA-87264639-1"
   end
 
   def track_opens_url
     if environment == :development
-      # "This is in development"
-      "http://placehold.it/1x1"
+      tracking_link = "https://placehold.it/5x5"
     else
-      "http://google-analytics.com/collect?v=1&tid=UA-48789419-1&cid=555&t=event&ec=email&ea=open&el=#{utm_campaign}"
+      tracking_link = "https://google-analytics.com/collect?v=1&tid=#{tracking_id}&cid=333&t=event&ec=email&ea=open&cn=#{utm_campaign}&cs=#{utm_source}&cm=#{utm_medium}&dt=#{utm_dt}&dp=#{utm_dp}&dl=#{utm_dl}"
     end
+    "<img src=\"#{tracking_link}\" />"
   end
 end
 
