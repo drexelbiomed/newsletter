@@ -23,14 +23,17 @@ Drexel University | School of Biomed
 * Gap year option that fills a critical gap in the
 medical curriculum for future physicians (and continued education
 for current physicians)
-* UPenn students enrolled in the post-bac program are guaranteed
+*  UPenn students enrolled in the post-bac program are guaranteed
 admissions!
 * Can be completed in 1 (gap) year
 * Includes 4 courses (2 required and 2 chosen from a list of
-electives) and an optional research component (for details see:
-Course Catalog 
+electives; for details see: Course Catalog 
 ( http://catalog.drexel.edu/graduate/schoolofbiomedicalengineeringscienceandhealthsystems/bioinformaticscert/ )
-)
+) and an optional research component (under the mentorship of a
+faculty at Drexel, UPenn, or CHOP).
+* Certificate can be applied towards a MS, or PhD in Biomedical
+Engineering or Biomedical Science at the School of Biomedical
+Engineering, Science and Health Systems
 
 Extensive molecular and biological patient data is
 increasingly included in diagnosis and treatment and its
@@ -71,14 +74,14 @@ https://admissions.drexel.edu/apply/
 The materials necessary to complete the application
 include: an updated resume, essay (statement of purpose
 describing your future plans), and an unofficial copy of your
-post-bac program transcript. Application fee will be waived
+post-bac program transcript. Application fee will be waived.
 
 Any questions?
 Please contact Natalia Broz at njb33@drexel.edu
 
 * Yan, B., Ban, K. H., & Tan, T. W. (2014). Integrating
 translational bioinformatics into the medical curriculum.
-International journal of medical education, 5, 132–134.
+International Journal of Medical Education, 5, 132–134.
 doi:10.5116/ijme.53ae.bc97
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4212410/
 
