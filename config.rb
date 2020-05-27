@@ -246,7 +246,7 @@ helpers do
       if environment == :development
         tracking_link = "https://placehold.it/5x5"
       else
-        tracking_link = "https://google-analytics.com/collect?v=1&tid=#{tracking_id}&cid=333&t=event&ec=email&ea=open&cn=#{utm_campaign}&cs=#{utm_source}&cm=#{utm_medium}&dt=#{utm_dt}&dp=#{utm_dp}&dl=#{utm_dl}"
+        tracking_link = "https://google-analytics.com/collect?v=1&tid=#{tracking_id}&cid=333&t=event&ec=email&ea=open&cn=#{utm_campaign}&cs=#{utm_source}"
       end
       "<img src=\"#{tracking_link}\" />"
     end
