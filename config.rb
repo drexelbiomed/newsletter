@@ -165,6 +165,20 @@ helpers do
       end
     end
 
+    def coulter_link
+      html = '<a target="_blank" href="http://drexel.edu/coulter'
+      if environment == :development
+        html += "#development"
+        html += '">'
+        html += "<!-- Analytics Tags: "
+        html += gua
+        html += " -->"
+      else
+        html += gua
+        html += '">'
+      end
+    end
+
     def end_link
       "</a>"
     end
