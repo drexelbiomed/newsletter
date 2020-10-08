@@ -1,15 +1,120 @@
 Coulter-Drexel Translational Research Partnership
 Program 
-( http://drexel.edu/biomed?utm_source=&utm_medium=HTML_Email&utm_campaign= )
+( https://drexel.edu/coulter/?utm_source=newsletter&utm_medium=email&utm_campaign=2020_fall_update )
 
 
-HEADER
+Fall / Winter 2020 Update
 
-BODY
+A Note from the Director
+------------------------
 
-BUTTON LABEL ( BUTTON%20LINK )
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed id nisl arcu. Sed et luctus risus. Nulla congue orci ligula.
+Sed ac purus felis. Vestibulum maximus nibh orci, in luctus ante
+tempus in. Nullam auctor nisi a condimentum rhoncus. Vestibulum
+vulputate arcu ut scelerisque feugiat. Integer et leo auctor,
+vestibulum magna nec, suscipit enim. Donec magna eros, maximus in
+odio vitae, egestas dapibus massa. Morbi ultrices mauris sed nunc
+faucibus lobortis non ac est.
 
-SIGNATURE
+Upcoming Dates to Remember
+--------------------------
+
+* Mid-year Review – January 21, 2020
+
+* First  Pitch – April  7, 2020
+
+* Second Pitch – May 26, 2020
+
+News Highlights
+---------------
+
+* Drexel University Takes Top Spot on National Rankings
+for Innovation
+
+* Sandhya Kortagere Wins 2020 Equalize Therapeutic Award
+
+* Adrienne Juarascio Wins Distinguished Drexel 40 Under 40 Award
+
+* Alex Mazin wins DOD and NIH grants totaling $2.844 Million to
+support his development of Inhibitors of RAD52 as a Therapy
+Against BRCA-Deficient cancers.
+
+* Kinos Medical received their 501(k) Substantially equivalent
+determination for their Axiom Total Ankle Sytem from the FDA.
+
+* Kelly Beck announced as CEO of Polycore.
+
+* The Integra Foundation awards a second year of 5k to support
+Coulter Fellows Projects.
+
+Read Full Stories 
+( https://drexel.edu/coulter/news/news-archive/?utm_source=newsletter&utm_medium=email&utm_campaign=2020_fall_update )
+
+
+2020-21 Coulter Awardees
+------------------------
+
+The Coulter-Drexel Translational Research Partnership
+Program has awarded over $880,000 total for 2020-2021 to the
+following projects.
+
+* Mxene Sorbents for Efficient and Cost-Effective
+Dialysate Regeneration
+
+Yury Gogotsi, PhD, Meera Harhay, MD, Mykola Seredych,
+PhD, Jesse Kim, and Ian G. Welsford
+
+* Preclinical optimization of a novel neuroprotective agent to
+treat Parkinson’s Disease
+
+Sandhya Kortagere, PhD and Jill Farmer, D.O, MPH
+
+* Use of non-thermal plasma for treatment of HSV infections
+
+Vandana Miller, MD, Fred Krebs, PhD, Stephen
+Jennings, PhD, Brian Wigdahl, PhD, Sean Wang, PhD, and Ken Li,
+PhD
+
+* Megabase DNA Sequencing System
+
+Ming Xiao, PhD, Dharma Varapula, Lahari Uppuluri,
+Moses Noh, PhD
+
+* Team IEP: A cloud application for urban districts to improve
+transition outcomes for ASD youth through iterative,
+collaborative and synchronized implementation of transition goals
+by youth, parents and school staff
+
+Elizabeth McGhee Hassrick, PhD, Brigid Garvin, Ed.S.
+NCSP, Bridget Sweeney Blakely, PhD, Troy Finamore, Andrew
+Stutzman, and Paul Phan
+
+* Orthopedic Surgical Devices with Controlled Fluid- Induced
+Expansion Properties for Improved Bone Fixation and Bone
+Integration
+
+Sorin Siegler, PhD, Giuseppe Palmese, PhD, Antonios
+Kontsos, PhD, Pablo Huang Zhang, PhD, Keith Wapner, MD,
+Christopher Jones, MD, Michael Ciccotti, MD, Jarrett Cain, DPM,
+Thomas P. Shaer, VMD, and Brian Garvey
+
+* Ice Cream Therapy: Functional Ice Cream Alternative to Oral
+Nutrition Supplements
+
+Jonathan Deutsch, Rose Ann DiMaria-Ghalili,
+Brandy-Joe Milliron, Kathleen Fisher, Dimitri Pappas, and Andrea
+Wenner
+
+2020-21 Funded Project Abstracts 
+( https://drexel.edu/coulter/projects/overview/?utm_source=newsletter&utm_medium=email&utm_campaign=2020_fall_update )
+
+
+Sincerely,
+
+Kathie Jordan, PhD
+
+Coulter Program Director
 
 tbody>tr>th.first.last.small-12.large-12.columns -->
 
